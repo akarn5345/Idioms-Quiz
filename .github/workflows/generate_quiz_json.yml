@@ -1,0 +1,31 @@
+name: Generate Quiz JSON
+
+permissions:
+  contents: write
+
+on:
+  push:
+    paths:
+      - 'idioms_list.csv'
+      - 'generate_idioms_quiz.py'
+      - 'idioms_data.json'  # optional, for clarity
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Run script to generate idioms_data.json
+        run: python generate_idioms_quiz.py
+
+      - name: Commit and push generated file
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add idioms_data.json
+          git commit -m "Auto-generated idioms_data.json" || echo "No changes to commit"
+          git push
