@@ -7,11 +7,28 @@ from collections import Counter
 def format_idiom(idiom):
     return ' '.join(word.capitalize() for word in idiom.strip().split())
 
-# Generate relatable distractor meanings
+# Generate distractor meanings with similarity
 def generate_distractor_meanings(correct_meaning, all_meanings):
-    available_meanings = [m for m in all_meanings if m.lower() != correct_meaning.lower()]
-    random.shuffle(available_meanings)  # Shuffle the pool each time
-    return available_meanings[:3]  # Pick three random distractor meanings
+    # Split correct meaning into keywords (simple approach: non-stop words)
+    keywords = [word.lower() for word in correct_meaning.split() if word.lower() not in ['a', 'an', 'the', 'of', 'and']]
+    if not keywords:
+        keywords = [correct_meaning.split()[0].lower()]  # Fallback to first word
+
+    # Find meanings with at least one similar keyword
+    similar_meanings = []
+    for meaning in all_meanings:
+        if meaning.lower() != correct_meaning.lower():
+            if any(keyword in meaning.lower() for keyword in keywords):
+                similar_meanings.append(meaning)
+
+    # If not enough similar meanings, fall back to random non-matching meanings
+    distractors = similar_meanings[:3]
+    if len(distractors) < 3:
+        available_meanings = [m for m in all_meanings if m.lower() != correct_meaning.lower() and m not in similar_meanings]
+        random.shuffle(available_meanings)
+        distractors.extend(available_meanings[:3 - len(distractors)])
+
+    return distractors[:3]  # Ensure exactly three distractors
 
 # Generate options with meanings
 def generate_options(correct_idiom, all_idioms, all_meanings):
