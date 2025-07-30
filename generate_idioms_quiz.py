@@ -7,19 +7,20 @@ from collections import Counter
 def format_idiom(idiom):
     return ' '.join(word.capitalize() for word in idiom.strip().split())
 
-# Generate relatable distractor idioms with shuffling
-def generate_distractor_idioms(correct_idiom, all_idioms):
-    available_idioms = [i for i in all_idioms if i.lower() != correct_idiom.lower()]
-    random.shuffle(available_idioms)  # Shuffle the pool each time
-    return [format_idiom(i) for i in available_idioms[:3]]  # Pick three random distractors
+# Generate relatable distractor meanings
+def generate_distractor_meanings(correct_meaning, all_meanings):
+    available_meanings = [m for m in all_meanings if m.lower() != correct_meaning.lower()]
+    random.shuffle(available_meanings)  # Shuffle the pool each time
+    return available_meanings[:3]  # Pick three random distractor meanings
 
-# Generate options with shuffling
-def generate_options(correct_idiom, all_idioms):
-    distractor_options = generate_distractor_idioms(correct_idiom, all_idioms)
-    options = distractor_options + [format_idiom(correct_idiom)]
+# Generate options with meanings
+def generate_options(correct_idiom, all_idioms, all_meanings):
+    correct_meaning = next(row['Meaning'] for row in all_idioms if row['Idioms'] == correct_idiom)
+    distractor_options = generate_distractor_meanings(correct_meaning, all_meanings)
+    options = distractor_options + [correct_meaning]
     random.shuffle(options)  # Shuffle the final options list
     labeled_options = dict(zip(['A', 'B', 'C', 'D'], options))
-    correct_letter = [k for k, v in labeled_options.items() if v == format_idiom(correct_idiom)][0]
+    correct_letter = [k for k, v in labeled_options.items() if v == correct_meaning][0]
     return labeled_options, correct_letter
 
 # Input/Output files
@@ -35,7 +36,8 @@ with open(input_csv, newline='', encoding='utf-8') as csvfile:
     reader.fieldnames = [fn.strip() for fn in reader.fieldnames]
     rows = list(reader)
     
-    all_idioms = [row['Idioms'] for row in rows if 'Idioms' in row and row['Idioms'].strip()]
+    all_idioms = [{'Idioms': row['Idioms'], 'Meaning': row['Meaning']} for row in rows if 'Idioms' in row and row['Idioms'].strip()]
+    all_meanings = [row['Meaning'] for row in rows if 'Idioms' in row and row['Idioms'].strip()]
     
     for row in rows:
         if 'Idioms' not in row or not row['Idioms'].strip():
@@ -53,7 +55,7 @@ with open(input_csv, newline='', encoding='utf-8') as csvfile:
         
         year_counter[year] += 1
         
-        options, correct_letter = generate_options(correct_idiom, all_idioms)
+        options, correct_letter = generate_options(correct_idiom, all_idioms, all_meanings)
         
         quiz_data.append({
             'correct_idiom': format_idiom(correct_idiom),
