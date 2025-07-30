@@ -5,12 +5,12 @@
     "meaning": "Something very easily doable",
     "hindi_meaning": "Hindi",
     "options": {
-      "A": " Day and night",
-      "B": " To understand more than what the words suggest",
-      "C": " Something very easily doable",
-      "D": " Speak truthfully"
+      "A": " To force yourself to do something unpleasant",
+      "B": " Something very easily doable",
+      "C": " Something common and not special",
+      "D": " to say or do something that makes people feel more relaxed"
     },
-    "correct_letter": "C"
+    "correct_letter": "B"
   },
   {
     "correct_idiom": "A Bad Patch",
@@ -18,12 +18,12 @@
     "meaning": "A period of time when a person faces lots of troubles",
     "hindi_meaning": "एक बुरा दौर",
     "options": {
-      "A": " Keep plans and thoughts hidden",
-      "B": " A continuing unpleasant situation",
-      "C": " To wait for a situation to become clear or certain",
-      "D": " A period of time when a person faces lots of troubles"
+      "A": " A period of time when a person faces lots of troubles",
+      "B": " A time when money might unexpectedly be needed",
+      "C": " A fearless person",
+      "D": " Friends in good times"
     },
-    "correct_letter": "D"
+    "correct_letter": "A"
   },
   {
     "correct_idiom": "A Bitter Pill",
@@ -31,12 +31,12 @@
     "meaning": "Facing a distressing situation",
     "hindi_meaning": "एक कड़वी गोली",
     "options": {
-      "A": " Blamed for the mistakes of others",
-      "B": " To wish good luck",
-      "C": " Something common and not special",
-      "D": " Facing a distressing situation"
+      "A": " Facing a distressing situation",
+      "B": " Praise or approval for doing something good",
+      "C": " To wait for a situation to become clear or certain",
+      "D": " A continuing unpleasant situation"
     },
-    "correct_letter": "D"
+    "correct_letter": "A"
   },
   {
     "correct_idiom": "A Blessing In Disguise",
@@ -44,12 +44,12 @@
     "meaning": "an apparent misfortune that eventually has good results",
     "hindi_meaning": "भेष में आशीर्वाद",
     "options": {
-      "A": " So worried",
-      "B": " Helpless",
-      "C": " an apparent misfortune that eventually has good results",
-      "D": " To understand more than what the words suggest"
+      "A": " Friends in good times",
+      "B": " to say or do something that makes people feel more relaxed",
+      "C": " To wish good luck",
+      "D": " an apparent misfortune that eventually has good results"
     },
-    "correct_letter": "C"
+    "correct_letter": "D"
   },
   {
     "correct_idiom": "A Daredevil",
@@ -57,10 +57,10 @@
     "meaning": "A fearless person",
     "hindi_meaning": "एक साहसी",
     "options": {
-      "A": " Tell others secret information",
-      "B": " Halting between two options",
+      "A": " To look saddened",
+      "B": " A period of time when a person faces lots of troubles",
       "C": " A fearless person",
-      "D": " To wish good luck"
+      "D": " A thoroughly upright straightforward person"
     },
     "correct_letter": "C"
   },
@@ -70,10 +70,10 @@
     "meaning": "Something common and not special",
     "hindi_meaning": "दस सेंट भी एक दर्जन से अधिक",
     "options": {
-      "A": " To start or create something from very beginning",
-      "B": " One who does same thing in the same way",
+      "A": " to say or do something that makes people feel more relaxed",
+      "B": " Something very easily doable",
       "C": " Something common and not special",
-      "D": " To do something too soon and too quickly"
+      "D": " To force yourself to do something unpleasant"
     },
     "correct_letter": "C"
   },
@@ -83,12 +83,12 @@
     "meaning": "A time when money might unexpectedly be needed",
     "hindi_meaning": "बरसात वाला दिन",
     "options": {
-      "A": " A thoroughly upright straightforward person",
-      "B": " A time when money might unexpectedly be needed",
-      "C": " Avoid starvation",
-      "D": " Under all conditions"
+      "A": " A time when money might unexpectedly be needed",
+      "B": " A period of time when a person faces lots of troubles",
+      "C": " Friends in good times",
+      "D": " To become very angry"
     },
-    "correct_letter": "B"
+    "correct_letter": "A"
   },
   {
     "correct_idiom": "A Vicious Cycle",
@@ -96,12 +96,12 @@
     "meaning": "A continuing unpleasant situation",
     "hindi_meaning": "created another problem that then makes the first problem worse",
     "options": {
-      "A": " In a depressed or weak state",
-      "B": " Blamed for the mistakes of others",
-      "C": " A continuing unpleasant situation",
-      "D": " To wish good luck"
+      "A": " To force yourself to do something unpleasant",
+      "B": " To wait for a situation to become clear or certain",
+      "C": " Facing a distressing situation",
+      "D": " A continuing unpleasant situation"
     },
-    "correct_letter": "C"
+    "correct_letter": "D"
   },
   {
     "correct_idiom": "Around The Clock",
@@ -109,10 +109,10 @@
     "meaning": "Day and night",
     "hindi_meaning": "चौबीस घंटे",
     "options": {
-      "A": " Being very delighted",
+      "A": " Tried very hard",
       "B": " Day and night",
-      "C": " Under any circumstances",
-      "D": " To become very angry"
+      "C": " To interfere with",
+      "D": " Praise or approval for doing something good"
     },
     "correct_letter": "B"
   },
@@ -122,12 +122,12 @@
     "meaning": "In a depressed or weak state",
     "hindi_meaning": "निम्न स्तर पर",
     "options": {
-      "A": " Helpless",
-      "B": " In a depressed or weak state",
-      "C": " Blamed for the mistakes of others",
-      "D": " A period of time when a person faces lots of troubles"
+      "A": " an apparent misfortune that eventually has good results",
+      "B": " Facing a distressing situation",
+      "C": " In a depressed or weak state",
+      "D": " Something very easily doable"
     },
-    "correct_letter": "B"
+    "correct_letter": "C"
   },
   {
     "correct_idiom": "At Her Wits' End",
@@ -135,12 +135,12 @@
     "meaning": "So worried",
     "hindi_meaning": "confused",
     "options": {
-      "A": " A talent for speaking",
-      "B": " So worried",
-      "C": " Showing no interest",
-      "D": " To have bigger things to take care of then the menial task at hand"
+      "A": " Something very easily doable",
+      "B": " A period of time when a person faces lots of troubles",
+      "C": " A fearless person",
+      "D": " So worried"
     },
-    "correct_letter": "B"
+    "correct_letter": "D"
   },
   {
     "correct_idiom": "Beside The Mark",
@@ -148,12 +148,12 @@
     "meaning": "Irrelevant",
     "hindi_meaning": "निशान के बगल में",
     "options": {
-      "A": " Had no effect on",
-      "B": " Irrelevant",
-      "C": " An endless task",
-      "D": " To understand more than what the words suggest"
+      "A": " Irrelevant",
+      "B": " Helpless",
+      "C": " Steal from a shop",
+      "D": " To start or create something from very beginning"
     },
-    "correct_letter": "B"
+    "correct_letter": "A"
   },
   {
     "correct_idiom": "Bite The Bullet",
@@ -161,8 +161,8 @@
     "meaning": "To force yourself to do something unpleasant",
     "hindi_meaning": "मज़बूरी को स्वीकार करना",
     "options": {
-      "A": " Treated her with contempt",
-      "B": " Day and night",
+      "A": " A continuing unpleasant situation",
+      "B": " Something common and not special",
       "C": " To force yourself to do something unpleasant",
       "D": " Something very easily doable"
     },
@@ -174,12 +174,12 @@
     "meaning": "To wish good luck",
     "hindi_meaning": "भाग्य तुम्हारे साथ हो",
     "options": {
-      "A": " To look saddened",
-      "B": " Do something in an inexpensive and easy way",
-      "C": " One who does same thing in the same way",
-      "D": " To wish good luck"
+      "A": " To wish good luck",
+      "B": " to say or do something that makes people feel more relaxed",
+      "C": " an apparent misfortune that eventually has good results",
+      "D": " To force yourself to do something unpleasant"
     },
-    "correct_letter": "D"
+    "correct_letter": "A"
   },
   {
     "correct_idiom": "Break The Ice",
@@ -187,12 +187,12 @@
     "meaning": "to say or do something that makes people feel more relaxed",
     "hindi_meaning": "especially at the beginning of a meeting",
     "options": {
-      "A": " So worried",
-      "B": " A talent for speaking",
-      "C": " Facing a distressing situation",
-      "D": " to say or do something that makes people feel more relaxed"
+      "A": " an apparent misfortune that eventually has good results",
+      "B": " Something very easily doable",
+      "C": " to say or do something that makes people feel more relaxed",
+      "D": " Something common and not special"
     },
-    "correct_letter": "D"
+    "correct_letter": "C"
   },
   {
     "correct_idiom": "Call A Space A Space",
@@ -200,10 +200,10 @@
     "meaning": "Speak truthfully",
     "hindi_meaning": "किसी स्थान को स्थान कहें",
     "options": {
-      "A": " A fearless person",
-      "B": " Uncomfortable",
+      "A": " A talent for speaking",
+      "B": " A fearless person",
       "C": " Speak truthfully",
-      "D": " Helpless"
+      "D": " Halting between two options"
     },
     "correct_letter": "C"
   },
@@ -213,12 +213,12 @@
     "meaning": "Showing no interest",
     "hindi_meaning": "एक फांसी की देखभाल",
     "options": {
-      "A": " Showing no interest",
+      "A": " Something common and not special",
       "B": " Had no effect on",
-      "C": " Given by somebody who is directly involved and therefore likely to be accurate",
-      "D": " Now and then // Periodically"
+      "C": " Showing no interest",
+      "D": " To be ignored"
     },
-    "correct_letter": "A"
+    "correct_letter": "C"
   },
   {
     "correct_idiom": "Come Rain Or Shine",
@@ -226,12 +226,12 @@
     "meaning": "Under any circumstances",
     "hindi_meaning": "चाहे बारिश हो या धूप",
     "options": {
-      "A": " Helpless",
-      "B": " Under any circumstances",
-      "C": " To have bigger things to take care of then the menial task at hand",
-      "D": " Tried very hard"
+      "A": " Under any circumstances",
+      "B": " Many good and bad times",
+      "C": " To understand more than what the words suggest",
+      "D": " Aware of any changes or developments and quick to react to them"
     },
-    "correct_letter": "B"
+    "correct_letter": "A"
   },
   {
     "correct_idiom": "Cook Someone's Goose",
@@ -239,12 +239,12 @@
     "meaning": "To interfere with",
     "hindi_meaning": "disrupt or ruin something for someone",
     "options": {
-      "A": " Being very delighted",
-      "B": " They have accurately identified or explained something",
-      "C": " To interfere with",
-      "D": " first speech"
+      "A": " To wish good luck",
+      "B": " To interfere with",
+      "C": " to say or do something that makes people feel more relaxed",
+      "D": " To force yourself to do something unpleasant"
     },
-    "correct_letter": "C"
+    "correct_letter": "B"
   },
   {
     "correct_idiom": "Creature Of Habit",
@@ -252,9 +252,9 @@
     "meaning": "One who does same thing in the same way",
     "hindi_meaning": "आदत का प्राणी",
     "options": {
-      "A": " To look saddened",
-      "B": " To wish good luck",
-      "C": " an apparent misfortune that eventually has good results",
+      "A": " Something very easily doable",
+      "B": " Facing a distressing situation",
+      "C": " Something common and not special",
       "D": " One who does same thing in the same way"
     },
     "correct_letter": "D"
@@ -265,12 +265,12 @@
     "meaning": "Do something in an inexpensive and easy way",
     "hindi_meaning": "कटे हुए कोने",
     "options": {
-      "A": " Do something in an inexpensive and easy way",
-      "B": " Something very easily doable",
-      "C": " Under any circumstances",
-      "D": " A continuing unpleasant situation"
+      "A": " Facing a distressing situation",
+      "B": " Do something in an inexpensive and easy way",
+      "C": " Something common and not special",
+      "D": " Something very easily doable"
     },
-    "correct_letter": "A"
+    "correct_letter": "B"
   },
   {
     "correct_idiom": "Easy Does It",
@@ -278,10 +278,10 @@
     "meaning": "Used to tell someone to do something slowly and carefully",
     "hindi_meaning": "आराम से",
     "options": {
-      "A": " Treated her with contempt",
+      "A": " Something common and not special",
       "B": " Used to tell someone to do something slowly and carefully",
-      "C": " Helpless",
-      "D": " Showing no interest"
+      "C": " To force yourself to do something unpleasant",
+      "D": " Something very easily doable"
     },
     "correct_letter": "B"
   },
@@ -291,12 +291,12 @@
     "meaning": "Friends in good times",
     "hindi_meaning": "अच्छे मौसम के दोस्त",
     "options": {
-      "A": " Under all conditions",
-      "B": " To be ignored",
-      "C": " Friends in good times",
-      "D": " Keep plans and thoughts hidden"
+      "A": " Friends in good times",
+      "B": " Something very easily doable",
+      "C": " an apparent misfortune that eventually has good results",
+      "D": " Facing a distressing situation"
     },
-    "correct_letter": "C"
+    "correct_letter": "A"
   },
   {
     "correct_idiom": "Fall Flat",
@@ -304,12 +304,12 @@
     "meaning": "Had no effect on",
     "hindi_meaning": "चित्त गिरना",
     "options": {
-      "A": " In a depressed or weak state",
-      "B": " The major portion",
-      "C": " Had no effect on",
-      "D": " Avoid starvation"
+      "A": " Had no effect on",
+      "B": " Facing a distressing situation",
+      "C": " A period of time when a person faces lots of troubles",
+      "D": " A fearless person"
     },
-    "correct_letter": "C"
+    "correct_letter": "A"
   },
   {
     "correct_idiom": "Fish Out Of Water",
@@ -317,12 +317,12 @@
     "meaning": "Uncomfortable",
     "hindi_meaning": "पानी से बाहर मछली",
     "options": {
-      "A": " Tell others secret information",
-      "B": " Uncomfortable",
-      "C": " an apparent misfortune that eventually has good results",
-      "D": " Friends in good times"
+      "A": " To understand more than what the words suggest",
+      "B": " One who does same thing in the same way",
+      "C": " Halting between two options",
+      "D": " Uncomfortable"
     },
-    "correct_letter": "B"
+    "correct_letter": "D"
   },
   {
     "correct_idiom": "Five-finger Discount",
@@ -330,12 +330,12 @@
     "meaning": "Steal from a shop",
     "hindi_meaning": "पांच-उंगली छूट",
     "options": {
-      "A": " Not very often",
-      "B": " A small",
-      "C": " To have bigger things to take care of then the menial task at hand",
-      "D": " Steal from a shop"
+      "A": " Steal from a shop",
+      "B": " Day and night",
+      "C": " One who does same thing in the same way",
+      "D": " To start or create something from very beginning"
     },
-    "correct_letter": "D"
+    "correct_letter": "A"
   },
   {
     "correct_idiom": "Gift Of The Gab",
@@ -343,12 +343,12 @@
     "meaning": "A talent for speaking",
     "hindi_meaning": "भाषणक्षमता",
     "options": {
-      "A": " Not very often",
-      "B": " Helpless",
-      "C": " So worried",
-      "D": " A talent for speaking"
+      "A": " To force yourself to do something unpleasant",
+      "B": " an apparent misfortune that eventually has good results",
+      "C": " A talent for speaking",
+      "D": " Uncomfortable"
     },
-    "correct_letter": "D"
+    "correct_letter": "C"
   },
   {
     "correct_idiom": "Henpecked Husbands",
@@ -356,12 +356,12 @@
     "meaning": "Oppressed husband",
     "hindi_meaning": "डरपोक पति",
     "options": {
-      "A": " Avoid starvation",
-      "B": " Oppressed husband",
-      "C": " One who does same thing in the same way",
-      "D": " So worried"
+      "A": " Aware of any changes or developments and quick to react to them",
+      "B": " A fearless person",
+      "C": " Work harder than before",
+      "D": " Oppressed husband"
     },
-    "correct_letter": "B"
+    "correct_letter": "D"
   },
   {
     "correct_idiom": "High And Dry",
@@ -369,12 +369,12 @@
     "meaning": "Helpless",
     "hindi_meaning": "उच्च और सूखा",
     "options": {
-      "A": " Helpless",
-      "B": " In a depressed or weak state",
-      "C": " Something very easily doable",
-      "D": " Speak truthfully"
+      "A": " Not very often",
+      "B": " Given by somebody who is directly involved and therefore likely to be accurate",
+      "C": " A time when money might unexpectedly be needed",
+      "D": " Helpless"
     },
-    "correct_letter": "A"
+    "correct_letter": "D"
   },
   {
     "correct_idiom": "Hit The Nail On The Head",
@@ -382,10 +382,10 @@
     "meaning": "They have accurately identified or explained something",
     "hindi_meaning": "कील के सिर पर मारो",
     "options": {
-      "A": " Day and night",
+      "A": " Something very easily doable",
       "B": " They have accurately identified or explained something",
-      "C": " To disclose",
-      "D": " To become very angry"
+      "C": " an apparent misfortune that eventually has good results",
+      "D": " Something common and not special"
     },
     "correct_letter": "B"
   },
@@ -395,10 +395,10 @@
     "meaning": "To become very angry",
     "hindi_meaning": "छत पर जाओ",
     "options": {
-      "A": " Facing a distressing situation",
-      "B": " Not easily deceived",
+      "A": " Something very easily doable",
+      "B": " To wish good luck",
       "C": " To become very angry",
-      "D": " A continuing unpleasant situation"
+      "D": " To force yourself to do something unpleasant"
     },
     "correct_letter": "C"
   },
@@ -408,10 +408,10 @@
     "meaning": "Resentment",
     "hindi_meaning": "पीलियाग्रस्त आँख",
     "options": {
-      "A": " Friends in good times",
+      "A": " first speech",
       "B": " Resentment",
-      "C": " Had no effect on",
-      "D": " Many good and bad times"
+      "C": " Given by somebody who is directly involved and therefore likely to be accurate",
+      "D": " To understand more than what the words suggest"
     },
     "correct_letter": "B"
   },
@@ -421,12 +421,12 @@
     "meaning": "To do something too soon and too quickly",
     "hindi_meaning": "जल्दबाजी में निर्णय लें",
     "options": {
-      "A": " One who does same thing in the same way",
-      "B": " Had no effect on",
-      "C": " To do something too soon and too quickly",
-      "D": " Something very easily doable"
+      "A": " Something very easily doable",
+      "B": " Something common and not special",
+      "C": " To force yourself to do something unpleasant",
+      "D": " To do something too soon and too quickly"
     },
-    "correct_letter": "C"
+    "correct_letter": "D"
   },
   {
     "correct_idiom": "Keep Cards Close To Chest",
@@ -434,10 +434,10 @@
     "meaning": "Keep plans and thoughts hidden",
     "hindi_meaning": "कार्ड को सीने के पास रखें",
     "options": {
-      "A": " Improve absurd behaviour and act seriously",
+      "A": " A talent for speaking",
       "B": " Keep plans and thoughts hidden",
-      "C": " A talent for speaking",
-      "D": " Disregarded"
+      "C": " A small",
+      "D": " Avoid starvation"
     },
     "correct_letter": "B"
   },
@@ -447,12 +447,12 @@
     "meaning": "To be ignored",
     "hindi_meaning": "ठंड में छोड़ दिया गया",
     "options": {
-      "A": " An endless task",
-      "B": " Work harder than before",
-      "C": " To be ignored",
-      "D": " first speech"
+      "A": " To force yourself to do something unpleasant",
+      "B": " A time when money might unexpectedly be needed",
+      "C": " To wish good luck",
+      "D": " To be ignored"
     },
-    "correct_letter": "C"
+    "correct_letter": "D"
   },
   {
     "correct_idiom": "Let The Dust Settle",
@@ -460,12 +460,12 @@
     "meaning": "To wait for a situation to become clear or certain",
     "hindi_meaning": "धूल जमने दो",
     "options": {
-      "A": " To wait for a situation to become clear or certain",
-      "B": " In a depressed or weak state",
-      "C": " They have accurately identified or explained something",
+      "A": " an apparent misfortune that eventually has good results",
+      "B": " A continuing unpleasant situation",
+      "C": " To wait for a situation to become clear or certain",
       "D": " Facing a distressing situation"
     },
-    "correct_letter": "A"
+    "correct_letter": "C"
   },
   {
     "correct_idiom": "Made A Scapegoat",
@@ -473,12 +473,12 @@
     "meaning": "Blamed for the mistakes of others",
     "hindi_meaning": "बलि का बकरा बनाया गया",
     "options": {
-      "A": " A small",
-      "B": " To look saddened",
-      "C": " To wait for a situation to become clear or certain",
-      "D": " Blamed for the mistakes of others"
+      "A": " Uncomfortable",
+      "B": " Blamed for the mistakes of others",
+      "C": " To force yourself to do something unpleasant",
+      "D": " an apparent misfortune that eventually has good results"
     },
-    "correct_letter": "D"
+    "correct_letter": "B"
   },
   {
     "correct_idiom": "Maiden Speech",
@@ -486,12 +486,12 @@
     "meaning": "first speech",
     "hindi_meaning": "प्रथम भाषण",
     "options": {
-      "A": " A period of time when a person faces lots of troubles",
-      "B": " To understand more than what the words suggest",
-      "C": " To have bigger things to take care of then the menial task at hand",
-      "D": " first speech"
+      "A": " first speech",
+      "B": " Showing no interest",
+      "C": " Many good and bad times",
+      "D": " Irrelevant"
     },
-    "correct_letter": "D"
+    "correct_letter": "A"
   },
   {
     "correct_idiom": "Make A Beeline For",
@@ -499,12 +499,12 @@
     "meaning": "Going straight and quick",
     "hindi_meaning": "के लिए सीधी रेखा बनाओ",
     "options": {
-      "A": " Resentment",
-      "B": " Going straight and quick",
-      "C": " Praise or approval for doing something good",
-      "D": " Tell others secret information"
+      "A": " Aware of any changes or developments and quick to react to them",
+      "B": " A thoroughly upright straightforward person",
+      "C": " To do something too soon and too quickly",
+      "D": " Going straight and quick"
     },
-    "correct_letter": "B"
+    "correct_letter": "D"
   },
   {
     "correct_idiom": "Many Ups And Downs",
@@ -512,12 +512,12 @@
     "meaning": "Many good and bad times",
     "hindi_meaning": "कई उतार-चढ़ाव",
     "options": {
-      "A": " Tried very hard",
-      "B": " To become very angry",
-      "C": " Many good and bad times",
-      "D": " Disregarded"
+      "A": " To wish good luck",
+      "B": " an apparent misfortune that eventually has good results",
+      "C": " Friends in good times",
+      "D": " Many good and bad times"
     },
-    "correct_letter": "C"
+    "correct_letter": "D"
   },
   {
     "correct_idiom": "Move Heavens And Earth",
@@ -525,12 +525,12 @@
     "meaning": "Tried very hard",
     "hindi_meaning": "आकाश और पृथ्वी को हिलाओ",
     "options": {
-      "A": " A continuing unpleasant situation",
-      "B": " A talent for speaking",
-      "C": " Uncomfortable",
-      "D": " Tried very hard"
+      "A": " Tried very hard",
+      "B": " To become very angry",
+      "C": " Being very delighted",
+      "D": " Something very easily doable"
     },
-    "correct_letter": "D"
+    "correct_letter": "A"
   },
   {
     "correct_idiom": "Nobody's Fool",
@@ -538,12 +538,12 @@
     "meaning": "Not easily deceived",
     "hindi_meaning": "कोई भी मूर्ख नहीं",
     "options": {
-      "A": " Not easily deceived",
-      "B": " An endless task",
-      "C": " A small",
-      "D": " To look saddened"
+      "A": " Something very easily doable",
+      "B": " Something common and not special",
+      "C": " Not easily deceived",
+      "D": " Not very often"
     },
-    "correct_letter": "A"
+    "correct_letter": "C"
   },
   {
     "correct_idiom": "Off And On",
@@ -551,12 +551,12 @@
     "meaning": "Now and then // Periodically",
     "hindi_meaning": "आए दिन",
     "options": {
-      "A": " Now and then // Periodically",
-      "B": " Aware of any changes or developments and quick to react to them",
-      "C": " Under all conditions",
-      "D": " Friends in good times"
+      "A": " To have bigger things to take care of then the menial task at hand",
+      "B": " Being very delighted",
+      "C": " Uncomfortable",
+      "D": " Now and then // Periodically"
     },
-    "correct_letter": "A"
+    "correct_letter": "D"
   },
   {
     "correct_idiom": "Olive Branch",
@@ -564,12 +564,12 @@
     "meaning": "Gesture of peace",
     "hindi_meaning": "जैतून शाखा",
     "options": {
-      "A": " Gesture of peace",
-      "B": " To wait for a situation to become clear or certain",
-      "C": " Many good and bad times",
-      "D": " Uncomfortable"
+      "A": " One who does same thing in the same way",
+      "B": " To understand more than what the words suggest",
+      "C": " Gesture of peace",
+      "D": " Something very easily doable"
     },
-    "correct_letter": "A"
+    "correct_letter": "C"
   },
   {
     "correct_idiom": "On Cloud Nine",
@@ -577,10 +577,10 @@
     "meaning": "Being very delighted",
     "hindi_meaning": "ठिक रात के नव बजे",
     "options": {
-      "A": " To look saddened",
+      "A": " Something very easily doable",
       "B": " Being very delighted",
-      "C": " Tried very hard",
-      "D": " Speak truthfully"
+      "C": " To become very angry",
+      "D": " Tried very hard"
     },
     "correct_letter": "B"
   },
@@ -590,10 +590,10 @@
     "meaning": "Aware of any changes or developments and quick to react to them",
     "hindi_meaning": "काम में तेज",
     "options": {
-      "A": " Praise or approval for doing something good",
-      "B": " Work harder than before",
+      "A": " In a depressed or weak state",
+      "B": " an apparent misfortune that eventually has good results",
       "C": " Aware of any changes or developments and quick to react to them",
-      "D": " Disregarded"
+      "D": " So worried"
     },
     "correct_letter": "C"
   },
@@ -603,12 +603,12 @@
     "meaning": "Halting between two options",
     "hindi_meaning": "बाड़े पर",
     "options": {
-      "A": " Halting between two options",
-      "B": " To wish good luck",
-      "C": " To wait for a situation to become clear or certain",
-      "D": " Irrelevant"
+      "A": " To start or create something from very beginning",
+      "B": " Halting between two options",
+      "C": " The major portion",
+      "D": " Work harder than before"
     },
-    "correct_letter": "A"
+    "correct_letter": "B"
   },
   {
     "correct_idiom": "Once In A Blue Moon",
@@ -616,12 +616,12 @@
     "meaning": "Not very often",
     "hindi_meaning": "ईद का चाँद होना",
     "options": {
-      "A": " Tell others secret information",
-      "B": " Had no effect on",
-      "C": " Keep plans and thoughts hidden",
-      "D": " Not very often"
+      "A": " Not very often",
+      "B": " Something very easily doable",
+      "C": " Something common and not special",
+      "D": " To become very angry"
     },
-    "correct_letter": "D"
+    "correct_letter": "A"
   },
   {
     "correct_idiom": "Pat On The Back",
@@ -629,12 +629,12 @@
     "meaning": "Praise or approval for doing something good",
     "hindi_meaning": "पीठ पर थपथपाना",
     "options": {
-      "A": " Friends in good times",
-      "B": " Helpless",
-      "C": " Praise or approval for doing something good",
-      "D": " Not easily deceived"
+      "A": " Something very easily doable",
+      "B": " Something common and not special",
+      "C": " an apparent misfortune that eventually has good results",
+      "D": " Praise or approval for doing something good"
     },
-    "correct_letter": "C"
+    "correct_letter": "D"
   },
   {
     "correct_idiom": "Penelope's Web",
@@ -642,9 +642,9 @@
     "meaning": "An endless task",
     "hindi_meaning": "पेनेलोप का जाल",
     "options": {
-      "A": " Tell others secret information",
-      "B": " Given by somebody who is directly involved and therefore likely to be accurate",
-      "C": " Friends in good times",
+      "A": " To have bigger things to take care of then the menial task at hand",
+      "B": " Irrelevant",
+      "C": " Treated her with contempt",
       "D": " An endless task"
     },
     "correct_letter": "D"
@@ -655,12 +655,12 @@
     "meaning": "To look saddened",
     "hindi_meaning": "लंबा चेहरा बनाओ",
     "options": {
-      "A": " Many good and bad times",
-      "B": " Disregarded",
-      "C": " Being very delighted",
-      "D": " To look saddened"
+      "A": " To look saddened",
+      "B": " To force yourself to do something unpleasant",
+      "C": " to say or do something that makes people feel more relaxed",
+      "D": " To wish good luck"
     },
-    "correct_letter": "D"
+    "correct_letter": "A"
   },
   {
     "correct_idiom": "Pull Our Socks Up",
@@ -668,12 +668,12 @@
     "meaning": "Work harder than before",
     "hindi_meaning": "अपने मोज़े ऊपर खींचो",
     "options": {
-      "A": " To wish good luck",
-      "B": " Work harder than before",
-      "C": " One who does same thing in the same way",
-      "D": " to say or do something that makes people feel more relaxed"
+      "A": " Work harder than before",
+      "B": " So worried",
+      "C": " Day and night",
+      "D": " To understand more than what the words suggest"
     },
-    "correct_letter": "B"
+    "correct_letter": "A"
   },
   {
     "correct_idiom": "Read Between The Lines",
@@ -681,12 +681,12 @@
     "meaning": "To understand more than what the words suggest",
     "hindi_meaning": "लाइनों के बीच पढ़ें",
     "options": {
-      "A": " To be ignored",
-      "B": " To understand more than what the words suggest",
-      "C": " A small",
-      "D": " an apparent misfortune that eventually has good results"
+      "A": " To understand more than what the words suggest",
+      "B": " To wish good luck",
+      "C": " To force yourself to do something unpleasant",
+      "D": " to say or do something that makes people feel more relaxed"
     },
-    "correct_letter": "B"
+    "correct_letter": "A"
   },
   {
     "correct_idiom": "Spill The Beans",
@@ -694,12 +694,12 @@
     "meaning": "Tell others secret information",
     "hindi_meaning": "भेद खोलना",
     "options": {
-      "A": " Tell others secret information",
-      "B": " A fearless person",
-      "C": " A period of time when a person faces lots of troubles",
-      "D": " A thoroughly upright straightforward person"
+      "A": " Blamed for the mistakes of others",
+      "B": " Tell others secret information",
+      "C": " Used to tell someone to do something slowly and carefully",
+      "D": " Given by somebody who is directly involved and therefore likely to be accurate"
     },
-    "correct_letter": "A"
+    "correct_letter": "B"
   },
   {
     "correct_idiom": "Start From Scratch",
@@ -707,9 +707,9 @@
     "meaning": "To start or create something from very beginning",
     "hindi_meaning": "शून्य से शुरू करें",
     "options": {
-      "A": " To have bigger things to take care of then the menial task at hand",
+      "A": " an apparent misfortune that eventually has good results",
       "B": " Something very easily doable",
-      "C": " Being very delighted",
+      "C": " Something common and not special",
       "D": " To start or create something from very beginning"
     },
     "correct_letter": "D"
@@ -720,12 +720,12 @@
     "meaning": "Given by somebody who is directly involved and therefore likely to be accurate",
     "hindi_meaning": "सीधे घोड़े के मुँह से",
     "options": {
-      "A": " Tell others secret information",
-      "B": " Given by somebody who is directly involved and therefore likely to be accurate",
-      "C": " Many good and bad times",
-      "D": " To look saddened"
+      "A": " Facing a distressing situation",
+      "B": " A time when money might unexpectedly be needed",
+      "C": " Given by somebody who is directly involved and therefore likely to be accurate",
+      "D": " an apparent misfortune that eventually has good results"
     },
-    "correct_letter": "B"
+    "correct_letter": "C"
   },
   {
     "correct_idiom": "Straight Shooter",
@@ -733,12 +733,12 @@
     "meaning": "A thoroughly upright straightforward person",
     "hindi_meaning": "सीधा निशानेबाज",
     "options": {
-      "A": " To do something too soon and too quickly",
-      "B": " Aware of any changes or developments and quick to react to them",
-      "C": " A thoroughly upright straightforward person",
-      "D": " Under all conditions"
+      "A": " A thoroughly upright straightforward person",
+      "B": " A period of time when a person faces lots of troubles",
+      "C": " Improve absurd behaviour and act seriously",
+      "D": " A fearless person"
     },
-    "correct_letter": "C"
+    "correct_letter": "A"
   },
   {
     "correct_idiom": "Straighten Up And Fly Right",
@@ -747,9 +747,9 @@
     "hindi_meaning": "सीधे खड़े हो जाओ और दाईं ओर उड़ो",
     "options": {
       "A": " Improve absurd behaviour and act seriously",
-      "B": " To do something too soon and too quickly",
-      "C": " To disclose",
-      "D": " make lemonade"
+      "B": " Friends in good times",
+      "C": " Aware of any changes or developments and quick to react to them",
+      "D": " an apparent misfortune that eventually has good results"
     },
     "correct_letter": "A"
   },
@@ -759,12 +759,12 @@
     "meaning": "The major portion",
     "hindi_meaning": "शेर का हिस्सा",
     "options": {
-      "A": " Going straight and quick",
-      "B": " make lemonade",
-      "C": " The major portion",
-      "D": " Resentment"
+      "A": " Not very often",
+      "B": " Do something in an inexpensive and easy way",
+      "C": " Tried very hard",
+      "D": " The major portion"
     },
-    "correct_letter": "C"
+    "correct_letter": "D"
   },
   {
     "correct_idiom": "The Tip Of The Iceberg",
@@ -772,12 +772,12 @@
     "meaning": "A small",
     "hindi_meaning": "noticeable part of a problem",
     "options": {
-      "A": " A small",
-      "B": " To have bigger things to take care of then the menial task at hand",
-      "C": " To start or create something from very beginning",
-      "D": " Going straight and quick"
+      "A": " To force yourself to do something unpleasant",
+      "B": " Under any circumstances",
+      "C": " A small",
+      "D": " To look saddened"
     },
-    "correct_letter": "A"
+    "correct_letter": "C"
   },
   {
     "correct_idiom": "Through Thick And Thin",
@@ -785,12 +785,12 @@
     "meaning": "Under all conditions",
     "hindi_meaning": "no matter how challenging or difficult",
     "options": {
-      "A": " A time when money might unexpectedly be needed",
-      "B": " Under all conditions",
-      "C": " Facing a distressing situation",
-      "D": " Going straight and quick"
+      "A": " an apparent misfortune that eventually has good results",
+      "B": " Now and then // Periodically",
+      "C": " Under any circumstances",
+      "D": " Under all conditions"
     },
-    "correct_letter": "B"
+    "correct_letter": "D"
   },
   {
     "correct_idiom": "To Bring To Light",
@@ -798,12 +798,12 @@
     "meaning": "To disclose",
     "hindi_meaning": "प्रकाश में लाना",
     "options": {
-      "A": " Day and night",
-      "B": " To disclose",
-      "C": " Now and then // Periodically",
-      "D": " Speak truthfully"
+      "A": " to say or do something that makes people feel more relaxed",
+      "B": " To wish good luck",
+      "C": " To force yourself to do something unpleasant",
+      "D": " To disclose"
     },
-    "correct_letter": "B"
+    "correct_letter": "D"
   },
   {
     "correct_idiom": "To Have Bigger Fish To Fry",
@@ -811,12 +811,12 @@
     "meaning": "To have bigger things to take care of then the menial task at hand",
     "hindi_meaning": "बड़ी मछलियाँ तलने के लिए",
     "options": {
-      "A": " To have bigger things to take care of then the menial task at hand",
-      "B": " A small",
-      "C": " To disclose",
-      "D": " first speech"
+      "A": " an apparent misfortune that eventually has good results",
+      "B": " Facing a distressing situation",
+      "C": " To have bigger things to take care of then the menial task at hand",
+      "D": " A continuing unpleasant situation"
     },
-    "correct_letter": "A"
+    "correct_letter": "C"
   },
   {
     "correct_idiom": "To Keep The Wolf Away From The Door",
@@ -824,10 +824,10 @@
     "meaning": "Avoid starvation",
     "hindi_meaning": "भेड़िये को दरवाजे से दूर रखने के लिए",
     "options": {
-      "A": " Going straight and quick",
-      "B": " Tell others secret information",
+      "A": " A time when money might unexpectedly be needed",
+      "B": " Keep plans and thoughts hidden",
       "C": " Avoid starvation",
-      "D": " A time when money might unexpectedly be needed"
+      "D": " Facing a distressing situation"
     },
     "correct_letter": "C"
   },
@@ -837,12 +837,12 @@
     "meaning": "Disregarded",
     "hindi_meaning": "अनसुना करना",
     "options": {
-      "A": " Not very often",
-      "B": " A fearless person",
-      "C": " Disregarded",
-      "D": " To disclose"
+      "A": " Showing no interest",
+      "B": " A period of time when a person faces lots of troubles",
+      "C": " Facing a distressing situation",
+      "D": " Disregarded"
     },
-    "correct_letter": "C"
+    "correct_letter": "D"
   },
   {
     "correct_idiom": "Turned Up One's Nose",
@@ -850,12 +850,12 @@
     "meaning": "Treated her with contempt",
     "hindi_meaning": "नाक ऊपर कर ली",
     "options": {
-      "A": " Treated her with contempt",
-      "B": " A time when money might unexpectedly be needed",
-      "C": " Keep plans and thoughts hidden",
-      "D": " Friends in good times"
+      "A": " Tell others secret information",
+      "B": " Treated her with contempt",
+      "C": " Blamed for the mistakes of others",
+      "D": " To interfere with"
     },
-    "correct_letter": "A"
+    "correct_letter": "B"
   },
   {
     "correct_idiom": "When Life Gives You Lemons",
@@ -863,11 +863,11 @@
     "meaning": "make lemonade",
     "hindi_meaning": "Make the best out of difficult situations",
     "options": {
-      "A": " Praise or approval for doing something good",
-      "B": " to say or do something that makes people feel more relaxed",
-      "C": " To do something too soon and too quickly",
-      "D": " make lemonade"
+      "A": " Under any circumstances",
+      "B": " make lemonade",
+      "C": " To wait for a situation to become clear or certain",
+      "D": " to say or do something that makes people feel more relaxed"
     },
-    "correct_letter": "D"
+    "correct_letter": "B"
   }
 ]
