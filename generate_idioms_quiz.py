@@ -54,7 +54,7 @@ def generate_options(correct_word, all_words):
     return labeled_options, correct_letter
 
 # File paths
-input_excel = 'word_list.xlsx'
+input_excel = 'idioms_list.xlsx'
 used_words_file = 'used_words.txt'
 output_json = 'quiz_data.json'
 
