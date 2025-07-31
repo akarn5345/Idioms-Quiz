@@ -1,76 +1,66 @@
 import pandas as pd
 import json
 import random
+from collections import deque
 import os
-import openpyxl
 
-# Check file extension and existence
-file_path = 'idioms_list.xlsx'
-if not os.path.isfile(file_path) or not file_path.lower().endswith('.xlsx'):
-    raise FileNotFoundError(f"Error: '{file_path}' is not a valid .xlsx file or does not exist.")
+# File paths
+file_path = "idioms_list.xlsx"
+json_output = "idioms_data.json"
+used_ids_file = "used_ids.txt"
 
-# Validate file integrity
+# Read the Excel file (even if misnamed, fallback to CSV reader)
 try:
-    openpyxl.load_workbook(file_path)
-except openpyxl.utils.exceptions.InvalidFileException as e:
-    raise Exception(f"Error: '{file_path}' is not a valid Excel file: {str(e)}")
-except Exception as e:
-    raise Exception(f"Error: Cannot read '{file_path}' due to file corruption or format issue: {str(e)}")
+    df = pd.read_excel(file_path)
+except Exception:
+    df = pd.read_csv(file_path, sep='\t' if '\t' in open(file_path).readline() else ',')
 
-# Read the .xlsx file with openpyxl engine
-try:
-    df = pd.read_excel(file_path, engine='openpyxl')
-except FileNotFoundError:
-    raise FileNotFoundError(f"Error: '{file_path}' not found in the current directory.")
-except Exception as e:
-    raise Exception(f"Error reading '{file_path}': {str(e)}")
+# Shuffle once and cycle through
+random.seed(42)  # For reproducibility
+all_data = df.to_dict(orient="records")
+random.shuffle(all_data)
+queue = deque(all_data)
 
-# Define required and optional columns
-required_columns = ['Idioms', 'Meaning', 'Hindi Meaning', 'Year']
-all_columns = required_columns + ['Difficulty']  # Allow optional 'Difficulty' column
+# Load used idioms if present
+used = set()
+if os.path.exists(used_ids_file):
+    with open(used_ids_file, "r") as f:
+        used = set(line.strip() for line in f)
 
-# Check for required columns
-missing_columns = [col for col in required_columns if col not in df.columns]
-if missing_columns:
-    raise ValueError(f"Missing required columns: {', '.join(missing_columns)}")
-
-# Validate data
-if df['Idioms'].duplicated().any():
-    raise ValueError("Error: Duplicate 'Idioms' found in the Excel file. Each idiom must be unique.")
-df = df.dropna(subset=['Meaning', 'Hindi Meaning'])  # Remove rows with missing meanings
-if df.empty:
-    raise ValueError("Error: No valid data after removing rows with missing 'Meaning' or 'Hindi Meaning'.")
-
-# Prepare quiz data
 quiz_data = []
-all_meanings = df['Meaning'].tolist()
 
-for index, row in df.iterrows():
-    # Select 3 random incorrect meanings, ensuring no duplicates within options
-    available_meanings = [m for m in all_meanings if m != row['Meaning']]
-    if len(available_meanings) < 3:
-        raise ValueError(f"Error: Not enough unique meanings to generate options for idiom '{row['Idioms']}'. Need at least 3 other meanings.")
-    incorrect_meanings = random.sample(available_meanings, 3)
-    # Combine correct and incorrect meanings, then shuffle
-    options = [row['Meaning']] + incorrect_meanings
+while queue:
+    item = queue.popleft()
+    idiom = item["Idioms"].strip()
+    if idiom in used:
+        continue
+
+    correct = item["Meaning"].strip()
+    year = item.get("Year", "")
+
+    # Collect 3 wrong meanings
+    other_meanings = [i["Meaning"] for i in all_data if i["Idioms"] != idiom]
+    wrong_options = random.sample(other_meanings, min(3, len(other_meanings)))
+    options = wrong_options + [correct]
     random.shuffle(options)
-    
-    question = {
-        'idiom': row['Idioms'],
-        'meaning': row['Meaning'],
-        'hindi_meaning': row['Hindi Meaning'],
-        'year': str(row['Year']),  # Convert to string to match HTML radio values
-        'options': options
-    }
-    # Add optional Difficulty if present
-    if 'Difficulty' in df.columns and pd.notna(row['Difficulty']):
-        question['difficulty'] = str(row['Difficulty'])
-    quiz_data.append(question)
 
-# Save to quiz_data.json
-try:
-    with open('quiz_data.json', 'w', encoding='utf-8') as f:
-        json.dump(quiz_data, f, ensure_ascii=False, indent=2)
-    print("quiz_data.json generated successfully!")
-except Exception as e:
-    raise Exception(f"Error writing to 'quiz_data.json': {str(e)}")
+    quiz_data.append({
+        "idiom": idiom,
+        "options": options,
+        "answer": correct,
+        "year": year
+    })
+
+    used.add(idiom)
+    break  # Only add one question at a time
+
+# Save used idioms
+with open(used_ids_file, "w") as f:
+    for idiom in used:
+        f.write(idiom + "\n")
+
+# Write JSON output
+with open(json_output, "w", encoding="utf-8") as f:
+    json.dump(quiz_data, f, ensure_ascii=False, indent=2)
+
+print(f"Quiz generated: {json_output}")
