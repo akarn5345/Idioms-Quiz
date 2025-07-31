@@ -7,157 +7,194 @@
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #d6e9f7;
+      background: #dceefd;
+      margin: 0;
       padding: 20px;
     }
-    h1 {
-      text-align: center;
+    .container {
+      max-width: 800px;
+      margin: auto;
     }
-    .filter-section {
-      margin-bottom: 20px;
-      text-align: center;
-    }
-    .quiz-box {
+    .question-card {
       background: white;
       padding: 20px;
       border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       margin-bottom: 20px;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
+    }
+    .option {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 14px;
+      border-radius: 10px;
+      font-size: 18px;
+      border: 2px solid #007bff;
+      background: white;
+      text-align: center;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .option.correct {
+      background-color: #d4f7d4;
+      border-color: #28a745;
+      font-weight: bold;
+    }
+    .option.wrong {
+      background-color: #f8d7da;
+      border-color: #dc3545;
+      color: #a94442;
+    }
+    .option:disabled {
+      cursor: not-allowed;
+      opacity: 0.8;
     }
     .question {
       font-weight: bold;
-      margin-bottom: 15px;
-      font-size: 18px;
-    }
-    .options {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      align-items: center;
       margin-bottom: 10px;
     }
-    .option {
-      padding: 12px 20px;
-      border: 2px solid #007bff;
-      border-radius: 10px;
-      cursor: pointer;
-      min-width: 80%;
-      max-width: 90%;
-      text-align: center;
-      transition: background-color 0.3s ease;
-      font-size: 16px;
-    }
-    .option:hover {
-      background-color: #f0f8ff;
-    }
-    .correct {
-      background-color: #d4f9d4;
-      color: #027502;
-      border-color: #27ae60;
-    }
-    .wrong {
-      background-color: #f9d4d4;
-      color: #a50202;
-      border-color: #e74c3c;
-    }
-    .disabled {
-      pointer-events: none;
-      opacity: 0.6;
-    }
     .hindi-meaning {
-      font-style: italic;
-      margin-top: 5px;
+      margin-top: 8px;
+      font-size: 18px;
       text-align: center;
       color: #333;
     }
-    .start-btn {
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 16px;
+    .filters {
+      margin-bottom: 20px;
     }
-    .start-btn:hover {
-      background-color: #0056b3;
-    }
-    .year-label {
+    .filters label {
       margin-right: 10px;
-      font-size: 15px;
+    }
+    .start-btn {
+      background-color: #007bff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .inline-group {
+      margin-top: 10px;
+    }
+    .inline-group label {
+      margin-right: 20px;
+    }
+    #timer {
+      font-size: 18px;
+      margin: 15px 0;
+      font-weight: bold;
+      color: #dc3545;
+      text-align: right;
     }
   </style>
 </head>
 <body>
-  <h1>Idioms Quiz</h1>
-  <div class="filter-section">
-    <label class="year-label"><input type="checkbox" value="2022"> 2022</label>
-    <label class="year-label"><input type="checkbox" value="2023"> 2023</label>
-    <label class="year-label"><input type="checkbox" value="2024" checked> 2024</label>
-    <button class="start-btn" onclick="startQuiz()">Start Quiz</button>
+  <div class="container">
+    <h1>Idioms Quiz</h1>
+    <div class="filters">
+      <label><input type="checkbox" value="2022"> 2022</label>
+      <label><input type="checkbox" value="2023"> 2023</label>
+      <label><input type="checkbox" value="2024" checked> 2024</label>
+
+      <div class="inline-group">
+        <label><input type="radio" name="questionCount" value="20" checked> 20 Questions</label>
+        <label><input type="radio" name="questionCount" value="50"> 50 Questions</label>
+      </div>
+
+      <button class="start-btn" onclick="startQuiz()">Start Quiz</button>
+    </div>
+    <div id="quiz-container"></div>
   </div>
-  <div id="quiz-container"></div>
-
   <script>
-    let quizData = [];
-    let currentQuestion = 0;
+    let data = [];
+    let index = 0;
+    let timer;
 
-    async function loadQuizData() {
-      const response = await fetch("idioms_data.json");
-      quizData = await response.json();
+    async function startQuiz() {
+      const years = Array.from(document.querySelectorAll('.filters input[type=checkbox]:checked')).map(cb => parseInt(cb.value));
+      const questionCount = parseInt(document.querySelector('input[name="questionCount"]:checked').value);
+      const timeLimit = questionCount === 20 ? 10 : 20;
+
+      const res = await fetch('idioms_data.json');
+      const json = await res.json();
+      data = json.filter(item => years.includes(item.year));
+      data = shuffleArray(data).slice(0, questionCount);
+      index = 0;
+
+      document.getElementById('quiz-container').innerHTML = '';
+      clearInterval(timer);
+      startTimer(timeLimit);
+      nextQuestion();
     }
 
-    function startQuiz() {
-      const checkedYears = Array.from(document.querySelectorAll('input[type=checkbox]:checked')).map(cb => parseInt(cb.value));
-      const filtered = quizData.filter(q => checkedYears.includes(q.year));
-      filtered.sort(() => Math.random() - 0.5);
-      document.getElementById("quiz-container").innerHTML = "";
-      filtered.forEach((q, idx) => renderQuestion(q, idx));
+    function startTimer(minutes) {
+      let seconds = minutes * 60;
+      const display = document.createElement('div');
+      display.id = 'timer';
+      document.getElementById('quiz-container').prepend(display);
+
+      timer = setInterval(() => {
+        const min = Math.floor(seconds / 60);
+        const sec = seconds % 60;
+        display.textContent = `Time Left: ${min}:${sec < 10 ? '0' : ''}${sec}`;
+        if (--seconds < 0) {
+          clearInterval(timer);
+          display.textContent = 'Time is up!';
+          disableRemaining();
+        }
+      }, 1000);
     }
 
-    function renderQuestion(q, idx) {
-      const qBox = document.createElement("div");
-      qBox.className = "quiz-box";
+    function disableRemaining() {
+      const allButtons = document.querySelectorAll('.option');
+      allButtons.forEach(btn => btn.disabled = true);
+    }
 
-      const qText = document.createElement("div");
-      qText.className = "question";
-      qText.textContent = `Q${idx + 1}. ${q.idiom}`;
-
-      const optionsDiv = document.createElement("div");
-      optionsDiv.className = "options";
-
+    function nextQuestion() {
+      if (index >= data.length) return;
+      const q = data[index++];
+      const card = document.createElement('div');
+      card.className = 'question-card';
+      card.innerHTML = `<div class="question">Q${index}. ${q.idiom}</div>`;
       q.options.forEach(opt => {
-        const btn = document.createElement("div");
-        btn.className = "option";
+        const btn = document.createElement('button');
+        btn.className = 'option';
         btn.textContent = opt;
-        btn.onclick = () => {
-          const allBtns = optionsDiv.querySelectorAll(".option");
-          allBtns.forEach(b => b.classList.add("disabled"));
-          if (opt === q.answer) {
-            btn.classList.add("correct");
-          } else {
-            btn.classList.add("wrong");
-            allBtns.forEach(b => {
-              if (b.textContent === q.answer) b.classList.add("correct");
-            });
-          }
-          const hindi = document.createElement("div");
-          hindi.className = "hindi-meaning";
-          hindi.textContent = q.hindiMeaning || "No Hindi meaning available";
-          qBox.appendChild(hindi);
-        };
-        optionsDiv.appendChild(btn);
+        btn.onclick = () => handleAnswer(btn, q);
+        card.appendChild(btn);
+      });
+      document.getElementById('quiz-container').appendChild(card);
+    }
+
+    function handleAnswer(selectedBtn, question) {
+      const allOptions = selectedBtn.parentElement.querySelectorAll('.option');
+      allOptions.forEach(btn => {
+        btn.disabled = true;
+        if (btn.textContent === question.answer) {
+          btn.classList.add('correct');
+        } else if (btn === selectedBtn) {
+          btn.classList.add('wrong');
+        }
       });
 
-      qBox.appendChild(qText);
-      qBox.appendChild(optionsDiv);
-      document.getElementById("quiz-container").appendChild(qBox);
+      const hindiDiv = document.createElement('div');
+      hindiDiv.className = 'hindi-meaning';
+      hindiDiv.textContent = question.hindiMeaning;
+      const correctBtn = Array.from(allOptions).find(b => b.textContent === question.answer);
+      correctBtn.insertAdjacentElement('afterend', hindiDiv);
+
+      setTimeout(() => nextQuestion(), 1000);
     }
 
-    loadQuizData();
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
   </script>
 </body>
 </html>
