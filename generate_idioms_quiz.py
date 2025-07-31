@@ -37,7 +37,8 @@ for idx, row in df.iterrows():
         "idiom": idiom,
         "options": options,
         "answer": correct,
-        "year": year
+        "year": year,
+        "hindiMeaning": row["Hindi Meaning"]  # ✅ Added line
     })
 
 # Write JSON output
