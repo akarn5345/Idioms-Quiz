@@ -1,14 +1,20 @@
 import pandas as pd
 import json
 import random
+import os
 
-# Read the .xlsx file
+# Check file extension
+file_path = 'idioms_list.xlsx'
+if not os.path.isfile(file_path) or not file_path.lower().endswith('.xlsx'):
+    raise FileNotFoundError(f"Error: '{file_path}' is not a valid .xlsx file or does not exist.")
+
+# Read the .xlsx file with openpyxl engine
 try:
-    df = pd.read_excel('idioms_list.xlsx')
+    df = pd.read_excel(file_path, engine='openpyxl')
 except FileNotFoundError:
-    raise FileNotFoundError("Error: 'idioms_list.xlsx' not found in the current directory.")
+    raise FileNotFoundError(f"Error: '{file_path}' not found in the current directory.")
 except Exception as e:
-    raise Exception(f"Error reading 'idioms_list.xlsx': {str(e)}")
+    raise Exception(f"Error reading '{file_path}': {str(e)}")
 
 # Define required and optional columns
 required_columns = ['Idioms', 'Meaning', 'Hindi Meaning', 'Year']
