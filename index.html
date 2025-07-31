@@ -75,10 +75,13 @@
     }
     .hindi-dropdown {
       font-weight: normal;
-      margin-top: 10px;
+      margin-top: 5px;
       color: #555;
       font-size: 15px;
       font-family: 'Noto Sans Devanagari', sans-serif;
+    }
+    .answer-container {
+      display: inline-block;
     }
   </style>
 </head>
@@ -125,11 +128,12 @@
           <h3>Q${index + 1}. ${q.idiom}</h3>
           <ul>
             ${q.options.map((opt, i) => `
-              <li>
-                <button onclick="checkAnswer(this, '${q.answer}', '${q.hindiMeaning || ''}')">${opt}</button>
+              <li class="answer-container">
+                <button onclick="checkAnswer(this, '${q.answer}', \
+                  '${q.hindiMeaning?.replace(/'/g, "\'") || ''}')">${opt}</button>
+                <div class="hindi-dropdown" style="display:none">${q.hindiMeaning || 'No Hindi meaning available'}</div>
               </li>`).join('')}
           </ul>
-          <div class="hindi-dropdown" style="display:none">${q.hindiMeaning || 'No Hindi meaning available'}</div>
         `;
         container.appendChild(div);
       });
@@ -155,6 +159,8 @@
           b.style.background = '#d4ffd4';
           b.style.color = '#218838';
           b.style.fontWeight = 'bold';
+          const hindiDiv = b.nextElementSibling;
+          if (hindiDiv) hindiDiv.style.display = 'block';
         } else if (b === btn) {
           b.style.background = '#ffd6d6';
           b.style.color = '#c82333';
@@ -167,9 +173,6 @@
 
       const scoreDiv = document.getElementById('score');
       scoreDiv.textContent = `Score: ${score} / ${quizData.length}`;
-
-      const hindiDiv = questionBlock.querySelector('.hindi-dropdown');
-      hindiDiv.style.display = 'block';
 
       const allButtons = document.querySelectorAll('.question-block button:not([disabled])');
       if (allButtons.length === 0) {
