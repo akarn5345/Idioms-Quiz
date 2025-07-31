@@ -2,38 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Idiom Quiz</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f9f9f9;
       padding: 20px;
-      line-height: 1.6;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    label {
+      font-weight: 500;
     }
     select, button {
-      padding: 6px 12px;
-      margin: 10px 0;
+      padding: 8px 14px;
+      margin: 10px 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #007BFF;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #0056b3;
     }
     .question {
-      margin-bottom: 20px;
-      background: #fff;
-      border-left: 4px solid #007BFF;
-      padding: 15px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
     }
     .options label {
       display: block;
+      padding: 8px;
       margin: 5px 0;
+      border-radius: 4px;
+      background: #f1f1f1;
+      cursor: pointer;
     }
     .correct {
-      background-color: #d4edda;
+      background-color: #d4edda !important;
     }
     .incorrect {
-      background-color: #f8d7da;
+      background-color: #f8d7da !important;
     }
     .feedback {
-      margin-top: 10px;
+      margin-top: 12px;
     }
   </style>
 </head>
@@ -41,22 +62,21 @@
 
 <h1>Idiom Quiz</h1>
 
-<label for="year">Select Year(s):</label>
-<select id="year" multiple></select>
+<div style="text-align: center">
+  <label for="year">Select Year(s):</label>
+  <select id="year" multiple></select>
 
-<br/>
+  <label for="questionCount">Number of Questions:</label>
+  <select id="questionCount">
+    <option value="5">5</option>
+    <option value="10">10</option>
+    <option value="15">15</option>
+    <option value="20">20</option>
+    <option value="25" selected>25</option>
+  </select>
 
-<label for="questionCount">Number of Questions:</label>
-<select id="questionCount">
-  <option value="5">5</option>
-  <option value="10">10</option>
-  <option value="15">15</option>
-  <option value="20">20</option>
-  <option value="25" selected>25</option>
-</select>
-
-<br/>
-<button onclick="startQuiz()">Start Quiz</button>
+  <button onclick="startQuiz()">Start Quiz</button>
+</div>
 
 <div id="quiz"></div>
 
@@ -70,7 +90,7 @@ fetch('idioms_data.json')
   .then(response => response.json())
   .then(data => {
     allData = data;
-    populateYears(data.years); // Keep this line
+    populateYears(data.years);
   });
 
 function populateYears(years) {
@@ -87,7 +107,7 @@ function startQuiz() {
   const selectedYears = Array.from(document.getElementById('year').selectedOptions).map(opt => opt.value);
   const questionCount = parseInt(document.getElementById('questionCount').value);
 
-  quizData = allData.questions.filter(q => selectedYears.includes(String(q.year))); // ✅ Updated line
+  quizData = allData.questions.filter(q => selectedYears.includes(String(q.year)));
   quizData = quizData.slice(0, questionCount);
 
   currentQuestionIndex = 0;
@@ -140,9 +160,9 @@ function submitAnswer(correctLetter, hindiMeaning) {
 
   if (selectedValue === correctLetter) {
     score++;
-    feedback.innerHTML = `<p class="correct">✅ Correct! <br> <strong>Hindi Meaning:</strong> ${hindiMeaning}</p>`;
+    feedback.innerHTML = `<p class="correct">✅ Correct!<br><strong>Hindi Meaning:</strong> ${hindiMeaning}</p>`;
   } else {
-    feedback.innerHTML = `<p class="incorrect">❌ Incorrect. Correct Answer: ${correctLetter} <br> <strong>Hindi Meaning:</strong> ${hindiMeaning}</p>`;
+    feedback.innerHTML = `<p class="incorrect">❌ Incorrect. Correct Answer: ${correctLetter}<br><strong>Hindi Meaning:</strong> ${hindiMeaning}</p>`;
   }
 
   setTimeout(() => {
