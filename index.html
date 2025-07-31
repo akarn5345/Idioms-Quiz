@@ -109,7 +109,6 @@
   </div>
   <script>
     let data = [];
-    let index = 0;
     let timer;
 
     async function startQuiz() {
@@ -121,12 +120,11 @@
       const json = await res.json();
       data = json.filter(item => years.includes(item.year));
       data = shuffleArray(data).slice(0, questionCount);
-      index = 0;
 
       document.getElementById('quiz-container').innerHTML = '';
       clearInterval(timer);
       startTimer(timeLimit);
-      nextQuestion();
+      renderAllQuestions();
     }
 
     function startTimer(minutes) {
@@ -152,20 +150,20 @@
       allButtons.forEach(btn => btn.disabled = true);
     }
 
-    function nextQuestion() {
-      if (index >= data.length) return;
-      const q = data[index++];
-      const card = document.createElement('div');
-      card.className = 'question-card';
-      card.innerHTML = `<div class="question">Q${index}. ${q.idiom}</div>`;
-      q.options.forEach(opt => {
-        const btn = document.createElement('button');
-        btn.className = 'option';
-        btn.textContent = opt;
-        btn.onclick = () => handleAnswer(btn, q);
-        card.appendChild(btn);
+    function renderAllQuestions() {
+      data.forEach((q, i) => {
+        const card = document.createElement('div');
+        card.className = 'question-card';
+        card.innerHTML = `<div class="question">Q${i + 1}. ${q.idiom}</div>`;
+        q.options.forEach(opt => {
+          const btn = document.createElement('button');
+          btn.className = 'option';
+          btn.textContent = opt;
+          btn.onclick = () => handleAnswer(btn, q);
+          card.appendChild(btn);
+        });
+        document.getElementById('quiz-container').appendChild(card);
       });
-      document.getElementById('quiz-container').appendChild(card);
     }
 
     function handleAnswer(selectedBtn, question) {
@@ -184,8 +182,6 @@
       hindiDiv.textContent = question.hindiMeaning;
       const correctBtn = Array.from(allOptions).find(b => b.textContent === question.answer);
       correctBtn.insertAdjacentElement('afterend', hindiDiv);
-
-      setTimeout(() => nextQuestion(), 1000);
     }
 
     function shuffleArray(array) {
