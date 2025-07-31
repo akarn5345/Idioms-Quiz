@@ -1,176 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Idiom Quiz</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      padding: 20px;
-      background: linear-gradient(to right, #e0eafc, #cfdef3);
-    }
-    h1 {
-      text-align: center;
-      color: #333;
-    }
-    label {
-      font-weight: 500;
-    }
-    select, button {
-      padding: 8px 14px;
-      margin: 10px 5px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-    button {
-      background-color: #007BFF;
-      color: white;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-    button:hover {
-      background-color: #0056b3;
-    }
-    .question {
-      margin: 20px 0;
-      padding: 20px;
-      border-radius: 8px;
-      background-color: #fff;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    }
-    .options label {
-      display: block;
-      padding: 8px;
-      margin: 5px 0;
-      border-radius: 4px;
-      background: #f1f1f1;
-      cursor: pointer;
-    }
-    .correct {
-      background-color: #d4edda !important;
-    }
-    .incorrect {
-      background-color: #f8d7da !important;
-    }
-    .feedback {
-      margin-top: 12px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idiom Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        #quiz-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .question {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .options {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .option {
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        #hindi-meaning {
+            margin-top: 20px;
+            display: none;
+        }
+        #hindi-meaning select {
+            padding: 5px;
+            font-size: 1em;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-
-<h1>Idiom Quiz</h1>
-
-<div style="text-align: center">
-  <label for="year">Select Year(s):</label>
-  <select id="year" multiple></select>
-
-  <label for="questionCount">Number of Questions:</label>
-  <select id="questionCount">
-    <option value="5">5</option>
-    <option value="10">10</option>
-    <option value="15">15</option>
-    <option value="20">20</option>
-    <option value="25" selected>25</option>
-  </select>
-
-  <button onclick="startQuiz()">Start Quiz</button>
-</div>
-
-<div id="quiz"></div>
-
-<script>
-let allData = [];
-let quizData = [];
-let currentQuestionIndex = 0;
-let score = 0;
-
-fetch('idioms_data.json')
-  .then(response => response.json())
-  .then(data => {
-    allData = data;
-    populateYears(data.years);
-  });
-
-function populateYears(years) {
-  const yearSelect = document.getElementById('year');
-  years.forEach(year => {
-    const option = document.createElement('option');
-    option.value = year;
-    option.text = year;
-    yearSelect.appendChild(option);
-  });
-}
-
-function startQuiz() {
-  const selectedYears = Array.from(document.getElementById('year').selectedOptions).map(opt => opt.value);
-  const questionCount = parseInt(document.getElementById('questionCount').value);
-
-  quizData = allData.questions.filter(q => selectedYears.includes(String(q.year)));
-  quizData = quizData.slice(0, questionCount);
-
-  currentQuestionIndex = 0;
-  score = 0;
-
-  showQuestion();
-}
-
-function showQuestion() {
-  const quizDiv = document.getElementById('quiz');
-  quizDiv.innerHTML = '';
-
-  if (currentQuestionIndex >= quizData.length) {
-    quizDiv.innerHTML = `<h2>Quiz Finished!</h2><p>Your Score: ${score}/${quizData.length}</p>`;
-    return;
-  }
-
-  const q = quizData[currentQuestionIndex];
-
-  const questionDiv = document.createElement('div');
-  questionDiv.className = 'question';
-
-  questionDiv.innerHTML = `
-    <h3>Q${currentQuestionIndex + 1}. What is the meaning of: <em>${q.correct_idiom}</em>?</h3>
-    <div class="options">
-      ${Object.entries(q.options).map(([letter, text]) => `
-        <label>
-          <input type="radio" name="option" value="${letter}" />
-          ${letter}: ${text}
-        </label>
-      `).join('')}
+    <h1>Idiom Quiz</h1>
+    <div id="quiz-container">
+        <div id="question" class="question"></div>
+        <div id="options" class="options"></div>
+        <button id="submit">Submit</button>
+        <div id="result"></div>
+        <div id="hindi-meaning">
+            <label for="hindi">Hindi Meaning:</label>
+            <select id="hindi" disabled>
+                <option value="">Select to view</option>
+            </select>
+        </div>
     </div>
-    <button onclick="submitAnswer('${q.correct_letter}', '${q.hindi_meaning.replace(/'/g, "\\'")}')">Submit</button>
-    <div class="feedback" id="feedback"></div>
-  `;
 
-  quizDiv.appendChild(questionDiv);
-}
+    <script>
+        let quizData = [];
+        let currentQuestion = 0;
+        let score = 0;
 
-function submitAnswer(correctLetter, hindiMeaning) {
-  const selected = document.querySelector('input[name="option"]:checked');
-  const feedback = document.getElementById('feedback');
+        // Load quiz data
+        fetch('quiz_data.json')
+            .then(response => response.json())
+            .then(data => {
+                quizData = data;
+                loadQuestion();
+            });
 
-  if (!selected) {
-    alert("Please select an option!");
-    return;
-  }
+        function loadQuestion() {
+            const q = quizData[currentQuestion];
+            document.getElementById('question').textContent = `What is the meaning of the idiom: "${q.idiom}"?`;
+            const optionsDiv = document.getElementById('options');
+            optionsDiv.innerHTML = '';
+            q.options.forEach((option, index) => {
+                const optionElement = document.createElement('div');
+                optionElement.className = 'option';
+                optionElement.innerHTML = `
+                    <input type="radio" name="option" id="option${index}" value="${option}">
+                    <label for="option${index}">${option}</label>
+                `;
+                optionsDiv.appendChild(optionElement);
+            });
+            document.getElementById('result').textContent = '';
+            document.getElementById('hindi-meaning').style.display = 'none';
+            document.getElementById('hindi').innerHTML = `<option value="">${q.hindi_meaning}</option>`;
+        }
 
-  const selectedValue = selected.value;
+        document.getElementById('submit').addEventListener('click', () => {
+            const selectedOption = document.querySelector('input[name="option"]:checked');
+            if (!selectedOption) {
+                alert('Please select an option!');
+                return;
+            }
+            const answer = selectedOption.value;
+            const correctAnswer = quizData[currentQuestion].meaning;
+            const resultDiv = document.getElementById('result');
+            if (answer === correctAnswer) {
+                resultDiv.textContent = 'Correct!';
+                score++;
+            } else {
+                resultDiv.textContent = `Incorrect! The correct meaning is: ${correctAnswer}`;
+            }
+            document.getElementById('hindi-meaning').style.display = 'block';
+            document.getElementById('submit').textContent = 'Next';
+            document.getElementById('submit').onclick = nextQuestion;
+        });
 
-  if (selectedValue === correctLetter) {
-    score++;
-    feedback.innerHTML = `<p class="correct">✅ Correct!<br><strong>Hindi Meaning:</strong> ${hindiMeaning}</p>`;
-  } else {
-    feedback.innerHTML = `<p class="incorrect">❌ Incorrect. Correct Answer: ${correctLetter}<br><strong>Hindi Meaning:</strong> ${hindiMeaning}</p>`;
-  }
-
-  setTimeout(() => {
-    currentQuestionIndex++;
-    showQuestion();
-  }, 2000);
-}
-</script>
-
+        function nextQuestion() {
+            currentQuestion++;
+            if (currentQuestion < quizData.length) {
+                loadQuestion();
+                document.getElementById('submit').textContent = 'Submit';
+                document.getElementById('submit').onclick = () => {};
+                document.getElementById('submit').addEventListener('click', () => {
+                    const selectedOption = document.querySelector('input[name="option"]:checked');
+                    if (!selectedOption) {
+                        alert('Please select an option!');
+                        return;
+                    }
+                    const answer = selectedOption.value;
+                    const correctAnswer = quizData[currentQuestion].meaning;
+                    const resultDiv = document.getElementById('result');
+                    if (answer === correctAnswer) {
+                        resultDiv.textContent = 'Correct!';
+                        score++;
+                    } else {
+                        resultDiv.textContent = `Incorrect! The correct meaning is: ${correctAnswer}`;
+                    }
+                    document.getElementById('hindi-meaning').style.display = 'block';
+                    document.getElementById('submit').textContent = 'Next';
+                    document.getElementById('submit').onclick = nextQuestion;
+                });
+            } else {
+                document.getElementById('quiz-container').innerHTML = `
+                    <h2>Quiz Completed!</h2>
+                    <p>Your score: ${score} out of ${quizData.length}</p>
+                `;
+            }
+        }
+    </script>
 </body>
 </html>
