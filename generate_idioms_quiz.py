@@ -1,20 +1,17 @@
+import pandas as pd
 import json
 import random
 from collections import Counter
-from openpyxl import load_workbook
 
 USED_TRACK_FILE = 'used_idioms.txt'
 
-# Format the idiom (capitalize first letter of each word)
 def format_idiom(idiom):
     return ' '.join(word.capitalize() for word in idiom.strip().split())
 
-# Generate 3 fresh distractors every time
 def generate_distractor_meanings(correct_meaning, all_meanings):
-    meanings_pool = [m for m in all_meanings if m.strip() and m.strip().lower() != correct_meaning.strip().lower()]
-    return random.sample(meanings_pool, 3) if len(meanings_pool) >= 3 else meanings_pool[:3]
+    pool = [m for m in all_meanings if m.strip().lower() != correct_meaning.strip().lower()]
+    return random.sample(pool, 3) if len(pool) >= 3 else pool[:3]
 
-# Generate options
 def generate_options(correct_idiom, all_idioms, all_meanings):
     correct_meaning = next(row['Meaning'] for row in all_idioms if row['Idioms'] == correct_idiom)
     distractors = generate_distractor_meanings(correct_meaning, all_meanings)
@@ -24,7 +21,6 @@ def generate_options(correct_idiom, all_idioms, all_meanings):
     correct_letter = [k for k, v in labeled.items() if v == correct_meaning][0]
     return labeled, correct_letter
 
-# Load used idioms
 def load_used_idioms():
     try:
         with open(USED_TRACK_FILE, 'r', encoding='utf-8') as f:
@@ -32,36 +28,25 @@ def load_used_idioms():
     except FileNotFoundError:
         return set()
 
-# Save used idioms
 def save_used_idioms(used):
     with open(USED_TRACK_FILE, 'w', encoding='utf-8') as f:
         f.write('\n'.join(used))
 
-# Input/output
-input_excel = 'idioms_list.xlsx'
+input_xlsx = 'idioms_list.xlsx'
 output_json = 'idioms_data.json'
+
+df = pd.read_excel(input_xlsx, dtype=str).fillna('')
+rows = df.to_dict(orient='records')
 
 quiz_data = []
 year_counter = Counter()
 unique_years = set()
-
 used_idioms = load_used_idioms()
 
-# Read Excel data
-wb = load_workbook(filename=input_excel)
-ws = wb.active
+all_idioms = [{'Idioms': row['Idioms'], 'Meaning': row['Meaning']} for row in rows if row['Idioms']]
+all_meanings = [row['Meaning'] for row in rows if row['Meaning']]
 
-rows = []
-header = [cell.strip() if isinstance(cell, str) else cell for cell in next(ws.iter_rows(min_row=1, max_row=1, values_only=True))]
-
-for row in ws.iter_rows(min_row=2, values_only=True):
-    row_data = dict(zip(header, row))
-    rows.append(row_data)
-
-all_idioms = [{'Idioms': row['Idioms'], 'Meaning': row['Meaning']} for row in rows if row.get('Idioms')]
-all_meanings = [row['Meaning'] for row in rows if row.get('Meaning')]
-
-unused_rows = [row for row in rows if row.get('Idioms') and row['Idioms'].strip() not in used_idioms]
+unused_rows = [row for row in rows if row['Idioms'].strip() not in used_idioms]
 if not unused_rows:
     print("🔄 All idioms used. Resetting...")
     unused_rows = rows
@@ -74,7 +59,7 @@ for row in unused_rows:
 
     meaning = row.get('Meaning', '').strip()
     hindi_meaning = row.get('Hindi Meaning', '').strip()
-    year = str(row.get('Year', '')).strip() or '2024'
+    year = row.get('Year', '').strip() or '2024'
     unique_years.add(year)
     year_counter[year] += 1
 
@@ -91,7 +76,6 @@ for row in unused_rows:
 
     used_idioms.add(idiom)
 
-# Save final output with both questions and list of years
 final_output = {
     "questions": quiz_data,
     "years": sorted(unique_years)
