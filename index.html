@@ -3,176 +3,147 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Idioms Quiz</title>
-  <!-- (Style block unchanged) -->
+  <title>Idiom Quiz</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 20px;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+    }
+    h1 {
+      text-align: center;
+    }
+    .question-box {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .options {
+      margin-top: 10px;
+    }
+    .options label {
+      display: block;
+      margin-bottom: 8px;
+    }
+    #result {
+      font-weight: bold;
+      margin-top: 15px;
+    }
+    .filters {
+      margin-bottom: 20px;
+    }
+    .filters label {
+      margin-right: 10px;
+    }
+  </style>
 </head>
 <body>
-  <!-- (Body content unchanged up to script block) -->
+  <h1>Idiom Quiz</h1>
+
+  <div class="filters">
+    <label>Filter by year:
+      <select id="yearFilter" multiple size="5" style="vertical-align: middle;"></select>
+    </label>
+    <label style="margin-left: 20px;">Number of questions:
+      <input type="number" id="questionCount" value="5" min="1" max="50" />
+    </label>
+    <button onclick="startQuiz()">Start Quiz</button>
+  </div>
+
+  <div id="quiz"></div>
 
   <script>
+    let allData = [];
     let quizData = [];
-    let usedQuestions = new Set();
-    let score = 0;
-    let selectedQuestions = [];
-    let fontSize = 16;
-    const questionPrompts = [
-      "Which of these is the correct idiom?",
-      "Pick the right idiom:",
-      "Choose the correct idiom:",
-      "Spot the correct idiom:",
-      "Correct idiom:"
-    ];
+    let currentIndex = 0;
+    let correctAnswers = 0;
 
-    let timerInterval = null;
-    let timeLeft = 600;
-
-    function displayTimer() {
-      const timerDiv = document.getElementById('timer');
-      const minutes = Math.floor(timeLeft / 60);
-      const seconds = timeLeft % 60;
-      timerDiv.textContent = `Time Left: ${minutes}:${seconds.toString().padStart(2, '0')}`;
-    }
-
-    function startTimer() {
-      displayTimer();
-      document.getElementById('timer').style.display = 'block';
-      if (timerInterval) clearInterval(timerInterval);
-      timerInterval = setInterval(() => {
-        timeLeft--;
-        displayTimer();
-        if (timeLeft <= 0) {
-          clearInterval(timerInterval);
-          endQuizDueToTimeout();
-        }
-      }, 1000);
-    }
-
-    function endQuizDueToTimeout() {
-      document.querySelectorAll('.question-block button').forEach(btn => btn.disabled = true);
-      const resultMsg = document.getElementById('result-msg');
-      resultMsg.textContent = "⏰ Time's up!";
-      resultMsg.style.color = "orange";
-    }
-
-    async function startQuiz() {
+    async function loadData() {
       const res = await fetch('idioms_data.json');
       const data = await res.json();
-      const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
-      const selectedYears = Array.from(checkboxes).map(cb => cb.value);
+      allData = data;
 
-      const countRadios = document.querySelectorAll('input[name="question-count"]:checked');
-      const questionCount = countRadios.length ? parseInt(countRadios[0].value) : 25;
+      const yearSelect = document.getElementById('yearFilter');
+      data.years.forEach(year => {
+        const option = document.createElement('option');
+        option.value = year;
+        option.textContent = year;
+        option.selected = true;
+        yearSelect.appendChild(option);
+      });
+    }
 
-      if (questionCount === 50) {
-        timeLeft = 1200;
-      } else {
-        timeLeft = 600;
-      }
+    function startQuiz() {
+      const selectedYears = Array.from(document.getElementById('yearFilter').selectedOptions).map(o => o.value);
+      const count = parseInt(document.getElementById('questionCount').value, 10);
 
-      if (selectedYears.length === 0) {
-        alert("Please select at least one year.");
-        return;
-      }
-
-      quizData = data.questions.filter(q => selectedYears.includes(String(q.year)));
-      if (quizData.length === 0) {
-        document.getElementById('quiz-container').innerHTML = '<p>No idioms found for selected years.</p>';
-        document.getElementById('timer').style.display = 'none';
-        return;
-      }
+      // ✅ CORRECTED LINE — accessing 'data.questions'
+      quizData = allData.questions.filter(q => selectedYears.includes(String(q.year)));
 
       shuffleArray(quizData);
-      selectedQuestions = quizData.filter(q => !usedQuestions.has(q.correct_idiom)).slice(0, questionCount);
-      selectedQuestions.forEach(q => usedQuestions.add(q.correct_idiom));
-      score = 0;
-
-      displayAllQuestions();
-      startTimer();
+      quizData = quizData.slice(0, count);
+      currentIndex = 0;
+      correctAnswers = 0;
+      showQuestion();
     }
 
-    function displayAllQuestions() {
-      const container = document.getElementById('quiz-container');
+    function showQuestion() {
+      const container = document.getElementById('quiz');
       container.innerHTML = '';
-      selectedQuestions.forEach((q, index) => {
-        const prompt = questionPrompts[Math.floor(Math.random() * questionPrompts.length)];
-        const div = document.createElement('div');
-        div.className = 'question-block';
-        div.innerHTML = `
-          <h3>Q${index + 1}. <strong>${q.correct_idiom}</strong></h3>
-          <ul>
-            ${Object.entries(q.options).map(([key, val]) => `
-              <li>
-                <button data-correct="${key === q.correct_letter}" data-key="${key}" data-value="${val}" onclick="checkAnswer(this, '${q.correct_letter}')">${val}</button>
-              </li>
-            `).join('')}
-          </ul>
-        `;
-        container.appendChild(div);
-      });
 
-      const scoreDiv = document.createElement('div');
-      scoreDiv.className = 'score';
-      scoreDiv.textContent = `Score: 0 / ${selectedQuestions.length}`;
-      container.appendChild(scoreDiv);
+      if (currentIndex >= quizData.length) {
+        container.innerHTML = `<div class="question-box">✅ Quiz completed!<br/>Score: ${correctAnswers} / ${quizData.length}</div>`;
+        return;
+      }
 
-      const resultDiv = document.createElement('div');
-      resultDiv.className = 'result';
-      resultDiv.id = 'result-msg';
-      container.appendChild(resultDiv);
+      const q = quizData[currentIndex];
+
+      const box = document.createElement('div');
+      box.className = 'question-box';
+
+      box.innerHTML = `
+        <div><strong>${currentIndex + 1}. Idiom:</strong> ${q.correct_idiom}</div>
+        <div><em>(${q.hindi_meaning})</em></div>
+        <div class="options">
+          ${Object.entries(q.options).map(([key, val]) => `
+            <label>
+              <input type="radio" name="option" value="${key}" />
+              ${key}. ${val}
+            </label>
+          `).join('')}
+        </div>
+        <button onclick="submitAnswer()">Submit</button>
+        <div id="result"></div>
+      `;
+
+      container.appendChild(box);
     }
 
-    function checkAnswer(btn, correctLetter) {
-      const questionBlock = btn.closest('.question-block');
-      const buttons = questionBlock.querySelectorAll("button");
-      buttons.forEach(b => b.disabled = true);
+    function submitAnswer() {
+      const selected = document.querySelector('input[name="option"]:checked');
+      const resultDiv = document.getElementById('result');
 
-      buttons.forEach(b => {
-        b.classList.remove('correct-answer', 'selected-wrong', 'dimmed');
-        if (b.dataset.key === correctLetter) {
-          b.classList.add('correct-answer');
-        } else if (b === btn) {
-          b.classList.add('selected-wrong');
-        } else {
-          b.classList.add('dimmed');
-        }
-      });
-
-      if (btn.dataset.key === correctLetter) {
-        score++;
+      if (!selected) {
+        resultDiv.textContent = '⚠️ Please select an option!';
+        return;
       }
 
-      const scoreDiv = document.querySelector('.score');
-      if (scoreDiv) {
-        scoreDiv.textContent = `Score: ${score} / ${selectedQuestions.length}`;
+      const answer = selected.value;
+      const correct = quizData[currentIndex].correct_letter;
+
+      if (answer === correct) {
+        resultDiv.textContent = '✅ Correct!';
+        correctAnswers++;
+      } else {
+        resultDiv.textContent = `❌ Incorrect. Correct answer is ${correct}.`;
       }
 
-      const questionIndex = Array.from(document.querySelectorAll('.question-block')).indexOf(questionBlock);
-      const hindiMeaning = selectedQuestions[questionIndex].hindi_meaning || 'कोई अर्थ उपलब्ध नहीं';
-
-      let oldHindiDiv = questionBlock.querySelector('.hindi-meaning-div');
-      if (oldHindiDiv) oldHindiDiv.remove();
-
-      const hindiDiv = document.createElement('div');
-      hindiDiv.className = 'hindi-meaning-div';
-      hindiDiv.textContent = hindiMeaning;
-      const correctBtn = Array.from(buttons).find(b => b.dataset.key === correctLetter);
-      correctBtn.parentElement.appendChild(hindiDiv);
-
-      const allButtons = document.querySelectorAll('.question-block button:not([disabled])');
-      if (allButtons.length === 0) {
-        if (timerInterval) clearInterval(timerInterval);
-        const resultMsg = document.getElementById('result-msg');
-        const percent = (score / selectedQuestions.length) * 100;
-        resultMsg.textContent = percent >= 50 ? "✅ Passed!" : "❌ Failed. Try Again.";
-        resultMsg.style.color = percent >= 50 ? "green" : "red";
-      }
-    }
-
-    function adjustFontSize(change) {
-      fontSize += change;
-      document.querySelectorAll('.question-block').forEach(el => {
-        el.style.fontSize = fontSize + 'px';
-      });
+      setTimeout(() => {
+        currentIndex++;
+        showQuestion();
+      }, 1500);
     }
 
     function shuffleArray(arr) {
@@ -181,6 +152,8 @@
         [arr[i], arr[j]] = [arr[j], arr[i]];
       }
     }
+
+    window.onload = loadData;
   </script>
 </body>
 </html>
