@@ -6,128 +6,177 @@
   <title>Idioms Quiz</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, 'Noto Sans Devanagari', sans-serif;
       padding: 20px;
       background: linear-gradient(to right, #e0eafc, #cfdef3);
-    }
-    .quiz-container {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      max-width: 600px;
-      margin: auto;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h1 {
-      text-align: center;
       color: #333;
+      max-width: 800px;
+      margin: 0 auto;
     }
-    select, input[type="number"] {
-      padding: 5px;
-      margin: 5px;
+    .year-buttons {
+      margin-bottom: 20px;
     }
-    button {
-      padding: 10px 15px;
-      background-color: #4CAF50;
+    .year-buttons label {
+      margin-right: 10px;
+      font-weight: 500;
+    }
+    .year-buttons input[type="checkbox"] {
+      margin-right: 5px;
+    }
+    button.start-btn {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #007acc;
       color: white;
       border: none;
-      border-radius: 5px;
+      border-radius: 4px;
+      margin-top: 10px;
+    }
+    .quiz-container {
+      margin-top: 20px;
+    }
+    .question-block {
+      margin-bottom: 20px;
+      padding: 10px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .question-block h3 {
+      margin-bottom: 10px;
+      font-size: 1.05em;
+    }
+    .question-block ul {
+      list-style: none;
+      padding: 0;
+    }
+    .question-block li {
+      margin: 5px 0;
+    }
+    .question-block button {
+      width: auto;
+      min-width: 120px;
+      max-width: 90%;
+      padding: 8px 16px;
+      font-size: 16px;
+      border: 1px solid #007acc;
+      border-radius: 4px;
+      background-color: #f0f8ff;
       cursor: pointer;
+      transition: opacity 0.3s, color 0.3s, font-weight 0.3s, background 0.3s;
     }
-    button:hover {
-      background-color: #45a049;
-    }
-    .option {
-      margin: 10px 0;
-    }
-    #result, #score, #hindi-meaning {
-      margin-top: 15px;
+    .score, .result {
+      font-size: 18px;
       font-weight: bold;
+      text-align: center;
+    }
+    .hindi-meaning-div {
+      margin-top: 7px;
+      font-weight: bold;
+      color: #444;
+      font-family: 'Noto Sans Devanagari', sans-serif;
     }
   </style>
 </head>
 <body>
-  <div class="quiz-container">
-    <h1>Idioms Quiz</h1>
-    <label for="year">Year:</label>
-    <select id="year"></select>
-    <label for="hindi">Hindi Meaning:</label>
-    <select id="hindi"></select>
-    <label for="questionCount">Number of Questions:</label>
-    <input type="number" id="questionCount" min="1" max="50" value="5" />
-    <button onclick="startQuiz()">Start Quiz</button>
-    <div id="quiz" style="display:none;">
-      <p id="questionText"></p>
-      <div id="options"></div>
-      <button onclick="submitAnswer()">Submit</button>
-      <p id="result"></p>
-      <p id="hindi-meaning"></p>
-    </div>
-    <p id="score"></p>
+  <h1>Idioms Quiz</h1>
+  <div class="year-buttons">
+    <label><input type="checkbox" value="2022" />2022</label>
+    <label><input type="checkbox" value="2023" />2023</label>
+    <label><input type="checkbox" value="2024" />2024</label>
+    <br>
+    <button class="start-btn" onclick="startQuiz()">Start Quiz</button>
   </div>
-
+  <div class="quiz-container" id="quiz-container">
+    <p>Select year(s) and click "Start Quiz".</p>
+  </div>
   <script>
     let allData = [];
     let quizData = [];
-    let current = 0;
     let score = 0;
 
-    fetch('idioms_data.json')
-      .then(res => res.json())
-      .then(data => {
-        allData = data;
-        const yearSet = new Set();
-        const hindiSet = new Set();
-        data.forEach(d => {
-          yearSet.add(d.year);
-          if (d.hindi) hindiSet.add(d.hindi);
+    function startQuiz() {
+      fetch('idioms_data.json')
+        .then(res => res.json())
+        .then(data => {
+          const selectedYears = Array.from(document.querySelectorAll('input[type="checkbox"]:checked')).map(cb => cb.value);
+          if (selectedYears.length === 0) {
+            alert("Please select at least one year.");
+            return;
+          }
+          allData = data.filter(q => selectedYears.includes(String(q.year)));
+          quizData = allData.sort(() => 0.5 - Math.random()).slice(0, 10);
+          score = 0;
+          displayAllQuestions();
         });
-        const yearSelect = document.getElementById('year');
-        const hindiSelect = document.getElementById('hindi');
-        yearSelect.innerHTML = '<option value="">All</option>';
-        hindiSelect.innerHTML = '<option value="">All</option>';
-        [...yearSet].sort().forEach(y => yearSelect.innerHTML += `<option value="${y}">${y}</option>`);
-        [...hindiSet].sort().forEach(h => hindiSelect.innerHTML += `<option value="${h}">${h}</option>`);
+    }
+
+    function displayAllQuestions() {
+      const container = document.getElementById('quiz-container');
+      container.innerHTML = '';
+      quizData.forEach((q, index) => {
+        const div = document.createElement('div');
+        div.className = 'question-block';
+        div.innerHTML = `
+          <h3>Q${index + 1}. ${q.idiom}</h3>
+          <ul>
+            ${q.options.map((opt, i) => `
+              <li>
+                <button onclick="checkAnswer(this, '${q.answer}', '${q["Hindi Meaning"] || ''}')">${opt}</button>
+              </li>`).join('')}
+          </ul>
+        `;
+        container.appendChild(div);
+      });
+      const scoreDiv = document.createElement('div');
+      scoreDiv.className = 'score';
+      scoreDiv.id = 'score';
+      scoreDiv.textContent = `Score: 0 / ${quizData.length}`;
+      container.appendChild(scoreDiv);
+
+      const resultDiv = document.createElement('div');
+      resultDiv.className = 'result';
+      resultDiv.id = 'result-msg';
+      container.appendChild(resultDiv);
+    }
+
+    function checkAnswer(btn, correct, hindiMeaning) {
+      const questionBlock = btn.closest('.question-block');
+      const buttons = questionBlock.querySelectorAll("button");
+      buttons.forEach(b => b.disabled = true);
+
+      buttons.forEach(b => {
+        if (b.textContent === correct) {
+          b.style.background = '#d4ffd4';
+          b.style.color = '#218838';
+          b.style.fontWeight = 'bold';
+        } else if (b === btn) {
+          b.style.background = '#ffd6d6';
+          b.style.color = '#c82333';
+        } else {
+          b.style.opacity = 0.5;
+        }
       });
 
-    function startQuiz() {
-      const year = document.getElementById('year').value;
-      const hindi = document.getElementById('hindi').value;
-      const count = +document.getElementById('questionCount').value;
-      quizData = allData.filter(q => (!year || q.year == year) && (!hindi || q.hindi == hindi));
-      quizData = quizData.sort(() => 0.5 - Math.random()).slice(0, count);
-      if (quizData.length == 0) return alert("No data found");
-      current = 0;
-      score = 0;
-      document.getElementById('score').textContent = '';
-      document.getElementById('quiz').style.display = 'block';
-      showQuestion();
-    }
+      if (btn.textContent === correct) score++;
 
-    function showQuestion() {
-      const q = quizData[current];
-      document.getElementById('questionText').textContent = `Q${current+1}: ${q.idiom}`;
-      document.getElementById('options').innerHTML = q.options.map(opt =>
-        `<div class='option'><label><input type='radio' name='opt' value='${opt}'> ${opt}</label></div>`).join('');
-      document.getElementById('result').textContent = '';
-      document.getElementById('hindi-meaning').textContent = '';
-    }
+      const scoreDiv = document.getElementById('score');
+      scoreDiv.textContent = `Score: ${score} / ${quizData.length}`;
 
-    function submitAnswer() {
-      const selected = document.querySelector('input[name="opt"]:checked');
-      if (!selected) return alert("Select an option");
-      const isCorrect = selected.value == quizData[current].answer;
-      document.getElementById('result').textContent = isCorrect ? 'Correct!' : `Wrong! Correct: ${quizData[current].answer}`;
-      document.getElementById('hindi-meaning').textContent = `Hindi: ${quizData[current].hindi || ''}`;
-      if (isCorrect) score++;
-      current++;
-      if (current < quizData.length) {
-        setTimeout(showQuestion, 1000);
-      } else {
-        setTimeout(() => {
-          document.getElementById('quiz').style.display = 'none';
-          document.getElementById('score').textContent = `Your Score: ${score}/${quizData.length}`;
-        }, 1500);
+      const meaningDiv = document.createElement('div');
+      meaningDiv.className = 'hindi-meaning-div';
+      meaningDiv.textContent = hindiMeaning || 'No Hindi meaning available';
+      btn.parentElement.appendChild(meaningDiv);
+
+      const allButtons = document.querySelectorAll('.question-block button:not([disabled])');
+      if (allButtons.length === 0) {
+        const resultMsg = document.getElementById('result-msg');
+        const percent = (score / quizData.length) * 100;
+        resultMsg.textContent = percent >= 50 ? "✅ Passed!" : "❌ Failed. Try Again.";
+        resultMsg.style.color = percent >= 50 ? "green" : "red";
       }
     }
   </script>
