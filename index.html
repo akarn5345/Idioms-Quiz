@@ -5,13 +5,141 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Idioms Quiz</title>
   <style>
-    /* [No change to CSS — keeping your original styling intact] */
-    /* ... (Your original styles remain here) ... */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, 'Noto Sans Devanagari', sans-serif;
+      padding: 20px;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+      color: #333;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .year-buttons {
+      margin-bottom: 20px;
+    }
+    .year-buttons label {
+      margin-right: 10px;
+      font-weight: 500;
+    }
+    .year-buttons input[type="checkbox"] {
+      margin-right: 5px;
+    }
+    button.start-btn {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #007acc;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      margin-top: 10px;
+    }
+    .font-controls {
+      margin: 10px 0;
+    }
+    .font-controls button {
+      margin-right: 10px;
+      padding: 5px 10px;
+    }
+    .quiz-container {
+      margin-top: 20px;
+    }
+    .question-block {
+      margin-bottom: 20px;
+      padding: 10px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .question-block h3 {
+      margin-bottom: 10px;
+      font-size: 1.05em;
+      word-wrap: break-word;
+    }
+    .question-block ul {
+      list-style: none;
+      padding: 0;
+    }
+    .question-block li {
+      margin: 5px 0;
+    }
+    .question-block button {
+      width: auto;
+      min-width: 120px;
+      max-width: 90%;
+      padding: 8px 16px;
+      font-size: 16px;
+      border: 1px solid #007acc;
+      border-radius: 4px;
+      background-color: #f0f8ff;
+      cursor: pointer;
+      transition: opacity 0.3s, color 0.3s, font-weight 0.3s, background 0.3s;
+      word-wrap: break-word;
+    }
+    .score {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 20px;
+      text-align: center;
+    }
+    .result {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 10px;
+      text-align: center;
+    }
+    .timer {
+      font-size: 22px;
+      font-weight: bold;
+      color: #333;
+      text-align: center;
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+    }
+    .question-count-select {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+    .correct-answer {
+      background: #d4ffd4 !important;
+      color: #218838 !important;
+      font-weight: bold !important;
+      border-color: #218838 !important;
+      opacity: 1 !important;
+    }
+    .selected-wrong {
+      background: #ffd6d6 !important;
+      color: #c82333 !important;
+      font-weight: normal !important;
+      border-color: #c82333 !important;
+      opacity: 1 !important;
+    }
+    .dimmed {
+      opacity: 0.5;
+      color: #aaa !important;
+      font-weight: normal !important;
+      background: #f0f8ff !important;
+      border-color: #007acc !important;
+    }
+    .meaning-div {
+      margin-top: 7px;
+      font-weight: bold;
+      color: #444;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      word-wrap: break-word;
+    }
+    .hindi-meaning-div {
+      margin-top: 3px;
+      font-weight: bold;
+      color: #666;
+      font-family: 'Noto Sans Devanagari', sans-serif;
+      word-wrap: break-word;
+    }
   </style>
 </head>
 <body>
   <h1>Idioms Quiz</h1>
-  <!-- Year & Question Selection -->
   <div class="year-buttons">
     <label><input type="checkbox" value="2022" />2022</label>
     <label><input type="checkbox" value="2023" />2023</label>
@@ -24,20 +152,15 @@
     <br>
     <button class="start-btn" onclick="startQuiz()">Start Quiz</button>
   </div>
-
-  <!-- Font size buttons -->
   <div class="font-controls">
     <label>Adjust Font Size:</label>
     <button onclick="adjustFontSize(1)">A+</button>
     <button onclick="adjustFontSize(-1)">A-</button>
   </div>
-
   <div id="timer" class="timer" style="display:none;"></div>
   <div class="quiz-container" id="quiz-container">
     <p>Select year(s) and click "Start Quiz".</p>
   </div>
-
-  <!-- JavaScript -->
   <script>
     let quizData = [];
     let usedQuestions = new Set();
@@ -53,7 +176,7 @@
     ];
 
     let timerInterval = null;
-    let timeLeft = 600; // Default 10 minutes
+    let timeLeft = 600;
 
     function displayTimer() {
       const timerDiv = document.getElementById('timer');
@@ -92,7 +215,11 @@
       const countRadios = document.querySelectorAll('input[name="question-count"]:checked');
       const questionCount = countRadios.length ? parseInt(countRadios[0].value) : 25;
 
-      timeLeft = questionCount === 50 ? 1200 : 600;
+      if (questionCount === 50) {
+        timeLeft = 1200;
+      } else {
+        timeLeft = 600;
+      }
 
       if (selectedYears.length === 0) {
         alert("Please select at least one year.");
@@ -180,7 +307,8 @@
       const hindiDiv = document.createElement('div');
       hindiDiv.className = 'hindi-meaning-div';
       hindiDiv.textContent = hindiMeaning;
-      btn.parentElement.appendChild(hindiDiv);
+      const correctBtn = Array.from(buttons).find(b => b.dataset.key === correctLetter);
+      correctBtn.parentElement.appendChild(hindiDiv);
 
       const allButtons = document.querySelectorAll('.question-block button:not([disabled])');
       if (allButtons.length === 0) {
