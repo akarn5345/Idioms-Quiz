@@ -84,8 +84,8 @@ with open(input_csv, newline='', encoding='utf-8') as csvfile:
         })
 
         used_idioms.add(idiom)
-        if len(quiz_data) >= 25:
-            break
+
+        # 🔁 Removed the 25-question limit
 
 # Save final output with both questions and list of years
 final_output = {
