@@ -136,6 +136,11 @@
       <label><input type="radio" name="question-count" value="50" />50 Questions</label>
     </span>
     <br>
+    <label for="hindi-filter">Hindi Meaning:</label>
+    <select id="hindi-filter">
+      <option value="">--All--</option>
+    </select>
+    <br>
     <button class="start-btn" onclick="startQuiz()">Start Quiz</button>
   </div>
   <div class="font-controls">
@@ -194,13 +199,14 @@
       allData = await response.json();
 
       const selectedYears = Array.from(document.querySelectorAll('input[type="checkbox"]:checked')).map(cb => cb.value);
+      const hindiFilter = document.getElementById('hindi-filter').value;
       const questionCount = parseInt(document.querySelector('input[name="question-count"]:checked').value);
-
       timeLeft = questionCount === 50 ? 1200 : 600;
 
-      const filtered = allData.filter(q => selectedYears.includes(String(q.year)));
+      const filtered = allData.filter(q => selectedYears.includes(String(q.year)) && (!hindiFilter || q.hindi_meaning === hindiFilter));
+
       if (!filtered.length) {
-        document.getElementById('quiz-container').innerHTML = '<p>No questions found for selected years.</p>';
+        document.getElementById('quiz-container').innerHTML = '<p>No questions found for selected filters.</p>';
         return;
       }
 
@@ -223,6 +229,7 @@
           <ul>
             ${q.options.map((opt, i) => `<li><button onclick="checkAnswer(this, '${q.answer}', '${opt}', ${idx})">${opt}</button></li>`).join('')}
           </ul>
+          <div class="hindi-meaning-div">${q.hindi_meaning}</div>
         `;
         container.appendChild(block);
       });
@@ -265,6 +272,19 @@
         [arr[i], arr[j]] = [arr[j], arr[i]];
       }
     }
+
+    window.addEventListener('DOMContentLoaded', async () => {
+      const response = await fetch('idioms_data.json');
+      const data = await response.json();
+      const hindiSet = new Set(data.map(q => q.hindi_meaning).filter(Boolean));
+      const hindiSelect = document.getElementById('hindi-filter');
+      hindiSet.forEach(h => {
+        const option = document.createElement('option');
+        option.value = h;
+        option.textContent = h;
+        hindiSelect.appendChild(option);
+      });
+    });
   </script>
 </body>
 </html>
