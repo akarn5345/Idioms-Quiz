@@ -79,6 +79,13 @@
       color: #444;
       font-family: 'Noto Sans Devanagari', sans-serif;
     }
+    .hindi-dropdown {
+      font-weight: normal;
+      margin-top: 5px;
+      color: #555;
+      font-size: 15px;
+      font-family: 'Noto Sans Devanagari', sans-serif;
+    }
   </style>
 </head>
 <body>
@@ -122,10 +129,11 @@
         div.className = 'question-block';
         div.innerHTML = `
           <h3>Q${index + 1}. ${q.idiom}</h3>
+          <div class="hindi-dropdown">${q.hindiMeaning || 'No Hindi meaning available'}</div>
           <ul>
             ${q.options.map((opt, i) => `
               <li>
-                <button onclick="checkAnswer(this, '${q.answer}', '${q["Hindi Meaning"] || ''}')">${opt}</button>
+                <button onclick="checkAnswer(this, '${q.answer}', '${q.hindiMeaning || ''}')">${opt}</button>
               </li>`).join('')}
           </ul>
         `;
@@ -165,11 +173,6 @@
 
       const scoreDiv = document.getElementById('score');
       scoreDiv.textContent = `Score: ${score} / ${quizData.length}`;
-
-      const meaningDiv = document.createElement('div');
-      meaningDiv.className = 'hindi-meaning-div';
-      meaningDiv.textContent = hindiMeaning || 'No Hindi meaning available';
-      btn.parentElement.appendChild(meaningDiv);
 
       const allButtons = document.querySelectorAll('.question-block button:not([disabled])');
       if (allButtons.length === 0) {
