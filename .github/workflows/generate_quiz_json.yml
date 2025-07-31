@@ -26,12 +26,12 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pandas openpyxl
+          pip install pandas
 
-      - name: Check for idioms_list.xlsx
+      - name: Check for idioms_list.csv
         run: |
-          if [ ! -f idioms_list.xlsx ]; then
-            echo "Error: idioms_list.xlsx not found"
+          if [ ! -f idioms_list.csv ]; then
+            echo "Error: idioms_list.csv not found"
             exit 1
           fi
 
