@@ -2,11 +2,20 @@ import pandas as pd
 import json
 import random
 import os
+import openpyxl
 
-# Check file extension
+# Check file extension and existence
 file_path = 'idioms_list.xlsx'
 if not os.path.isfile(file_path) or not file_path.lower().endswith('.xlsx'):
     raise FileNotFoundError(f"Error: '{file_path}' is not a valid .xlsx file or does not exist.")
+
+# Validate file integrity
+try:
+    openpyxl.load_workbook(file_path)
+except openpyxl.utils.exceptions.InvalidFileException as e:
+    raise Exception(f"Error: '{file_path}' is not a valid Excel file: {str(e)}")
+except Exception as e:
+    raise Exception(f"Error: Cannot read '{file_path}' due to file corruption or format issue: {str(e)}")
 
 # Read the .xlsx file with openpyxl engine
 try:
