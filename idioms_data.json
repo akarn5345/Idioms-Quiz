@@ -2,2168 +2,2365 @@
   {
     "idiom": "A Bad Patch",
     "options": [
-      "A period of time when a person faces lots of troubles",
-      "Under any circumstances",
-      "There's always some reason for a rumour",
-      "Disregarded"
+      "Become very confused when you are trying to explian something",
+      "Made a big fuss about a small problem",
+      "To begin again",
+      "A period of time when a person faces lots of troubles"
     ],
     "answer": "A period of time when a person faces lots of troubles",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "वह समयावधि जब व्यक्ति को बहुत सारी परेशानियों का सामना करना पड़ता है"
   },
   {
     "idiom": "A Bitter Pill",
     "options": [
-      "Many good and bad times",
-      "Very rare",
-      "To discourage doing something",
+      "To interfere with, disrupt or ruin something for someone",
+      "made some people exicited or interested",
+      "Now and then // Periodically",
       "Facing a distressing situation"
     ],
     "answer": "Facing a distressing situation",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "एक कष्टदायक स्थिति का सामना करना"
   },
   {
     "idiom": "A Blessing In Disguise",
     "options": [
-      "Speak truthfully",
-      "Watching eagerly",
+      "Irriates",
       "An apparent misfortune that eventually has good results",
-      "Oppressed husband"
+      "Fluency of speech",
+      "In trouble"
     ],
     "answer": "An apparent misfortune that eventually has good results",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "एक स्पष्ट दुर्भाग्य जिसका अंततः अच्छा परिणाम होता है"
   },
   {
     "idiom": "A Daredevil",
     "options": [
-      "grave errror",
       "A fearless person",
-      "Encourage the growth or action of something",
-      "Made a big fuss about a small problem"
+      "Uncomfortable",
+      "To apologise humbly",
+      "Many good and bad times"
     ],
     "answer": "A fearless person",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "एक निडर व्यक्ति"
   },
   {
     "idiom": "A Dime A Dozen",
     "options": [
-      "Swiftly",
-      "Something common and not special",
-      "At a distance",
-      "Failing completely"
+      "Make the best out of difficult situations",
+      "To be in trouble",
+      "Completely obsolete",
+      "Something common and not special"
     ],
     "answer": "Something common and not special",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "कुछ सामान्य और विशेष नहीं"
   },
   {
     "idiom": "A Rainy Day",
     "options": [
-      "Make the best out of difficult situations",
-      "Blamed for the mistakes of others",
-      "A time when money might unexpectedly be needed",
-      "grave errror"
+      "To be a winner",
+      "He can't take a decision",
+      "Start over",
+      "A time when money might unexpectedly be needed"
     ],
     "answer": "A time when money might unexpectedly be needed",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "ऐसा समय जब धन की अप्रत्याशित रूप से आवश्यकता पड़ सकती है"
   },
   {
     "idiom": "A Vicious Cycle",
     "options": [
-      "Contemplating // to think slowly and carefully about something",
+      "in writing",
+      "To face risk",
       "A continuing unpleasant situation, created another problem that then makes the first problem worse",
-      "True personality",
-      "To wait for a situation to become clear or certain"
+      "In good times and in bad times"
     ],
     "answer": "A continuing unpleasant situation, created another problem that then makes the first problem worse",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "एक निरंतर अप्रिय स्थिति ने एक और समस्या पैदा कर दी जो पहली समस्या को और बदतर बना देती है"
   },
   {
     "idiom": "Around The Clock",
     "options": [
       "Tell others secret information",
-      "Start over",
-      "Avoid somone or something because it is dangerous for you",
-      "Day and night"
+      "To be in charge",
+      "Day and night",
+      "To think hard"
     ],
     "answer": "Day and night",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "दिन और रात"
   },
   {
     "idiom": "At A Low Ebb",
     "options": [
-      "Very rare",
-      "Inexperienced",
-      "Not easily deceived",
-      "In a depressed or weak state"
+      "In a depressed or weak state",
+      "Treated her with contempt",
+      "To accept unpleasant consequences",
+      "A person whose friendship cannot be relied on in times"
     ],
     "answer": "In a depressed or weak state",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "उदास या कमज़ोर अवस्था में"
   },
   {
     "idiom": "At Her Wits' End",
     "options": [
-      "Take risk",
-      "Aeria view // A general view from above",
-      "To be in charge",
+      "Inexperienced person",
+      "Forward and backward",
+      "Given by somebody who is directly involved and therefore likely to be accurate",
       "So worried, confused or annoyed that she does not know what to do next"
     ],
     "answer": "So worried, confused or annoyed that she does not know what to do next",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "वह इतनी चिंतित, भ्रमित या परेशान है कि उसे समझ नहीं आ रहा कि आगे क्या करना है"
   },
   {
     "idiom": "Beside The Mark",
     "options": [
-      "To say or do something that makes people feel more relaxed, especially at the beginning of a meeting, party",
       "Irrelevant",
-      "The major portion",
-      "A fearless person"
+      "To accept unpleasant consequences",
+      "Bad luck",
+      "Occurred without a warning"
     ],
     "answer": "Irrelevant",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "अप्रासंगिक"
   },
   {
     "idiom": "Bite The Bullet",
     "options": [
-      "deliberately",
-      "Gesture of peace",
+      "Going straight and quick",
       "To force yourself to do something unpleasant",
-      "Gaining a big success"
+      "Keep plans and thoughts hidden",
+      "a very long time"
     ],
     "answer": "To force yourself to do something unpleasant",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "अपने आप को कुछ अप्रिय करने के लिए मजबूर करना"
   },
   {
     "idiom": "Break A Leg",
     "options": [
-      "To allow a secret to be known, usually without intending to",
+      "To wish good luck",
+      "Dishonesty",
       "Gesture of peace",
-      "To become very angry",
-      "To wish good luck"
+      "Not to take things seriously"
     ],
     "answer": "To wish good luck",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "शुभकामनाएँ देने के लिए"
   },
   {
     "idiom": "Break The Ice",
     "options": [
-      "To bear the negative consequences of wrongful actions",
+      "To deal with someone or something that proves unexpectedly or powerful",
+      "To put a bad impression",
       "To say or do something that makes people feel more relaxed, especially at the beginning of a meeting, party",
-      "Aware of any changes or developments and quick to react to them",
-      "To act too soon or before the right time"
+      "Watching eagerly"
     ],
     "answer": "To say or do something that makes people feel more relaxed, especially at the beginning of a meeting, party",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "ऐसा कुछ कहना या करना जिससे लोग अधिक सहज महसूस करें, विशेष रूप से किसी मीटिंग, पार्टी की शुरुआत में"
   },
   {
     "idiom": "Call A Space A Space",
     "options": [
-      "Occurred without a warning",
-      "Speak truthfully",
-      "Highest priority",
-      "Tell others secret information"
+      "Made a big fuss about a small problem",
+      "Cowards",
+      "Unexpectedly",
+      "Speak truthfully"
     ],
     "answer": "Speak truthfully",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "सच बोलो"
   },
   {
     "idiom": "Care A Hang",
     "options": [
-      "Make consistent progress for success",
+      "To apologise humbly",
+      "To act too soon or before the right time",
       "Showing no interest",
-      "Missing a good opprtunity",
-      "Behave as if something that has happened is much worse then it really is"
+      "A person whose friendship cannot be relied on in times"
     ],
     "answer": "Showing no interest",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "कोई रुचि नहीं दिखाना"
   },
   {
     "idiom": "Come Rain Or Shine",
     "options": [
-      "Something common and not special",
+      "Praise or approval for doing something good",
+      "Now and then // Periodically",
       "Under any circumstances",
-      "Very rare",
-      "To deal with someone or something that proves unexpectedly or powerful"
+      "Not easily deceived"
     ],
     "answer": "Under any circumstances",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "किसी भी परिस्थिति में"
   },
   {
     "idiom": "Cook Someone's Goose",
     "options": [
-      "Very rare",
+      "Praise or approval for doing something good",
       "To interfere with, disrupt or ruin something for someone",
-      "Blamed for the mistakes of others",
-      "An unreal hope"
+      "The better you know someone the less you like him",
+      "To face risk"
     ],
     "answer": "To interfere with, disrupt or ruin something for someone",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "किसी के लिए किसी चीज़ में हस्तक्षेप करना, बाधा डालना या बर्बाद करना"
   },
   {
     "idiom": "Creature Of Habit",
     "options": [
       "One who does same thing in the same way",
-      "Incomprehensible",
-      "Something that appears to be a misfortune can have unexpected benefits",
-      "Avoid starvation"
+      "in writing",
+      "An embarrassing fact to be kept secret",
+      "Speaking in a confusing manner without giving a correct answer"
     ],
     "answer": "One who does same thing in the same way",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "जो एक ही काम एक ही तरीके से करता है"
   },
   {
     "idiom": "Cut Corners",
     "options": [
+      "Someone is good even if they sometimes behave in a wrong manner",
+      "Something that appears to be a misfortune can have unexpected benefits",
       "Do something in an inexpensive and easy way",
-      "To be in trouble",
-      "To save money or time when doing something by not including some parts",
-      "To allow a secret to be known, usually without intending to"
+      "To force yourself to do something unpleasant"
     ],
     "answer": "Do something in an inexpensive and easy way",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "किसी काम को सस्ते और आसान तरीके से करें"
   },
   {
     "idiom": "Easy Does It",
     "options": [
-      "To save money or time when doing something by not including some parts",
-      "Used to tell someone to do something slowly and carefully",
-      "Not take too seriously",
-      "Many good and bad times"
+      "Avoid becoming friendly with someone",
+      "To discourage doing something",
+      "Just barely",
+      "Used to tell someone to do something slowly and carefully"
     ],
     "answer": "Used to tell someone to do something slowly and carefully",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "किसी को कुछ धीरे और सावधानी से करने के लिए कहने के लिए प्रयोग किया जाता है"
   },
   {
     "idiom": "Fair Weather Friends",
     "options": [
       "Friends in good times",
-      "To say or do something that makes people feel more relaxed, especially at the beginning of a meeting, party",
-      "Occurred without a warning",
-      "Disregarded"
+      "Aware of any changes or developments and quick to react to them",
+      "very little freedom",
+      "Stopped working"
     ],
     "answer": "Friends in good times",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "अच्छे समय में दोस्त"
   },
   {
     "idiom": "Fall Flat",
     "options": [
+      "True personality",
       "Had no effect on",
-      "In trouble",
-      "To become worse",
-      "Oppressed husband"
+      "Be useful",
+      "A person who does not settle in one place for a long time, does not gain wealth, name or fame"
     ],
     "answer": "Had no effect on",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "पर कोई प्रभाव नहीं पड़ा"
   },
   {
     "idiom": "Fish Out Of Water",
     "options": [
-      "Fluency of speech",
-      "To be a winner",
-      "To start or create something from very beginning",
+      "in writing",
+      "Went terribly wrong",
+      "Under any circumstances",
       "Uncomfortable"
     ],
     "answer": "Uncomfortable",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "असुविधाजनक"
   },
   {
     "idiom": "Five-finger Discount",
     "options": [
       "Steal from a shop",
-      "To accept unpleasant consequences",
-      "The better you know someone the less you like him",
-      "Become very confused when you are trying to explian something"
+      "Irriates",
+      "To force yourself to do something unpleasant",
+      "With all of one's possessions"
     ],
     "answer": "Steal from a shop",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "दुकान से चोरी करना"
   },
   {
     "idiom": "Gift Of The Gab",
     "options": [
-      "Make consistent progress for success",
       "A talent for speaking",
-      "very active",
-      "Quarrelling with"
+      "To avoid giving a definite answer or position",
+      "Very happy",
+      "Forward and backward"
     ],
     "answer": "A talent for speaking",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "बोलने की प्रतिभा"
   },
   {
     "idiom": "Henpecked Husbands",
     "options": [
-      "The better you know someone the less you like him",
       "Oppressed husband",
-      "Many good and bad times",
-      "Make the best out of difficult situations"
+      "refused to yield",
+      "Forward and backward",
+      "To be a winner"
     ],
     "answer": "Oppressed husband",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "उत्पीड़ित पति"
   },
   {
     "idiom": "High And Dry",
     "options": [
-      "gesture of peace",
-      "Obey someone's every wish",
       "Given by somebody who is directly involved and therefore likely to be accurate",
+      "To deal with a difficult situation in a very direct or confident way",
+      "To be a winner",
       "Helpless"
     ],
     "answer": "Helpless",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "असहाय"
   },
   {
     "idiom": "Hit The Nail On The Head",
     "options": [
-      "Praise or approval for doing something good",
-      "He can't take a decision",
-      "Very common and of no particular value",
-      "They have accurately identified or explained something"
+      "To say or do something that makes people feel more relaxed, especially at the beginning of a meeting, party",
+      "A talent for speaking",
+      "They have accurately identified or explained something",
+      "An embarrassing fact to be kept secret"
     ],
     "answer": "They have accurately identified or explained something",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "उन्होंने किसी चीज़ की सटीक पहचान की है या उसे समझाया है"
   },
   {
     "idiom": "Hit The Roof",
     "options": [
-      "gesture of peace",
-      "To become very angry",
-      "To put a bad impression",
-      "Now and then // Periodically"
+      "To avoid giving a definite answer or position",
+      "The better you know someone the less you like him",
+      "Steal from a shop",
+      "To become very angry"
     ],
     "answer": "To become very angry",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "बहुत क्रोधित होना"
   },
   {
     "idiom": "Jaundiced Eye",
     "options": [
-      "Not very often",
-      "To be a winner",
-      "Resentment",
-      "In trouble"
+      "Doing a job in a quick and competent manner",
+      "Appear to be valid or reasonable",
+      "Easy task",
+      "Resentment"
     ],
     "answer": "Resentment",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "क्रोध"
   },
   {
     "idiom": "Jump The Gun",
     "options": [
-      "The major portion",
-      "Had no effect on",
+      "To act too soon or before the right time",
       "To do something too soon and too quickly",
-      "To look saddened"
+      "A continuing unpleasant situation, created another problem that then makes the first problem worse",
+      "The better you know someone the less you like him"
     ],
     "answer": "To do something too soon and too quickly",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "किसी काम को बहुत जल्दी और बहुत जल्दी करना"
   },
   {
     "idiom": "Keep Cards Close To Chest",
     "options": [
       "Keep plans and thoughts hidden",
-      "very little freedom",
-      "Avoid starvation",
-      "Stopped working"
+      "Detailed description",
+      "To have reason to suspect",
+      "To become very angry"
     ],
     "answer": "Keep plans and thoughts hidden",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "योजनाओं और विचारों को छिपा कर रखें"
   },
   {
     "idiom": "Left Out In The Cold",
     "options": [
-      "Tell others secret information",
-      "To be ignored",
-      "hit me below the belt",
-      "O tell everyone proudly about your achievements"
+      "Not easily deceived",
+      "A continuing unpleasant situation, created another problem that then makes the first problem worse",
+      "In good times and in bad times",
+      "To be ignored"
     ],
     "answer": "To be ignored",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "अनदेखा किया जाना"
   },
   {
     "idiom": "Let The Dust Settle",
     "options": [
-      "Start over",
+      "To be uncertain",
       "To wait for a situation to become clear or certain",
-      "Blaming another person",
-      "To be a winner"
+      "Not brave",
+      "A talent for speaking"
     ],
     "answer": "To wait for a situation to become clear or certain",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "किसी स्थिति के स्पष्ट या निश्चित होने की प्रतीक्षा करना"
   },
   {
     "idiom": "Made A Scapegoat",
     "options": [
-      "They have accurately identified or explained something",
-      "Speaking in a confusing manner without giving a correct answer",
+      "Highest priority",
       "Blamed for the mistakes of others",
-      "To do something too soon and too quickly"
+      "In trouble",
+      "With all of one's possessions"
     ],
     "answer": "Blamed for the mistakes of others",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "दूसरों की गलतियों के लिए दोषी ठहराया जाना"
   },
   {
     "idiom": "Maiden Speech",
     "options": [
+      "To interfere with, disrupt or ruin something for someone",
+      "Forward and backward",
       "first speech",
-      "Involved in a problem",
-      "Not to take things seriously",
-      "Not easily deceived"
+      "To avoid giving a definite answer or position"
     ],
     "answer": "first speech",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "पहला भाषण"
   },
   {
     "idiom": "Make A Beeline For",
     "options": [
-      "The major portion",
-      "Missing a good opprtunity",
-      "It becomes easily and quickly achievable",
+      "in writing",
+      "Now and then // Periodically",
+      "Steal from a shop",
       "Going straight and quick"
     ],
     "answer": "Going straight and quick",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "सीधे और तेज़ी से आगे बढ़ना"
   },
   {
     "idiom": "Many Ups And Downs",
     "options": [
-      "So worried, confused or annoyed that she does not know what to do next",
-      "To do something too soon and too quickly",
-      "Dishonesty",
-      "Many good and bad times"
+      "Facing a distressing situation",
+      "Many good and bad times",
+      "A talent for speaking",
+      "Not easily deceived"
     ],
     "answer": "Many good and bad times",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "कई अच्छे और बुरे समय"
   },
   {
     "idiom": "Move Heavens And Earth",
     "options": [
-      "Keep plans and thoughts hidden",
-      "Used to tell someone to do something slowly and carefully",
       "Tried very hard",
-      "Not brave"
+      "Not very often",
+      "To understand more than what the words suggest",
+      "To have reason to suspect"
     ],
     "answer": "Tried very hard",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "बहुत कोशिश की"
   },
   {
     "idiom": "Nobody's Fool",
     "options": [
-      "very active",
-      "Be in a difficult situation from where escape is difficult",
       "Not easily deceived",
-      "Make the best out of difficult situations"
+      "Start the day in a bad mood, which continues all day long",
+      "To think hard",
+      "An embarrassing fact to be kept secret"
     ],
     "answer": "Not easily deceived",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "आसानी से धोखा नहीं दिया जाता"
   },
   {
     "idiom": "Off And On",
     "options": [
       "Now and then // Periodically",
-      "To be in charge",
-      "Swiftly",
-      "Avoid somone or something because it is dangerous for you"
+      "Aeria view // A general view from above",
+      "One who does same thing in the same way",
+      "To avoid giving a definite answer or position"
     ],
     "answer": "Now and then // Periodically",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "अब और फिर // समय-समय पर"
   },
   {
     "idiom": "Olive Branch",
     "options": [
-      "A selfish friend",
-      "To look saddened",
-      "Uncomfortable",
-      "Gesture of peace"
+      "refused to yield",
+      "Gesture of peace",
+      "Missing a good opprtunity",
+      "The worst possible situation"
     ],
     "answer": "Gesture of peace",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "शांति का संकेत"
   },
   {
     "idiom": "On Cloud Nine",
     "options": [
-      "The better you know someone the less you like him",
-      "To understand more than what the words suggest",
-      "Forward and backward",
+      "To think hard",
+      "At a distance",
+      "To wish good luck",
       "Being very delighted"
     ],
     "answer": "Being very delighted",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "बहुत प्रसन्न होना"
   },
   {
     "idiom": "On The Ball",
     "options": [
-      "in writing",
+      "Now and then // Periodically",
+      "Honestly",
       "Aware of any changes or developments and quick to react to them",
-      "The better you know someone the less you like him",
-      "a place that contains many interesting objects"
+      "very active"
     ],
     "answer": "Aware of any changes or developments and quick to react to them",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "किसी भी परिवर्तन या विकास के प्रति सजग और उन पर त्वरित प्रतिक्रिया देने वाला"
   },
   {
     "idiom": "On The Fence",
     "options": [
-      "Keep plans and thoughts hidden",
+      "To become worse",
+      "To wish good luck",
       "Halting between two options",
-      "To act too soon or before the right time",
-      "Fluency of speech"
+      "Occurred without a warning"
     ],
     "answer": "Halting between two options",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "दो विकल्पों के बीच अटकना"
   },
   {
     "idiom": "Once In A Blue Moon",
     "options": [
-      "Angry feeling",
       "Not very often",
-      "Behave as if something that has happened is much worse then it really is",
-      "Obey someone's every wish"
+      "At a distance",
+      "Gesture of peace",
+      "In trouble"
     ],
     "answer": "Not very often",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "ज्यादा नहीं"
   },
   {
     "idiom": "Pat On The Back",
     "options": [
-      "To be ignored",
-      "If you are not alert, you are likely to miss opportunities",
-      "Tried very hard",
-      "Praise or approval for doing something good"
+      "Praise or approval for doing something good",
+      "A person who does not settle in one place for a long time, does not gain wealth, name or fame",
+      "An apparent misfortune that eventually has good results",
+      "Be in a difficult situation from where escape is difficult"
     ],
     "answer": "Praise or approval for doing something good",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "कुछ अच्छा करने के लिए प्रशंसा या अनुमोदन"
   },
   {
     "idiom": "Penelope's Web",
     "options": [
-      "The worst possible situation",
-      "in writing",
       "An endless task",
-      "To be uncertain"
+      "Oppressed husband",
+      "Not take too seriously",
+      "Treated her with contempt"
     ],
     "answer": "An endless task",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "एक अंतहीन कार्य"
   },
   {
     "idiom": "Pull A Long Face",
     "options": [
-      "To do something too soon and too quickly",
-      "Many good and bad times",
-      "Keep plans and thoughts hidden",
-      "To look saddened"
+      "Very rare",
+      "Improve absurd behaviour and act seriously",
+      "To look saddened",
+      "Praise or approval for doing something good"
     ],
     "answer": "To look saddened",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "दुखी दिखना"
   },
   {
     "idiom": "Pull Our Socks Up",
     "options": [
-      "To do something without special prepration",
-      "To think hard",
-      "a very long time",
-      "Work harder than before"
+      "To have reason to suspect",
+      "Not to take things seriously",
+      "Work harder than before",
+      "A problem difficult to solve"
     ],
     "answer": "Work harder than before",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "पहले से अधिक कड़ी मेहनत करें"
   },
   {
     "idiom": "Read Between The Lines",
     "options": [
-      "An endless task",
+      "gesture of peace",
+      "Cowards",
       "To understand more than what the words suggest",
-      "in writing",
-      "Being very delighted"
+      "In trouble"
     ],
     "answer": "To understand more than what the words suggest",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "शब्दों से अधिक समझने के लिए"
   },
   {
     "idiom": "Spill The Beans",
     "options": [
-      "To go insane",
+      "A person whose friendship cannot be relied on in times",
       "Tell others secret information",
-      "Aware of any changes or developments and quick to react to them",
-      "Very happy"
+      "To be alert",
+      "Under any circumstances"
     ],
     "answer": "Tell others secret information",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "दूसरों को गुप्त जानकारी बताना"
   },
   {
     "idiom": "Start From Scratch",
     "options": [
       "To start or create something from very beginning",
-      "In prosperity and adversity",
-      "An unreal hope",
-      "Forward and backward"
+      "Unexpectedly",
+      "In good times and in bad times",
+      "Occurred without a warning"
     ],
     "answer": "To start or create something from very beginning",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "किसी चीज़ को बिल्कुल शुरू से शुरू करना या बनाना"
   },
   {
     "idiom": "Straight From The Horse's Mouth",
     "options": [
-      "To die",
-      "very little freedom",
+      "To think hard",
+      "Going straight and quick",
       "Given by somebody who is directly involved and therefore likely to be accurate",
-      "Irriates"
+      "To feel extremely excited or happy"
     ],
     "answer": "Given by somebody who is directly involved and therefore likely to be accurate",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "किसी ऐसे व्यक्ति द्वारा दिया गया जो सीधे तौर पर इसमें शामिल है और इसलिए सटीक होने की संभावना है"
   },
   {
     "idiom": "Straight Shooter",
     "options": [
-      "A person who does not settle in one place for a long time, does not gain wealth, name or fame",
-      "To disclose",
-      "A thoroughly upright straightforward person",
-      "To look saddened"
+      "Many good and bad times",
+      "Detailed description",
+      "Treated her with contempt",
+      "A thoroughly upright straightforward person"
     ],
     "answer": "A thoroughly upright straightforward person",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "एक पूरी तरह से ईमानदार और सीधा व्यक्ति"
   },
   {
     "idiom": "Straighten Up And Fly Right",
     "options": [
-      "To be in trouble",
+      "To allow a secret to be known, usually without intending to",
+      "It becomes easily and quickly achievable",
       "Improve absurd behaviour and act seriously",
-      "Start the day in a bad mood, which continues all day long",
-      "In trouble"
+      "Halting between two options"
     ],
     "answer": "Improve absurd behaviour and act seriously",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "बेतुके व्यवहार में सुधार करें और गंभीरता से कार्य करें"
   },
   {
     "idiom": "The Lion's Share",
     "options": [
-      "In perfect order",
-      "Irriates",
-      "Made a big fuss about a small problem",
-      "The major portion"
+      "To force yourself to do something unpleasant",
+      "Showing no interest",
+      "The major portion",
+      "made some people exicited or interested"
     ],
     "answer": "The major portion",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "प्रमुख भाग"
   },
   {
     "idiom": "The Tip Of The Iceberg",
     "options": [
-      "To have reason to suspect",
-      "Wildly exaggerated or falsified story",
       "A small, noticeable part of a problem, the total size of which is really much grater",
-      "Not easily deceived"
+      "Failing completely",
+      "In a depressed or weak state",
+      "Start over"
     ],
     "answer": "A small, noticeable part of a problem, the total size of which is really much grater",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "समस्या का एक छोटा, ध्यान देने योग्य हिस्सा, जिसका कुल आकार वास्तव में बहुत बड़ा है"
   },
   {
     "idiom": "Through Thick And Thin",
     "options": [
-      "A problem difficult to solve",
-      "Tried very hard",
-      "Cowards",
-      "Under all conditions, no matter how challenging or difficult"
+      "Do something in an inexpensive and easy way",
+      "There's always some reason for a rumour",
+      "Under all conditions, no matter how challenging or difficult",
+      "Work harder than before"
     ],
     "answer": "Under all conditions, no matter how challenging or difficult",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "सभी परिस्थितियों में, चाहे वह कितनी भी चुनौतीपूर्ण या कठिन क्यों न हो"
   },
   {
     "idiom": "To Bring To Light",
     "options": [
-      "Given by somebody who is directly involved and therefore likely to be accurate",
-      "In trouble",
       "To disclose",
-      "To bear the negative consequences of wrongful actions"
+      "An embarrassing fact to be kept secret",
+      "Very rare",
+      "Watching eagerly"
     ],
     "answer": "To disclose",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "खुलासा करने के लिए"
   },
   {
     "idiom": "To Have Bigger Fish To Fry",
     "options": [
       "To have bigger things to take care of then the menial task at hand",
-      "Inexperienced",
-      "Encourage the growth or action of something",
-      "To apologise humbly"
+      "Contemplating // to think slowly and carefully about something",
+      "Inexperienced person",
+      "To be in charge"
     ],
     "answer": "To have bigger things to take care of then the menial task at hand",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "हाथ में मौजूद छोटे-मोटे कामों से ज़्यादा बड़ी चीज़ों का ध्यान रखना"
   },
   {
     "idiom": "To Keep The Wolf Away From The Door",
     "options": [
-      "To save money or time when doing something by not including some parts",
-      "refused to yield",
       "Avoid starvation",
-      "In prosperity and adversity"
+      "Bad luck",
+      "To deal with someone or something that proves unexpectedly or powerful",
+      "Provoke trouble"
     ],
     "answer": "Avoid starvation",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "भुखमरी से बचें"
   },
   {
     "idiom": "To Turn A Deaf Ear",
     "options": [
-      "Disregarded",
-      "The driver was under suspicion after the police found blood on his car",
-      "made some people exicited or interested",
-      "To be alert"
+      "To disclose",
+      "To say or do something that makes people feel more relaxed, especially at the beginning of a meeting, party",
+      "Halting between two options",
+      "Disregarded"
     ],
     "answer": "Disregarded",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "उपेक्षित"
   },
   {
     "idiom": "Turned Up One's Nose",
     "options": [
-      "To be ignored",
-      "To be in charge",
-      "A difficult problem",
-      "Treated her with contempt"
+      "Showing no interest",
+      "Keep plans and thoughts hidden",
+      "Treated her with contempt",
+      "Detailed description"
     ],
     "answer": "Treated her with contempt",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "उसके साथ अवमाननापूर्ण व्यवहार किया"
   },
   {
     "idiom": "When Life Gives You Lemons, Make Lemonade",
     "options": [
-      "To deal with a difficult situation without being harmed",
-      "gesture of peace",
+      "Watching eagerly",
       "Make the best out of difficult situations",
-      "To interfere with, disrupt or ruin something for someone"
+      "To deal with someone or something that proves unexpectedly or powerful",
+      "Being very delighted"
     ],
     "answer": "Make the best out of difficult situations",
-    "year": 2024
+    "year": 2024,
+    "hindiMeaning": "कठिन परिस्थितियों से सर्वोत्तम लाभ उठाएँ"
   },
   {
     "idiom": "Lily-livered",
     "options": [
+      "To be in trouble",
+      "To have bigger things to take care of then the menial task at hand",
       "Not brave",
-      "made some people exicited or interested",
-      "Has a good effect even though at first it seemed it would be bad",
-      "To become very angry"
+      "Easy task"
     ],
     "answer": "Not brave",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "बहादुर नहीं"
   },
   {
     "idiom": "Tied Herself Up In Knots",
     "options": [
-      "Used to tell someone to do something slowly and carefully",
-      "Become very confused when you are trying to explian something",
-      "very active",
-      "To deal with someone or something that proves unexpectedly or powerful"
+      "A small, noticeable part of a problem, the total size of which is really much grater",
+      "A person who does not settle in one place for a long time, does not gain wealth, name or fame",
+      "To be uncertain",
+      "Become very confused when you are trying to explian something"
     ],
     "answer": "Become very confused when you are trying to explian something",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "जब आप किसी बात को समझाने की कोशिश कर रहे हों तो बहुत भ्रमित हो जाएँ"
   },
   {
     "idiom": "To Kick The Bucket",
     "options": [
-      "Make consistent progress for success",
-      "Bad luck",
+      "Very common and of no particular value",
       "To die",
-      "A thoroughly upright straightforward person"
+      "To discourage doing something",
+      "Irriates"
     ],
     "answer": "To die",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "दम टूटना"
   },
   {
     "idiom": "Miss The Boat",
     "options": [
-      "Start over",
-      "To deal with someone or something that proves unexpectedly or powerful",
-      "Day and night",
+      "very active",
+      "Make consistent progress for success",
+      "Blaming another person",
       "Missing a good opprtunity"
     ],
     "answer": "Missing a good opprtunity",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "एक अच्छा अवसर खोना"
   },
   {
     "idiom": "A Hard Nut To Crack",
     "options": [
-      "Blamed for the mistakes of others",
       "A difficult problem",
-      "An endless task",
-      "To be in trouble"
+      "Completely obsolete",
+      "An embarrassing fact to be kept secret",
+      "A time when money might unexpectedly be needed"
     ],
     "answer": "A difficult problem",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "एक कठिन समस्या"
   },
   {
     "idiom": "To Bell The Cat",
     "options": [
-      "Become very confused when you are trying to explian something",
-      "Day and night",
-      "Not take too seriously",
-      "To face risk"
+      "To have reason to suspect",
+      "To face risk",
+      "Honestly",
+      "deliberately"
     ],
     "answer": "To face risk",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "जोखिम का सामना करना"
   },
   {
     "idiom": "Sharp Practice",
     "options": [
-      "To think hard",
+      "An embarrassing fact to be kept secret",
       "Dishonesty",
-      "Unexpectedly",
-      "Irriates"
+      "in writing",
+      "To deal with someone or something that proves unexpectedly or powerful"
     ],
     "answer": "Dishonesty",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "बेईमानी"
   },
   {
     "idiom": "A Storm In A Teacup",
     "options": [
-      "Fluency of speech",
-      "Avoid becoming friendly with someone",
+      "To act too soon or before the right time",
       "Made a big fuss about a small problem",
-      "To discourage doing something"
+      "To say what you think about something very directly",
+      "In a depressed or weak state"
     ],
     "answer": "Made a big fuss about a small problem",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "एक छोटी सी समस्या को लेकर बहुत बड़ा बवाल मचा दिया"
   },
   {
     "idiom": "Keep Someone At Arm's Length",
     "options": [
+      "Completely obsolete",
+      "To bear the negative consequences of wrongful actions",
       "Avoid becoming friendly with someone",
-      "In perfect order",
-      "Work harder than before",
-      "Dishonesty"
+      "Praise or approval for doing something good"
     ],
     "answer": "Avoid becoming friendly with someone",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "किसी के साथ मित्रतापूर्ण व्यवहार करने से बचें"
   },
   {
     "idiom": "Rule The Roost",
     "options": [
-      "Improve absurd behaviour and act seriously",
-      "hit me below the belt",
-      "Contemplating // to think slowly and carefully about something",
-      "To be in charge"
+      "In a depressed or weak state",
+      "To be in charge",
+      "The better you know someone the less you like him",
+      "Involved in a problem"
     ],
     "answer": "To be in charge",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "प्रभारी होने के लिए"
   },
   {
     "idiom": "Scrape The Barrel",
     "options": [
-      "To deal with a difficult situation in a very direct or confident way",
-      "To be forced to use one's last and weakest resource",
-      "A problem difficult to solve",
-      "A difficult problem"
+      "With all of one's possessions",
+      "To understand more than what the words suggest",
+      "It becomes easily and quickly achievable",
+      "To be forced to use one's last and weakest resource"
     ],
     "answer": "To be forced to use one's last and weakest resource",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "अपने अंतिम और सबसे कमजोर संसाधन का उपयोग करने के लिए मजबूर होना"
   },
   {
     "idiom": "A Dime A Dozen",
     "options": [
+      "Now and then // Periodically",
       "Very common and of no particular value",
-      "Blaming another person",
-      "To bear the negative consequences of wrongful actions",
-      "To deal with a difficult situation without being harmed"
+      "To feel extremely excited or happy",
+      "To bear the negative consequences of wrongful actions"
     ],
     "answer": "Very common and of no particular value",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "बहुत सामान्य और कोई विशेष मूल्य नहीं"
   },
   {
     "idiom": "Beat About The Bush",
     "options": [
-      "To apologise humbly",
-      "Not very often",
+      "A talent for speaking",
+      "Behave as if something that has happened is much worse then it really is",
       "To avoid giving a definite answer or position",
-      "Very happy"
+      "Avoid starvation"
     ],
     "answer": "To avoid giving a definite answer or position",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "कोई निश्चित उत्तर या स्थिति देने से बचना"
   },
   {
     "idiom": "To Prime The Pump",
     "options": [
+      "To be in trouble",
+      "Doing a job in a quick and competent manner",
       "Encourage the growth or action of something",
-      "in writing",
-      "Missing a good opprtunity",
-      "To deal with a difficult situation without being harmed"
+      "Went terribly wrong"
     ],
     "answer": "Encourage the growth or action of something",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "किसी चीज़ के विकास या कार्य को प्रोत्साहित करना"
   },
   {
     "idiom": "Back Against The Wall",
     "options": [
+      "In trouble",
+      "first speech",
       "Be in a difficult situation from where escape is difficult",
-      "Showing no interest",
-      "To avoid giving a definite answer or position",
-      "Facing a distressing situation"
+      "A fearless person"
     ],
     "answer": "Be in a difficult situation from where escape is difficult",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "ऐसी कठिन परिस्थिति में होना जहाँ से बचना कठिन हो"
   },
   {
     "idiom": "Walking On Air",
     "options": [
-      "Speaking in a confusing manner without giving a correct answer",
-      "Went terribly wrong",
+      "To have reason to suspect",
+      "born to riches and luxury",
       "To feel extremely excited or happy",
-      "Be in a difficult situation from where escape is difficult"
+      "To understand more than what the words suggest"
     ],
     "answer": "To feel extremely excited or happy",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "अत्यधिक उत्साहित या खुश महसूस करना"
   },
   {
     "idiom": "Bad Iron",
     "options": [
-      "One who does same thing in the same way",
-      "Disregarded",
-      "Halting between two options",
+      "A small, noticeable part of a problem, the total size of which is really much grater",
+      "To be ignored",
+      "To say or do something that makes people feel more relaxed, especially at the beginning of a meeting, party",
       "Bad luck"
     ],
     "answer": "Bad luck",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "खराब किस्मत"
   },
   {
     "idiom": "By The Skin Of Your Teeth",
     "options": [
-      "Under any circumstances",
-      "Stopped working",
-      "Doing a job in a quick and competent manner",
-      "Just barely"
+      "A time when money might unexpectedly be needed",
+      "Be in a difficult situation from where escape is difficult",
+      "Just barely",
+      "Now and then // Periodically"
     ],
     "answer": "Just barely",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "बस मुश्किल से"
   },
   {
     "idiom": "Through Thick And Thin",
     "options": [
+      "Easy task",
       "In good times and in bad times",
-      "Dishonesty",
-      "O tell everyone proudly about your achievements",
-      "a place that contains many interesting objects"
+      "Aeria view // A general view from above",
+      "Going straight and quick"
     ],
     "answer": "In good times and in bad times",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "अच्छे समय में और बुरे समय में"
   },
   {
     "idiom": "It Turns Out To Be A Blessing In Disguise",
     "options": [
-      "a place that contains many interesting objects",
+      "Very common and of no particular value",
+      "Work harder than before",
       "Has a good effect even though at first it seemed it would be bad",
-      "A person who does not settle in one place for a long time, does not gain wealth, name or fame",
-      "A problem difficult to solve"
+      "A thoroughly upright straightforward person"
     ],
     "answer": "Has a good effect even though at first it seemed it would be bad",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "इसका प्रभाव अच्छा है, हालांकि पहले ऐसा लग रहा था कि यह बुरा होगा"
   },
   {
     "idiom": "To Be In Two Minds",
     "options": [
-      "A small, noticeable part of a problem, the total size of which is really much grater",
-      "A period of time when a person faces lots of troubles",
       "To be uncertain",
-      "To save money or time when doing something by not including some parts"
+      "Treated her with contempt",
+      "Stopped working",
+      "Oppressed husband"
     ],
     "answer": "To be uncertain",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "अनिश्चित होना"
   },
   {
     "idiom": "Falling Foul Of",
     "options": [
-      "By improvisation",
-      "Blaming another person",
-      "Quarrelling with",
-      "The major portion"
+      "Something that appears to be a misfortune can have unexpected benefits",
+      "Doing a job in a quick and competent manner",
+      "To feel extremely excited or happy",
+      "Quarrelling with"
     ],
     "answer": "Quarrelling with",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "झगड़ा करना"
   },
   {
     "idiom": "Get Into A Scrape",
     "options": [
-      "To be forced to use one's last and weakest resource",
-      "Provoke trouble",
-      "Many good and bad times",
-      "Involved in a problem"
+      "Involved in a problem",
+      "Incomprehensible",
+      "To be in charge",
+      "Avoid becoming friendly with someone"
     ],
     "answer": "Involved in a problem",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "किसी समस्या में शामिल"
   },
   {
     "idiom": "Gift Of The Gab",
     "options": [
-      "Tell others secret information",
-      "Fluency of speech",
-      "To die",
-      "Just barely"
+      "Involved in a problem",
+      "Make the best out of difficult situations",
+      "Make people meeting first time feel more comfortable",
+      "Fluency of speech"
     ],
     "answer": "Fluency of speech",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "भाषण की प्रवाहशीलता"
   },
   {
     "idiom": "Blow Something Out Of(all) Proportion",
     "options": [
+      "Make people meeting first time feel more comfortable",
+      "Provoke trouble",
       "Behave as if something that has happened is much worse then it really is",
-      "Disregarded",
-      "Aware of any changes or developments and quick to react to them",
-      "Not very often"
+      "Be in a difficult situation from where escape is difficult"
     ],
     "answer": "Behave as if something that has happened is much worse then it really is",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "ऐसा व्यवहार करें जैसे जो कुछ हुआ है वह वास्तव में उससे कहीं अधिक बुरा है"
   },
   {
     "idiom": "Blow Your Own Trumpet",
     "options": [
-      "O tell everyone proudly about your achievements",
-      "deliberately",
-      "Halting between two options",
-      "One who does same thing in the same way"
+      "They have accurately identified or explained something",
+      "A thoroughly upright straightforward person",
+      "Blamed for the mistakes of others",
+      "O tell everyone proudly about your achievements"
     ],
     "answer": "O tell everyone proudly about your achievements",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "हे अपनी उपलब्धियों के बारे में गर्व से सबको बताओ"
   },
   {
     "idiom": "To Go To The Dogs",
     "options": [
-      "Inexperienced person",
-      "Incomprehensible",
-      "Blaming another person",
-      "To become worse"
+      "To become worse",
+      "To begin again",
+      "very active",
+      "Treated her with contempt"
     ],
     "answer": "To become worse",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "बदतर बनना"
   },
   {
     "idiom": "Up The Creek",
     "options": [
-      "Inexperienced",
-      "Make consistent progress for success",
-      "refused to yield",
-      "In trouble"
+      "Encourage the growth or action of something",
+      "Inexperienced person",
+      "In trouble",
+      "Stopped working"
     ],
     "answer": "In trouble",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "मुसीबत में"
   },
   {
     "idiom": "Go Back To The Drawing Board",
     "options": [
-      "To go insane",
       "Start over",
-      "To think hard",
-      "To begin again"
+      "Detailed description",
+      "very active",
+      "By improvisation"
     ],
     "answer": "Start over",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "प्रारंभ करें"
   },
   {
     "idiom": "On The Ball",
     "options": [
-      "Completely obsolete",
-      "In a depressed or weak state",
-      "Doing a job in a quick and competent manner",
-      "Inexperienced"
+      "a very long time",
+      "A difficult problem",
+      "Steal from a shop",
+      "Doing a job in a quick and competent manner"
     ],
     "answer": "Doing a job in a quick and competent manner",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "किसी काम को शीघ्रता एवं कुशलता से करना"
   },
   {
     "idiom": "Jumped The Gun",
     "options": [
-      "To bear the negative consequences of wrongful actions",
-      "Many good and bad times",
-      "To force yourself to do something unpleasant",
-      "To act too soon or before the right time"
+      "A person whose friendship cannot be relied on in times",
+      "In good times and in bad times",
+      "To act too soon or before the right time",
+      "Encourage the growth or action of something"
     ],
     "answer": "To act too soon or before the right time",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "बहुत जल्दी या सही समय से पहले कार्य करना"
   },
   {
     "idiom": "To Face The Music",
     "options": [
-      "To look saddened",
+      "True personality",
       "To bear the negative consequences of wrongful actions",
-      "To deal with someone or something that proves unexpectedly or powerful",
-      "To act too soon or before the right time"
+      "He can't take a decision",
+      "O tell everyone proudly about your achievements"
     ],
     "answer": "To bear the negative consequences of wrongful actions",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "गलत कार्यों के नकारात्मक परिणाम भुगतना"
   },
   {
     "idiom": "Stir Up A Hornets' Nest",
     "options": [
-      "Praise or approval for doing something good",
-      "To apologise humbly",
       "Provoke trouble",
-      "To start or create something from very beginning"
+      "To say what you think about something very directly",
+      "A time when money might unexpectedly be needed",
+      "In good times and in bad times"
     ],
     "answer": "Provoke trouble",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "परेशानी भड़काना"
   },
   {
     "idiom": "It Is Raining Cats And Dogs",
     "options": [
-      "Failing completely",
-      "Be useful",
-      "Under all conditions, no matter how challenging or difficult",
-      "It is raining very heavily"
+      "It is raining very heavily",
+      "Facing a distressing situation",
+      "Tell others secret information",
+      "Blamed for the mistakes of others"
     ],
     "answer": "It is raining very heavily",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "बहुत तेज़ बारिश हो रही है"
   },
   {
     "idiom": "Taking A Bull By The Horns",
     "options": [
       "To deal with a difficult situation in a very direct or confident way",
-      "To face risk",
-      "Make the best out of difficult situations",
-      "Avoid starvation"
+      "To be ignored",
+      "Accept something as it looks without thinking about whether it might, in fact, not be quite what it appears",
+      "In prosperity and adversity"
     ],
     "answer": "To deal with a difficult situation in a very direct or confident way",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "किसी कठिन परिस्थिति से बहुत सीधे या आत्मविश्वास से निपटना"
   },
   {
     "idiom": "Called It A Day",
     "options": [
-      "a place that contains many interesting objects",
-      "The driver was under suspicion after the police found blood on his car",
-      "Stopped working",
-      "A person who does not settle in one place for a long time, does not gain wealth, name or fame"
+      "Facing a distressing situation",
+      "Irriates",
+      "Being very delighted",
+      "Stopped working"
     ],
     "answer": "Stopped working",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "काम करना बंद कर दिया"
   },
   {
     "idiom": "Once In A Blue Moon",
     "options": [
       "Very rare",
-      "Under any circumstances",
-      "To apologise humbly",
-      "To do something too soon and too quickly"
+      "Involved in a problem",
+      "Not very often",
+      "To be in a dangerous risky position"
     ],
     "answer": "Very rare",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "केवल कभी कभी"
   },
   {
     "idiom": "Under The Cloud",
     "options": [
-      "An endless task",
-      "in writing",
-      "Irriates",
-      "The driver was under suspicion after the police found blood on his car"
+      "To say what you think about something very directly",
+      "The driver was under suspicion after the police found blood on his car",
+      "With all of one's possessions",
+      "To save money or time when doing something by not including some parts"
     ],
     "answer": "The driver was under suspicion after the police found blood on his car",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "पुलिस को जब ड्राइवर की कार पर खून के निशान मिले तो वह संदेह के घेरे में आ गया।"
   },
   {
     "idiom": "Bad Blood",
     "options": [
-      "Incomprehensible",
-      "Very rare",
-      "Inexperienced",
-      "Angry feeling"
+      "Stopped working",
+      "Had no effect on",
+      "Angry feeling",
+      "Given by somebody who is directly involved and therefore likely to be accurate"
     ],
     "answer": "Angry feeling",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "गुस्सा महसूस करना"
   },
   {
     "idiom": "A Perfect Storm",
     "options": [
+      "To put a bad impression",
+      "Be useful",
       "The worst possible situation",
-      "An apparent misfortune that eventually has good results",
-      "Contemplating // to think slowly and carefully about something",
-      "Behave as if something that has happened is much worse then it really is"
+      "first speech"
     ],
     "answer": "The worst possible situation",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "सबसे खराब संभावित स्थिति"
   },
   {
     "idiom": "To Cath A Tartar",
     "options": [
-      "To be uncertain",
-      "Irrelevant",
+      "To be in a dangerous risky position",
+      "Provoke trouble",
       "To deal with someone or something that proves unexpectedly or powerful",
-      "Watching eagerly"
+      "Missing a good opprtunity"
     ],
     "answer": "To deal with someone or something that proves unexpectedly or powerful",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "किसी ऐसे व्यक्ति या चीज़ से निपटना जो अप्रत्याशित रूप से या शक्तिशाली साबित हो"
   },
   {
     "idiom": "As Dead As A Doornail",
     "options": [
-      "Helpless",
-      "Stopped working",
+      "Very common and of no particular value",
       "Completely obsolete",
-      "Treated her with contempt"
+      "Incomprehensible",
+      "Blamed for the mistakes of others"
     ],
     "answer": "Completely obsolete",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "पूरी तरह से अप्रचलित"
   },
   {
     "idiom": "Hit The Jackpot",
     "options": [
-      "Under any circumstances",
-      "Make people meeting first time feel more comfortable",
-      "Be in a difficult situation from where escape is difficult",
-      "Gaining a big success"
+      "Day and night",
+      "Watching eagerly",
+      "Gaining a big success",
+      "Make the best out of difficult situations"
     ],
     "answer": "Gaining a big success",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "बड़ी सफलता प्राप्त करना"
   },
   {
     "idiom": "Cut Corners",
     "options": [
-      "Day and night",
-      "They have accurately identified or explained something",
+      "Start the day in a bad mood, which continues all day long",
       "To save money or time when doing something by not including some parts",
-      "Cowards"
+      "To feel extremely excited or happy",
+      "To deal with a difficult situation without being harmed"
     ],
     "answer": "To save money or time when doing something by not including some parts",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "किसी कार्य को करते समय कुछ भागों को शामिल न करके धन या समय बचाना"
   },
   {
     "idiom": "True Colours",
     "options": [
-      "a very long time",
-      "Dishonesty",
+      "Not very often",
       "True personality",
-      "To do something without special prepration"
+      "Gesture of peace",
+      "Be useful"
     ],
     "answer": "True personality",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "सच्चा व्यक्तित्व"
   },
   {
     "idiom": "Bolt From The Blue",
     "options": [
-      "Become very confused when you are trying to explian something",
-      "To say or do something that makes people feel more relaxed, especially at the beginning of a meeting, party",
-      "Doing a job in a quick and competent manner",
-      "Occurred without a warning"
+      "born to riches and luxury",
+      "To feel extremely excited or happy",
+      "Occurred without a warning",
+      "To apologise humbly"
     ],
     "answer": "Occurred without a warning",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "बिना किसी चेतावनी के घटित हुआ"
   },
   {
     "idiom": "Take It With A Grain Of Salt",
     "options": [
-      "Dishonesty",
-      "So worried, confused or annoyed that she does not know what to do next",
-      "An embarrassing fact to be kept secret",
-      "Not to take things seriously"
+      "Not to take things seriously",
+      "One who does same thing in the same way",
+      "Appear to be valid or reasonable",
+      "The better you know someone the less you like him"
     ],
     "answer": "Not to take things seriously",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "चीजों को गंभीरता से न लेना"
   },
   {
     "idiom": "Throw Caution To The Wind",
     "options": [
-      "They have accurately identified or explained something",
+      "born to riches and luxury",
+      "To accept unpleasant consequences",
       "Take risk",
-      "Be useful",
-      "To be in a dangerous risky position"
+      "Something that appears to be a misfortune can have unexpected benefits"
     ],
     "answer": "Take risk",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "जोखिम लें"
   },
   {
     "idiom": "Blessing In Disguise",
     "options": [
-      "Just barely",
-      "A fearless person",
+      "Now and then // Periodically",
+      "Showing no interest",
       "Something that appears to be a misfortune can have unexpected benefits",
-      "An apparent misfortune that eventually has good results"
+      "Uncomfortable"
     ],
     "answer": "Something that appears to be a misfortune can have unexpected benefits",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "जो चीज़ दुर्भाग्य प्रतीत होती है, उससे अप्रत्याशित लाभ भी हो सकता है"
   },
   {
     "idiom": "To Weather The Storm",
     "options": [
-      "Something common and not special",
-      "very little freedom",
+      "To be ignored",
+      "If you are not alert, you are likely to miss opportunities",
       "To deal with a difficult situation without being harmed",
-      "An embarrassing fact to be kept secret"
+      "A fearless person"
     ],
     "answer": "To deal with a difficult situation without being harmed",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "किसी कठिन परिस्थिति से बिना नुकसान पहुंचाए निपटना"
   },
   {
     "idiom": "Pass The Buck",
     "options": [
-      "Halting between two options",
+      "Fluency of speech",
       "Blaming another person",
-      "Treated her with contempt",
-      "There's always some reason for a rumour"
+      "Start the day in a bad mood, which continues all day long",
+      "feel too frightened to do something"
     ],
     "answer": "Blaming another person",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "किसी अन्य व्यक्ति को दोष देना"
   },
   {
     "idiom": "Speaks His Mind",
     "options": [
+      "To begin again",
       "To say what you think about something very directly",
-      "In prosperity and adversity",
-      "Do something in an inexpensive and easy way",
-      "Steal from a shop"
+      "Avoid the main point by talking in a roundabout way",
+      "Detailed description"
     ],
     "answer": "To say what you think about something very directly",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "किसी चीज़ के बारे में आप जो सोचते हैं उसे बहुत सीधे तौर पर कहना"
   },
   {
     "idiom": "Chewing The Cud",
     "options": [
-      "a place that contains many interesting objects",
-      "hit me below the belt",
-      "They have accurately identified or explained something",
-      "Contemplating // to think slowly and carefully about something"
+      "Improve absurd behaviour and act seriously",
+      "Contemplating // to think slowly and carefully about something",
+      "The driver was under suspicion after the police found blood on his car",
+      "Disregarded"
     ],
     "answer": "Contemplating // to think slowly and carefully about something",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "चिंतन करना // किसी चीज़ के बारे में धीरे-धीरे और ध्यान से सोचना"
   },
   {
     "idiom": "Apple Pie Order",
     "options": [
-      "To interfere with, disrupt or ruin something for someone",
-      "In perfect order",
-      "Given by somebody who is directly involved and therefore likely to be accurate",
-      "Appear to be valid or reasonable"
+      "Involved in a problem",
+      "To be ignored",
+      "To be in trouble",
+      "In perfect order"
     ],
     "answer": "In perfect order",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "पूर्णतः व्यवस्थित"
   },
   {
     "idiom": "A Pipe Dream",
     "options": [
-      "To have bigger things to take care of then the menial task at hand",
-      "Bad luck",
-      "Provoke trouble",
-      "An unreal hope"
+      "An unreal hope",
+      "refused to yield",
+      "Swiftly",
+      "Start the day in a bad mood, which continues all day long"
     ],
     "answer": "An unreal hope",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "एक अवास्तविक आशा"
   },
   {
     "idiom": "At Cross Purposes",
     "options": [
-      "To wait for a situation to become clear or certain",
-      "Very rare",
       "Disagreeing with each other's ideas",
-      "Dishonesty"
+      "Gesture of peace",
+      "Now and then // Periodically",
+      "Highest priority"
     ],
     "answer": "Disagreeing with each other's ideas",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "एक दूसरे के विचारों से असहमत होना"
   },
   {
     "idiom": "By The Ear",
     "options": [
-      "To have reason to suspect",
-      "Encourage the growth or action of something",
-      "By improvisation",
-      "Be useful"
+      "Resentment",
+      "Dishonesty",
+      "Steal from a shop",
+      "By improvisation"
     ],
     "answer": "By improvisation",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "तात्कालिकता द्वारा"
   },
   {
     "idiom": "Out Of The Blue",
     "options": [
       "Unexpectedly",
-      "To feel extremely excited or happy",
-      "Disagreeing with each other's ideas",
-      "By improvisation"
+      "To deal with a difficult situation in a very direct or confident way",
+      "Avoid becoming friendly with someone",
+      "Very happy"
     ],
     "answer": "Unexpectedly",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "अप्रत्याशित रूप से"
   },
   {
     "idiom": "You Snooze, You Loose",
     "options": [
-      "Take risk",
+      "Make the best out of difficult situations",
       "If you are not alert, you are likely to miss opportunities",
-      "Become very confused when you are trying to explian something",
-      "Uncomfortable"
+      "To deal with someone or something that proves unexpectedly or powerful",
+      "Helpless"
     ],
     "answer": "If you are not alert, you are likely to miss opportunities",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "यदि आप सतर्क नहीं हैं, तो आप अवसर खो सकते हैं"
   },
   {
     "idiom": "No Smoke Without Fire",
     "options": [
       "There's always some reason for a rumour",
-      "Involved in a problem",
-      "very active",
-      "feel too frightened to do something"
+      "Become very confused when you are trying to explian something",
+      "Many good and bad times",
+      "Very rare"
     ],
     "answer": "There's always some reason for a rumour",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "किसी भी अफवाह के पीछे हमेशा कोई न कोई कारण होता है"
   },
   {
     "idiom": "Call It A Day",
     "options": [
-      "A person who does not settle in one place for a long time, does not gain wealth, name or fame",
+      "Keep plans and thoughts hidden",
+      "Appear to be valid or reasonable",
       "Stopped working",
-      "Someone is good even if they sometimes behave in a wrong manner",
-      "To have bigger things to take care of then the menial task at hand"
+      "Be useful"
     ],
     "answer": "Stopped working",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "काम करना बंद कर दिया"
   },
   {
     "idiom": "Gets On My Nerves",
     "options": [
-      "Being very delighted",
-      "Irriates",
-      "Accept something as it looks without thinking about whether it might, in fact, not be quite what it appears",
-      "Something common and not special"
+      "very little freedom",
+      "To be a winner",
+      "To look saddened",
+      "Irriates"
     ],
     "answer": "Irriates",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "चिढ़ाता है"
   },
   {
     "idiom": "Familiarity Breeds Contempt",
     "options": [
-      "Aeria view // A general view from above",
-      "Blaming another person",
-      "The better you know someone the less you like him",
-      "Honestly"
+      "Gaining a big success",
+      "One who does same thing in the same way",
+      "Avoid somone or something because it is dangerous for you",
+      "The better you know someone the less you like him"
     ],
     "answer": "The better you know someone the less you like him",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "आप किसी को जितना बेहतर जानते हैं, वह आपको उतना ही कम पसंद आता है"
   },
   {
     "idiom": "In A Soup",
     "options": [
+      "Contemplating // to think slowly and carefully about something",
       "In trouble",
-      "One who does same thing in the same way",
-      "Make consistent progress for success",
-      "The driver was under suspicion after the police found blood on his car"
+      "To act too soon or before the right time",
+      "To be in trouble"
     ],
     "answer": "In trouble",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "मुसीबत में"
   },
   {
     "idiom": "To Pour Cold Water On",
     "options": [
-      "A small, noticeable part of a problem, the total size of which is really much grater",
-      "To discourage doing something",
-      "A period of time when a person faces lots of troubles",
-      "To accept unpleasant consequences"
+      "To deal with a difficult situation without being harmed",
+      "To wait for a situation to become clear or certain",
+      "To understand more than what the words suggest",
+      "To discourage doing something"
     ],
     "answer": "To discourage doing something",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "किसी काम को करने से हतोत्साहित करना"
   },
   {
     "idiom": "Hard Nut To Crack",
     "options": [
-      "The better you know someone the less you like him",
-      "The major portion",
-      "Under any circumstances",
-      "A problem difficult to solve"
+      "To think hard",
+      "To interfere with, disrupt or ruin something for someone",
+      "A problem difficult to solve",
+      "Not take too seriously"
     ],
     "answer": "A problem difficult to solve",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "एक समस्या जिसका समाधान करना कठिन है"
   },
   {
     "idiom": "First And Foremost",
     "options": [
-      "deliberately",
-      "grave errror",
-      "Quarrelling with",
-      "Highest priority"
+      "Start the day in a bad mood, which continues all day long",
+      "Highest priority",
+      "Something common and not special",
+      "In trouble"
     ],
     "answer": "Highest priority",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "सर्वोच्च प्राथमिकता"
   },
   {
     "idiom": "Treading On Thin Ice",
     "options": [
-      "Not to take things seriously",
+      "Easy task",
+      "refused to yield",
       "To be in a dangerous risky position",
-      "Dishonesty",
-      "It is raining very heavily"
+      "Very rare"
     ],
     "answer": "To be in a dangerous risky position",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "खतरनाक जोखिम भरी स्थिति में होना"
   },
   {
     "idiom": "Dance Attendance",
     "options": [
-      "The driver was under suspicion after the police found blood on his car",
       "Obey someone's every wish",
-      "To be in trouble",
-      "To save money or time when doing something by not including some parts"
+      "Completely obsolete",
+      "To start or create something from very beginning",
+      "O tell everyone proudly about your achievements"
     ],
     "answer": "Obey someone's every wish",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "किसी की हर इच्छा का पालन करें"
   },
   {
     "idiom": "Bird's Eye View",
     "options": [
       "Aeria view // A general view from above",
-      "Make consistent progress for success",
-      "Speak truthfully",
-      "An endless task"
+      "Helpless",
+      "Keep plans and thoughts hidden",
+      "a very long time"
     ],
     "answer": "Aeria view // A general view from above",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "एरिया दृश्य // ऊपर से एक सामान्य दृश्य"
   },
   {
     "idiom": "Get Up On The Wrong Side Of The Bed",
     "options": [
-      "deliberately",
-      "In perfect order",
       "Start the day in a bad mood, which continues all day long",
-      "To begin again"
+      "Facing a distressing situation",
+      "An embarrassing fact to be kept secret",
+      "An endless task"
     ],
     "answer": "Start the day in a bad mood, which continues all day long",
-    "year": 2023
+    "year": 2023,
+    "hindiMeaning": "दिन की शुरुआत ख़राब मूड से होती है, जो पूरे दिन बना रहता है"
   },
   {
     "idiom": "Like A Cakewalk",
     "options": [
-      "Had no effect on",
+      "Take risk",
+      "Behave as if something that has happened is much worse then it really is",
       "Easy task",
-      "To go insane",
-      "Encourage the growth or action of something"
+      "A thoroughly upright straightforward person"
     ],
     "answer": "Easy task",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "आसान काम"
   },
   {
     "idiom": "All Eyes",
     "options": [
-      "Behave as if something that has happened is much worse then it really is",
-      "To be a winner",
-      "To become worse",
-      "Watching eagerly"
+      "Had no effect on",
+      "refused to yield",
+      "Watching eagerly",
+      "Not to take things seriously"
     ],
     "answer": "Watching eagerly",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "उत्सुकता से देख रहे हैं"
   },
   {
     "idiom": "In Weal And Woe",
     "options": [
+      "To force yourself to do something unpleasant",
       "In prosperity and adversity",
-      "Encourage the growth or action of something",
-      "Fluency of speech",
-      "hit me below the belt"
+      "Showing no interest",
+      "Going straight and quick"
     ],
     "answer": "In prosperity and adversity",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "समृद्धि और विपत्ति में"
   },
   {
     "idiom": "A Green Horn",
     "options": [
-      "Start over",
-      "Irriates",
+      "Oppressed husband",
       "Inexperienced person",
-      "To become worse"
+      "Missing a good opprtunity",
+      "Become very confused when you are trying to explian something"
     ],
     "answer": "Inexperienced person",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "अनुभवहीन व्यक्ति"
   },
   {
     "idiom": "Bag And Baggage",
     "options": [
-      "A time when money might unexpectedly be needed",
       "With all of one's possessions",
-      "Doing a job in a quick and competent manner",
-      "Contemplating // to think slowly and carefully about something"
+      "To interfere with, disrupt or ruin something for someone",
+      "Given by somebody who is directly involved and therefore likely to be accurate",
+      "Occurred without a warning"
     ],
     "answer": "With all of one's possessions",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "अपनी सारी संपत्ति के साथ"
   },
   {
     "idiom": "In Cold Blood",
     "options": [
       "deliberately",
-      "To start or create something from very beginning",
-      "Blaming another person",
-      "To understand more than what the words suggest"
+      "Uncomfortable",
+      "Encourage the growth or action of something",
+      "born to riches and luxury"
     ],
     "answer": "deliberately",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "जान-बूझकर"
   },
   {
     "idiom": "A Skeleton In The Cupboard",
     "options": [
-      "To become very angry",
-      "Resentment",
-      "An embarrassing fact to be kept secret",
-      "Take risk"
+      "Incomprehensible",
+      "To understand more than what the words suggest",
+      "To say what you think about something very directly",
+      "An embarrassing fact to be kept secret"
     ],
     "answer": "An embarrassing fact to be kept secret",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "एक शर्मनाक तथ्य जिसे गुप्त रखा जाना चाहिए"
   },
   {
     "idiom": "Fly Into A Passion",
     "options": [
-      "Used to tell someone to do something slowly and carefully",
-      "Speak truthfully",
-      "Resentment",
-      "To become angry suddenly"
+      "Appear to be valid or reasonable",
+      "Avoid the main point by talking in a roundabout way",
+      "To become angry suddenly",
+      "To wait for a situation to become clear or certain"
     ],
     "answer": "To become angry suddenly",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "अचानक क्रोधित हो जाना"
   },
   {
     "idiom": "Break The Ice",
     "options": [
-      "In trouble",
-      "Under any circumstances",
-      "Make people meeting first time feel more comfortable",
-      "Take risk"
+      "Involved in a problem",
+      "Friends in good times",
+      "Obey someone's every wish",
+      "Make people meeting first time feel more comfortable"
     ],
     "answer": "Make people meeting first time feel more comfortable",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "पहली बार मिलने वाले लोगों को अधिक सहज महसूस कराएं"
   },
   {
     "idiom": "Beat Around The Bush",
     "options": [
+      "gesture of peace",
       "Avoid the main point by talking in a roundabout way",
-      "Something that appears to be a misfortune can have unexpected benefits",
-      "Start over",
-      "Speaking in a confusing manner without giving a correct answer"
+      "Provoke trouble",
+      "Inexperienced"
     ],
     "answer": "Avoid the main point by talking in a roundabout way",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "घुमा-फिराकर बात करके मुख्य मुद्दे से बचना"
   },
   {
     "idiom": "To Smell A Rat",
     "options": [
-      "Helpless",
-      "To do something without special prepration",
+      "Something that appears to be a misfortune can have unexpected benefits",
+      "To be alert",
       "To have reason to suspect",
-      "Used to tell someone to do something slowly and carefully"
+      "Swiftly"
     ],
     "answer": "To have reason to suspect",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "संदेह करने का कारण होना"
   },
   {
     "idiom": "Fair And Square",
     "options": [
-      "To go insane",
-      "There's always some reason for a rumour",
       "Honestly",
-      "To start or create something from very beginning"
+      "Halting between two options",
+      "True personality",
+      "Gaining a big success"
     ],
     "answer": "Honestly",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "ईमानदारी से"
   },
   {
     "idiom": "At An Arm's Length",
     "options": [
-      "Has a good effect even though at first it seemed it would be bad",
-      "A difficult problem",
       "At a distance",
-      "Not take too seriously"
+      "Watching eagerly",
+      "Gesture of peace",
+      "Encourage the growth or action of something"
     ],
     "answer": "At a distance",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "दूरी पर"
   },
   {
     "idiom": "Cut A Poor Figure",
     "options": [
+      "Fluency of speech",
+      "Went terribly wrong",
       "To put a bad impression",
-      "Under any circumstances",
-      "To become very angry",
-      "Doing a job in a quick and competent manner"
+      "To deal with a difficult situation in a very direct or confident way"
     ],
     "answer": "To put a bad impression",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "बुरा प्रभाव डालने के लिए"
   },
   {
     "idiom": "Bear The Palm",
     "options": [
-      "Had no effect on",
-      "Improve absurd behaviour and act seriously",
-      "Tell others secret information",
-      "To be a winner"
+      "To be a winner",
+      "To be alert",
+      "Provoke trouble",
+      "Inexperienced"
     ],
     "answer": "To be a winner",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "विजेता बनने के लिए"
   },
   {
     "idiom": "Bob's Your Uncle!",
     "options": [
+      "To allow a secret to be known, usually without intending to",
+      "made some people exicited or interested",
       "It becomes easily and quickly achievable",
-      "Appear to be valid or reasonable",
-      "Dishonesty",
-      "Involved in a problem"
+      "To bear the negative consequences of wrongful actions"
     ],
     "answer": "It becomes easily and quickly achievable",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "यह आसानी से और शीघ्रता से प्राप्त किया जा सकता है"
   },
   {
     "idiom": "Beating About The Bush",
     "options": [
-      "A thoroughly upright straightforward person",
-      "Be in a difficult situation from where escape is difficult",
-      "Praise or approval for doing something good",
-      "Speaking in a confusing manner without giving a correct answer"
+      "Speaking in a confusing manner without giving a correct answer",
+      "Made a big fuss about a small problem",
+      "Swiftly",
+      "Has a good effect even though at first it seemed it would be bad"
     ],
     "answer": "Speaking in a confusing manner without giving a correct answer",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "सही उत्तर दिए बिना भ्रमित करने वाले तरीके से बोलना"
   },
   {
     "idiom": "Hit Me Below The Hand",
     "options": [
-      "very little freedom",
-      "To go insane",
-      "Unexpectedly",
-      "hit me below the belt"
+      "Keep plans and thoughts hidden",
+      "hit me below the belt",
+      "Doing a job in a quick and competent manner",
+      "Fluency of speech"
     ],
     "answer": "hit me below the belt",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "मुझे कमर के नीचे मारा"
   },
   {
     "idiom": "Himalayan Blunder",
     "options": [
-      "grave errror",
-      "To say or do something that makes people feel more relaxed, especially at the beginning of a meeting, party",
-      "deliberately",
-      "A selfish friend"
+      "Forward and backward",
+      "An apparent misfortune that eventually has good results",
+      "To deal with someone or something that proves unexpectedly or powerful",
+      "grave errror"
     ],
     "answer": "grave errror",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "गंभीर त्रुटि"
   },
   {
     "idiom": "Donkey's Years",
     "options": [
-      "a very long time",
+      "To interfere with, disrupt or ruin something for someone",
       "Accept something as it looks without thinking about whether it might, in fact, not be quite what it appears",
-      "Take risk",
-      "A problem difficult to solve"
+      "Angry feeling",
+      "a very long time"
     ],
     "answer": "a very long time",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "बहुत समय पहले"
   },
   {
     "idiom": "In Hot Waters",
     "options": [
-      "True personality",
-      "Honestly",
-      "To be in trouble",
-      "Take risk"
+      "Aware of any changes or developments and quick to react to them",
+      "Day and night",
+      "Just barely",
+      "To be in trouble"
     ],
     "answer": "To be in trouble",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "मुसीबत में होना"
   },
   {
     "idiom": "Quicken The Pulse",
     "options": [
-      "A difficult problem",
       "made some people exicited or interested",
-      "To go insane",
-      "Just barely"
+      "Make the best out of difficult situations",
+      "In trouble",
+      "Speaking in a confusing manner without giving a correct answer"
     ],
     "answer": "made some people exicited or interested",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "कुछ लोगों को उत्साहित या रुचिकर बनाया"
   },
   {
     "idiom": "Latin And Greek",
     "options": [
       "Incomprehensible",
-      "An embarrassing fact to be kept secret",
-      "Become very confused when you are trying to explian something",
-      "Inexperienced"
+      "To avoid giving a definite answer or position",
+      "Inexperienced",
+      "To become very angry"
     ],
     "answer": "Incomprehensible",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "समझ से बाहर"
   },
   {
     "idiom": "Elbow Room",
     "options": [
-      "A problem difficult to solve",
+      "In good times and in bad times",
+      "It is raining very heavily",
       "very little freedom",
-      "To save money or time when doing something by not including some parts",
-      "A person who does not settle in one place for a long time, does not gain wealth, name or fame"
+      "To deal with someone or something that proves unexpectedly or powerful"
     ],
     "answer": "very little freedom",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "बहुत कम स्वतंत्रता"
   },
   {
     "idiom": "On The Ball",
     "options": [
-      "Detailed description",
-      "Angry feeling",
-      "Take risk",
-      "To be alert"
+      "Keep plans and thoughts hidden",
+      "Uncomfortable",
+      "To be alert",
+      "Something that appears to be a misfortune can have unexpected benefits"
     ],
     "answer": "To be alert",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "चौकन्ना होना"
   },
   {
     "idiom": "Yellow Bellies",
     "options": [
-      "In trouble",
-      "refused to yield",
+      "To wait for a situation to become clear or certain",
+      "Avoid the main point by talking in a roundabout way",
       "Cowards",
-      "To avoid giving a definite answer or position"
+      "Aeria view // A general view from above"
     ],
     "answer": "Cowards",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "डरपोक"
   },
   {
     "idiom": "A Rolling Stone Gathers No Moss",
     "options": [
-      "A period of time when a person faces lots of troubles",
       "A person who does not settle in one place for a long time, does not gain wealth, name or fame",
-      "In prosperity and adversity",
-      "deliberately"
+      "Someone is good even if they sometimes behave in a wrong manner",
+      "Failing completely",
+      "To have bigger things to take care of then the menial task at hand"
     ],
     "answer": "A person who does not settle in one place for a long time, does not gain wealth, name or fame",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "जो व्यक्ति लम्बे समय तक एक ही स्थान पर नहीं रहता, उसे धन, नाम या प्रसिद्धि नहीं मिलती।"
   },
   {
     "idiom": "Born With A Silver Spoon In His Mouth",
     "options": [
-      "Make the best out of difficult situations",
-      "An unreal hope",
-      "To start or create something from very beginning",
-      "born to riches and luxury"
+      "Irriates",
+      "Now and then // Periodically",
+      "born to riches and luxury",
+      "made some people exicited or interested"
     ],
     "answer": "born to riches and luxury",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "धन और विलासिता में जन्मे"
   },
   {
     "idiom": "An Olive Branch",
     "options": [
-      "gesture of peace",
-      "At a distance",
-      "Be useful",
-      "To face risk"
+      "Something that appears to be a misfortune can have unexpected benefits",
+      "Start over",
+      "To deal with a difficult situation in a very direct or confident way",
+      "gesture of peace"
     ],
     "answer": "gesture of peace",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "शांति का संकेत"
   },
   {
     "idiom": "Cock And Bull Story",
     "options": [
-      "Had no effect on",
       "Wildly exaggerated or falsified story",
-      "Behave as if something that has happened is much worse then it really is",
-      "Not to take things seriously"
+      "With all of one's possessions",
+      "Make the best out of difficult situations",
+      "The worst possible situation"
     ],
     "answer": "Wildly exaggerated or falsified story",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "अत्यधिक अतिरंजित या झूठी कहानी"
   },
   {
     "idiom": "In Full Swing",
     "options": [
-      "Cowards",
-      "The better you know someone the less you like him",
-      "very active",
-      "Avoid starvation"
+      "There's always some reason for a rumour",
+      "At a distance",
+      "Very happy",
+      "very active"
     ],
     "answer": "very active",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "बहुत सक्रिय"
   },
   {
     "idiom": "Let The Cat Out Of The Bag",
     "options": [
-      "To be in a dangerous risky position",
       "To allow a secret to be known, usually without intending to",
-      "To think hard",
-      "Avoid starvation"
+      "An embarrassing fact to be kept secret",
+      "Halting between two options",
+      "Take risk"
     ],
     "answer": "To allow a secret to be known, usually without intending to",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "किसी रहस्य को ज्ञात होने देना, आमतौर पर बिना किसी इरादे के"
   },
   {
     "idiom": "Take Something At Face Value",
     "options": [
+      "Tell others secret information",
       "Accept something as it looks without thinking about whether it might, in fact, not be quite what it appears",
-      "Missing a good opprtunity",
-      "Inexperienced",
-      "To avoid giving a definite answer or position"
+      "deliberately",
+      "Swiftly"
     ],
     "answer": "Accept something as it looks without thinking about whether it might, in fact, not be quite what it appears",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "किसी चीज़ को जैसी वह दिखती है वैसी ही स्वीकार करें, बिना यह सोचे कि क्या वह वास्तव में वैसी नहीं है जैसी वह दिखती है"
   },
   {
     "idiom": "Turn Over A New Leaf",
     "options": [
-      "One who does same thing in the same way",
-      "A period of time when a person faces lots of troubles",
+      "To be in a dangerous risky position",
+      "Dishonesty",
       "To begin again",
-      "Dishonesty"
+      "Blamed for the mistakes of others"
     ],
     "answer": "To begin again",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "फिर से शुरू करने के लिए"
   },
   {
     "idiom": "A Fair-weather Friend",
     "options": [
-      "In prosperity and adversity",
-      "Inexperienced",
-      "To begin again",
-      "A selfish friend"
+      "Helpless",
+      "A selfish friend",
+      "To force yourself to do something unpleasant",
+      "Bad luck"
     ],
     "answer": "A selfish friend",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "एक स्वार्थी मित्र"
   },
   {
     "idiom": "Cudgel One's Brain",
     "options": [
-      "Very happy",
-      "Speaking in a confusing manner without giving a correct answer",
-      "Just barely",
+      "To bear the negative consequences of wrongful actions",
+      "Accept something as it looks without thinking about whether it might, in fact, not be quite what it appears",
+      "Dishonesty",
       "To think hard"
     ],
     "answer": "To think hard",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "कठिन सोचना"
   },
   {
     "idiom": "Come In Handy",
     "options": [
+      "To understand more than what the words suggest",
+      "Under any circumstances",
       "Be useful",
-      "A period of time when a person faces lots of troubles",
-      "Behave as if something that has happened is much worse then it really is",
-      "Official rules and bureaucracy that make it difficult to do something"
+      "in writing"
     ],
     "answer": "Be useful",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "उपयोगी बनें"
   },
   {
     "idiom": "Play It By Ear",
     "options": [
-      "To look saddened",
-      "To do something without special prepration",
-      "To become worse",
-      "born to riches and luxury"
+      "first speech",
+      "Obey someone's every wish",
+      "Occurred without a warning",
+      "To do something without special prepration"
     ],
     "answer": "To do something without special prepration",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "बिना किसी विशेष तैयारी के कुछ करना"
   },
   {
     "idiom": "On Cloud Nine",
     "options": [
-      "Oppressed husband",
-      "To be alert",
-      "To become very angry",
-      "Very happy"
+      "Completely obsolete",
+      "Very happy",
+      "Gaining a big success",
+      "Used to tell someone to do something slowly and carefully"
     ],
     "answer": "Very happy",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "बहुत खुश"
   },
   {
     "idiom": "Heart In The Right Place",
     "options": [
-      "A fearless person",
-      "To think hard",
+      "Highest priority",
+      "Gesture of peace",
       "Someone is good even if they sometimes behave in a wrong manner",
-      "Highest priority"
+      "To be forced to use one's last and weakest resource"
     ],
     "answer": "Someone is good even if they sometimes behave in a wrong manner",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "कोई व्यक्ति अच्छा होता है, भले ही वह कभी-कभी गलत तरीके से व्यवहार करता हो"
   },
   {
     "idiom": "Down The Tubes",
     "options": [
-      "With all of one's possessions",
-      "Fluency of speech",
+      "They have accurately identified or explained something",
+      "Had no effect on",
       "Failing completely",
-      "A person whose friendship cannot be relied on in times"
+      "Inexperienced"
     ],
     "answer": "Failing completely",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "पूरी तरह से विफल"
   },
   {
     "idiom": "Put His Food Down",
     "options": [
-      "To have bigger things to take care of then the menial task at hand",
-      "Under all conditions, no matter how challenging or difficult",
+      "Angry feeling",
+      "A person who does not settle in one place for a long time, does not gain wealth, name or fame",
       "refused to yield",
-      "Oppressed husband"
+      "To deal with a difficult situation without being harmed"
     ],
     "answer": "refused to yield",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "झुकने से इनकार कर दिया"
   },
   {
     "idiom": "Fair-weather Friends",
     "options": [
-      "Showing no interest",
+      "Under any circumstances",
+      "An apparent misfortune that eventually has good results",
       "A person whose friendship cannot be relied on in times",
-      "Praise or approval for doing something good",
-      "Has a good effect even though at first it seemed it would be bad"
+      "To understand more than what the words suggest"
     ],
     "answer": "A person whose friendship cannot be relied on in times",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "एक ऐसा व्यक्ति जिसकी दोस्ती पर कभी भरोसा नहीं किया जा सकता"
   },
   {
     "idiom": "Cold Feet",
     "options": [
-      "Avoid becoming friendly with someone",
-      "Stopped working",
+      "To allow a secret to be known, usually without intending to",
+      "An unreal hope",
       "feel too frightened to do something",
-      "first speech"
+      "To force yourself to do something unpleasant"
     ],
     "answer": "feel too frightened to do something",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "कुछ करने में बहुत डर लगना"
   },
   {
     "idiom": "Greenhorn",
     "options": [
-      "In a depressed or weak state",
-      "Blaming another person",
-      "To have bigger things to take care of then the menial task at hand",
-      "Inexperienced"
+      "Inexperienced",
+      "Detailed description",
+      "In perfect order",
+      "Angry feeling"
     ],
     "answer": "Inexperienced",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "अनुभवहीन"
   },
   {
     "idiom": "Face The Music",
     "options": [
-      "A fearless person",
-      "Be useful",
       "To accept unpleasant consequences",
-      "Watching eagerly"
+      "It becomes easily and quickly achievable",
+      "Something common and not special",
+      "Make people meeting first time feel more comfortable"
     ],
     "answer": "To accept unpleasant consequences",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "अप्रिय परिणामों को स्वीकार करना"
   },
   {
     "idiom": "Lose Your Marbles",
     "options": [
-      "a place that contains many interesting objects",
-      "With all of one's possessions",
-      "To go insane",
-      "Made a big fuss about a small problem"
+      "Something common and not special",
+      "Make consistent progress for success",
+      "Do something in an inexpensive and easy way",
+      "To go insane"
     ],
     "answer": "To go insane",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "पागल हो जाना"
   },
   {
     "idiom": "He's Sitting On The Fence",
     "options": [
-      "To become worse",
-      "a place that contains many interesting objects",
-      "made some people exicited or interested",
-      "He can't take a decision"
+      "Disregarded",
+      "Keep plans and thoughts hidden",
+      "He can't take a decision",
+      "Just barely"
     ],
     "answer": "He can't take a decision",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "वह कोई निर्णय नहीं ले सकता"
   },
   {
     "idiom": "Take With A Grain Of Salt",
     "options": [
-      "Given by somebody who is directly involved and therefore likely to be accurate",
-      "To be in trouble",
-      "Not take too seriously",
-      "Uncomfortable"
+      "Accept something as it looks without thinking about whether it might, in fact, not be quite what it appears",
+      "By improvisation",
+      "Not very often",
+      "Not take too seriously"
     ],
     "answer": "Not take too seriously",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "बहुत गंभीरता से न लें"
   },
   {
     "idiom": "To And Fro",
     "options": [
-      "To be alert",
-      "Forward and backward",
-      "To be in trouble",
-      "An apparent misfortune that eventually has good results"
+      "To put a bad impression",
+      "To have reason to suspect",
+      "Friends in good times",
+      "Forward and backward"
     ],
     "answer": "Forward and backward",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "आगे और पीछे"
   },
   {
     "idiom": "Eat Humble Pie",
     "options": [
+      "Provoke trouble",
       "To apologise humbly",
-      "With all of one's possessions",
-      "A selfish friend",
-      "Not take too seriously"
+      "An embarrassing fact to be kept secret",
+      "in writing"
     ],
     "answer": "To apologise humbly",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "विनम्रतापूर्वक क्षमा मांगना"
   },
   {
     "idiom": "By Leaps And Bounds",
     "options": [
-      "Occurred without a warning",
-      "Showing no interest",
-      "Inexperienced",
-      "Swiftly"
+      "To begin again",
+      "To become worse",
+      "Swiftly",
+      "Start over"
     ],
     "answer": "Swiftly",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "तेजी से"
   },
   {
     "idiom": "Red Tape",
     "options": [
       "Official rules and bureaucracy that make it difficult to do something",
-      "Make the best out of difficult situations",
-      "By improvisation",
-      "To interfere with, disrupt or ruin something for someone"
+      "To bear the negative consequences of wrongful actions",
+      "In trouble",
+      "Failing completely"
     ],
     "answer": "Official rules and bureaucracy that make it difficult to do something",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "आधिकारिक नियम और नौकरशाही जो कुछ करना मुश्किल बना देते हैं"
   },
   {
     "idiom": "In Black And White",
     "options": [
-      "in writing",
-      "To go insane",
-      "To be ignored",
-      "O tell everyone proudly about your achievements"
+      "Went terribly wrong",
+      "Facing a distressing situation",
+      "They have accurately identified or explained something",
+      "in writing"
     ],
     "answer": "in writing",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "लेखन में"
   },
   {
     "idiom": "Steer Clear Of",
     "options": [
-      "Obey someone's every wish",
-      "It becomes easily and quickly achievable",
+      "To become worse",
+      "Doing a job in a quick and competent manner",
       "Avoid somone or something because it is dangerous for you",
-      "To say what you think about something very directly"
+      "Make consistent progress for success"
     ],
     "answer": "Avoid somone or something because it is dangerous for you",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "किसी व्यक्ति या चीज़ से बचें क्योंकि वह आपके लिए खतरनाक है"
   },
   {
     "idiom": "Hold Water",
     "options": [
-      "Honestly",
-      "A continuing unpleasant situation, created another problem that then makes the first problem worse",
+      "Contemplating // to think slowly and carefully about something",
       "Appear to be valid or reasonable",
-      "Blamed for the mistakes of others"
+      "Steal from a shop",
+      "Cowards"
     ],
     "answer": "Appear to be valid or reasonable",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "वैध या उचित प्रतीत होना"
   },
   {
     "idiom": "Slow And Steady",
     "options": [
       "Make consistent progress for success",
-      "in writing",
-      "To act too soon or before the right time",
-      "With all of one's possessions"
+      "Avoid the main point by talking in a roundabout way",
+      "Make the best out of difficult situations",
+      "Start over"
     ],
     "answer": "Make consistent progress for success",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "सफलता के लिए निरंतर प्रगति करें"
   },
   {
     "idiom": "Ins And Outs",
     "options": [
-      "Avoid the main point by talking in a roundabout way",
-      "Take risk",
-      "It is raining very heavily",
-      "Detailed description"
+      "Detailed description",
+      "An unreal hope",
+      "To deal with a difficult situation without being harmed",
+      "In trouble"
     ],
     "answer": "Detailed description",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "विस्तृत विवरण"
   },
   {
     "idiom": "Went Pear-shaped",
     "options": [
-      "Accept something as it looks without thinking about whether it might, in fact, not be quite what it appears",
       "Went terribly wrong",
-      "very active",
-      "The driver was under suspicion after the police found blood on his car"
+      "in writing",
+      "Given by somebody who is directly involved and therefore likely to be accurate",
+      "In a depressed or weak state"
     ],
     "answer": "Went terribly wrong",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "बहुत ग़लत हुआ"
   },
   {
     "idiom": "Aladdin's Cave",
     "options": [
-      "Make people meeting first time feel more comfortable",
-      "Make consistent progress for success",
-      "Friends in good times",
-      "a place that contains many interesting objects"
+      "A problem difficult to solve",
+      "An embarrassing fact to be kept secret",
+      "a place that contains many interesting objects",
+      "Irrelevant"
     ],
     "answer": "a place that contains many interesting objects",
-    "year": 2022
+    "year": 2022,
+    "hindiMeaning": "एक ऐसी जगह जिसमें कई दिलचस्प वस्तुएं हों"
   }
 ]
