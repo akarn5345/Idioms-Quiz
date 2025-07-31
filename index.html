@@ -172,6 +172,7 @@
         btn.disabled = true;
         if (btn.textContent === question.answer) {
           btn.classList.add('correct');
+          btn.style.fontWeight = 'bold';
         } else if (btn === selectedBtn) {
           btn.classList.add('wrong');
         }
