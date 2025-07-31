@@ -43,6 +43,7 @@ output_json = 'idioms_data.json'
 
 quiz_data = []
 year_counter = Counter()
+unique_years = set()
 
 used_idioms = load_used_idioms()
 
@@ -68,6 +69,8 @@ with open(input_csv, newline='', encoding='utf-8') as csvfile:
         meaning = row.get('Meaning', '').strip()
         hindi_meaning = row.get('Hindi Meaning', '').strip()
         year = row.get('Year', '').strip() or '2024'
+        unique_years.add(year)
+        year_counter[year] += 1
 
         options, correct_letter = generate_options(idiom, all_idioms, all_meanings)
 
@@ -84,9 +87,14 @@ with open(input_csv, newline='', encoding='utf-8') as csvfile:
         if len(quiz_data) >= 25:
             break
 
-# Save results
+# Save final output with both questions and list of years
+final_output = {
+    "questions": quiz_data,
+    "years": sorted(unique_years)
+}
+
 with open(output_json, 'w', encoding='utf-8') as out:
-    json.dump(quiz_data, out, indent=2, ensure_ascii=False)
+    json.dump(final_output, out, indent=2, ensure_ascii=False)
 
 save_used_idioms(used_idioms)
 
