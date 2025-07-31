@@ -16,10 +16,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
@@ -28,13 +28,20 @@ jobs:
           python -m pip install --upgrade pip
           pip install pandas openpyxl
 
-      - name: Run script to generate idioms_data.json
+      - name: Check for idioms_list.xlsx
+        run: |
+          if [ ! -f idioms_list.xlsx ]; then
+            echo "Error: idioms_list.xlsx not found"
+            exit 1
+          fi
+
+      - name: Run script to generate quiz_data.json
         run: python generate_idioms_quiz.py
 
-      - name: Commit and push generated file
+      - name: Commit and push generated quiz_data.json
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add idioms_data.json
-          git commit -m "Auto-generated idioms_data.json" || echo "No changes to commit"
+          git add quiz_data.json
+          git commit -m "Auto-generated quiz_data.json" || echo "No changes to commit"
           git push
