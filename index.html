@@ -2,158 +2,155 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Idiom Quiz</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
       padding: 20px;
-      background: linear-gradient(to right, #e0eafc, #cfdef3);
+      line-height: 1.6;
     }
-    h1 {
-      text-align: center;
+    select, button {
+      padding: 6px 12px;
+      margin: 10px 0;
     }
-    .question-box {
+    .question {
+      margin-bottom: 20px;
       background: #fff;
-      border-radius: 10px;
-      padding: 20px;
-      margin-top: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .options {
-      margin-top: 10px;
+      border-left: 4px solid #007BFF;
+      padding: 15px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
     .options label {
       display: block;
-      margin-bottom: 8px;
+      margin: 5px 0;
     }
-    #result {
-      font-weight: bold;
-      margin-top: 15px;
+    .correct {
+      background-color: #d4edda;
     }
-    .filters {
-      margin-bottom: 20px;
+    .incorrect {
+      background-color: #f8d7da;
     }
-    .filters label {
-      margin-right: 10px;
+    .feedback {
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
-  <h1>Idiom Quiz</h1>
 
-  <div class="filters">
-    <label>Filter by year:
-      <select id="yearFilter" multiple size="5" style="vertical-align: middle;"></select>
-    </label>
-    <label style="margin-left: 20px;">Number of questions:
-      <input type="number" id="questionCount" value="5" min="1" max="50" />
-    </label>
-    <button onclick="startQuiz()">Start Quiz</button>
-  </div>
+<h1>Idiom Quiz</h1>
 
-  <div id="quiz"></div>
+<label for="year">Select Year(s):</label>
+<select id="year" multiple></select>
 
-  <script>
-    let allData = [];
-    let quizData = [];
-    let currentIndex = 0;
-    let correctAnswers = 0;
+<br/>
 
-    async function loadData() {
-      const res = await fetch('idioms_data.json');
-      const data = await res.json();
-      allData = data;
+<label for="questionCount">Number of Questions:</label>
+<select id="questionCount">
+  <option value="5">5</option>
+  <option value="10">10</option>
+  <option value="15">15</option>
+  <option value="20">20</option>
+  <option value="25" selected>25</option>
+</select>
 
-      const yearSelect = document.getElementById('yearFilter');
-      data.years.forEach(year => {
-        const option = document.createElement('option');
-        option.value = year;
-        option.textContent = year;
-        option.selected = true;
-        yearSelect.appendChild(option);
-      });
-    }
+<br/>
+<button onclick="startQuiz()">Start Quiz</button>
 
-    function startQuiz() {
-      const selectedYears = Array.from(document.getElementById('yearFilter').selectedOptions).map(o => o.value);
-      const count = parseInt(document.getElementById('questionCount').value, 10);
+<div id="quiz"></div>
 
-      // ✅ CORRECTED LINE — accessing 'data.questions'
-      quizData = allData.questions.filter(q => selectedYears.includes(String(q.year)));
+<script>
+let allData = [];
+let quizData = [];
+let currentQuestionIndex = 0;
+let score = 0;
 
-      shuffleArray(quizData);
-      quizData = quizData.slice(0, count);
-      currentIndex = 0;
-      correctAnswers = 0;
-      showQuestion();
-    }
+fetch('idioms_data.json')
+  .then(response => response.json())
+  .then(data => {
+    allData = data;
+    populateYears(data.years); // Keep this line
+  });
 
-    function showQuestion() {
-      const container = document.getElementById('quiz');
-      container.innerHTML = '';
+function populateYears(years) {
+  const yearSelect = document.getElementById('year');
+  years.forEach(year => {
+    const option = document.createElement('option');
+    option.value = year;
+    option.text = year;
+    yearSelect.appendChild(option);
+  });
+}
 
-      if (currentIndex >= quizData.length) {
-        container.innerHTML = `<div class="question-box">✅ Quiz completed!<br/>Score: ${correctAnswers} / ${quizData.length}</div>`;
-        return;
-      }
+function startQuiz() {
+  const selectedYears = Array.from(document.getElementById('year').selectedOptions).map(opt => opt.value);
+  const questionCount = parseInt(document.getElementById('questionCount').value);
 
-      const q = quizData[currentIndex];
+  quizData = allData.questions.filter(q => selectedYears.includes(String(q.year))); // ✅ Updated line
+  quizData = quizData.slice(0, questionCount);
 
-      const box = document.createElement('div');
-      box.className = 'question-box';
+  currentQuestionIndex = 0;
+  score = 0;
 
-      box.innerHTML = `
-        <div><strong>${currentIndex + 1}. Idiom:</strong> ${q.correct_idiom}</div>
-        <div><em>(${q.hindi_meaning})</em></div>
-        <div class="options">
-          ${Object.entries(q.options).map(([key, val]) => `
-            <label>
-              <input type="radio" name="option" value="${key}" />
-              ${key}. ${val}
-            </label>
-          `).join('')}
-        </div>
-        <button onclick="submitAnswer()">Submit</button>
-        <div id="result"></div>
-      `;
+  showQuestion();
+}
 
-      container.appendChild(box);
-    }
+function showQuestion() {
+  const quizDiv = document.getElementById('quiz');
+  quizDiv.innerHTML = '';
 
-    function submitAnswer() {
-      const selected = document.querySelector('input[name="option"]:checked');
-      const resultDiv = document.getElementById('result');
+  if (currentQuestionIndex >= quizData.length) {
+    quizDiv.innerHTML = `<h2>Quiz Finished!</h2><p>Your Score: ${score}/${quizData.length}</p>`;
+    return;
+  }
 
-      if (!selected) {
-        resultDiv.textContent = '⚠️ Please select an option!';
-        return;
-      }
+  const q = quizData[currentQuestionIndex];
 
-      const answer = selected.value;
-      const correct = quizData[currentIndex].correct_letter;
+  const questionDiv = document.createElement('div');
+  questionDiv.className = 'question';
 
-      if (answer === correct) {
-        resultDiv.textContent = '✅ Correct!';
-        correctAnswers++;
-      } else {
-        resultDiv.textContent = `❌ Incorrect. Correct answer is ${correct}.`;
-      }
+  questionDiv.innerHTML = `
+    <h3>Q${currentQuestionIndex + 1}. What is the meaning of: <em>${q.correct_idiom}</em>?</h3>
+    <div class="options">
+      ${Object.entries(q.options).map(([letter, text]) => `
+        <label>
+          <input type="radio" name="option" value="${letter}" />
+          ${letter}: ${text}
+        </label>
+      `).join('')}
+    </div>
+    <button onclick="submitAnswer('${q.correct_letter}', '${q.hindi_meaning.replace(/'/g, "\\'")}')">Submit</button>
+    <div class="feedback" id="feedback"></div>
+  `;
 
-      setTimeout(() => {
-        currentIndex++;
-        showQuestion();
-      }, 1500);
-    }
+  quizDiv.appendChild(questionDiv);
+}
 
-    function shuffleArray(arr) {
-      for (let i = arr.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [arr[i], arr[j]] = [arr[j], arr[i]];
-      }
-    }
+function submitAnswer(correctLetter, hindiMeaning) {
+  const selected = document.querySelector('input[name="option"]:checked');
+  const feedback = document.getElementById('feedback');
 
-    window.onload = loadData;
-  </script>
+  if (!selected) {
+    alert("Please select an option!");
+    return;
+  }
+
+  const selectedValue = selected.value;
+
+  if (selectedValue === correctLetter) {
+    score++;
+    feedback.innerHTML = `<p class="correct">✅ Correct! <br> <strong>Hindi Meaning:</strong> ${hindiMeaning}</p>`;
+  } else {
+    feedback.innerHTML = `<p class="incorrect">❌ Incorrect. Correct Answer: ${correctLetter} <br> <strong>Hindi Meaning:</strong> ${hindiMeaning}</p>`;
+  }
+
+  setTimeout(() => {
+    currentQuestionIndex++;
+    showQuestion();
+  }, 2000);
+}
+</script>
+
 </body>
 </html>
