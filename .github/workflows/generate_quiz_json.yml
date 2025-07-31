@@ -6,7 +6,7 @@ permissions:
 on:
   push:
     paths:
-      - 'idioms_list.xlsx'
+      - 'idioms_list.csv'
       - 'generate_idioms_quiz.py'
   workflow_dispatch:
 
