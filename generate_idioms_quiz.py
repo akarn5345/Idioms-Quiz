@@ -1,7 +1,7 @@
-import csv
 import json
 import random
 from collections import Counter
+from openpyxl import load_workbook
 
 USED_TRACK_FILE = 'used_idioms.txt'
 
@@ -38,7 +38,7 @@ def save_used_idioms(used):
         f.write('\n'.join(used))
 
 # Input/output
-input_csv = 'idioms_list.csv'
+input_excel = 'idioms_list.xlsx'
 output_json = 'idioms_data.json'
 
 quiz_data = []
@@ -47,45 +47,49 @@ unique_years = set()
 
 used_idioms = load_used_idioms()
 
-with open(input_csv, newline='', encoding='utf-8') as csvfile:
-    reader = csv.DictReader(csvfile)
-    reader.fieldnames = [fn.strip() for fn in reader.fieldnames]
-    rows = list(reader)
+# Read Excel data
+wb = load_workbook(filename=input_excel)
+ws = wb.active
 
-    all_idioms = [{'Idioms': row['Idioms'], 'Meaning': row['Meaning']} for row in rows if row.get('Idioms')]
-    all_meanings = [row['Meaning'] for row in rows if row.get('Meaning')]
+rows = []
+header = [cell.strip() if isinstance(cell, str) else cell for cell in next(ws.iter_rows(min_row=1, max_row=1, values_only=True))]
 
-    unused_rows = [row for row in rows if row.get('Idioms') and row['Idioms'].strip() not in used_idioms]
-    if not unused_rows:
-        print("🔄 All idioms used. Resetting...")
-        unused_rows = rows
-        used_idioms = set()
+for row in ws.iter_rows(min_row=2, values_only=True):
+    row_data = dict(zip(header, row))
+    rows.append(row_data)
 
-    for row in unused_rows:
-        idiom = row.get('Idioms', '').strip()
-        if not idiom:
-            continue
+all_idioms = [{'Idioms': row['Idioms'], 'Meaning': row['Meaning']} for row in rows if row.get('Idioms')]
+all_meanings = [row['Meaning'] for row in rows if row.get('Meaning')]
 
-        meaning = row.get('Meaning', '').strip()
-        hindi_meaning = row.get('Hindi Meaning', '').strip()
-        year = row.get('Year', '').strip() or '2024'
-        unique_years.add(year)
-        year_counter[year] += 1
+unused_rows = [row for row in rows if row.get('Idioms') and row['Idioms'].strip() not in used_idioms]
+if not unused_rows:
+    print("🔄 All idioms used. Resetting...")
+    unused_rows = rows
+    used_idioms = set()
 
-        options, correct_letter = generate_options(idiom, all_idioms, all_meanings)
+for row in unused_rows:
+    idiom = row.get('Idioms', '').strip()
+    if not idiom:
+        continue
 
-        quiz_data.append({
-            'correct_idiom': format_idiom(idiom),
-            'year': year,
-            'meaning': meaning,
-            'hindi_meaning': hindi_meaning,
-            'options': options,
-            'correct_letter': correct_letter
-        })
+    meaning = row.get('Meaning', '').strip()
+    hindi_meaning = row.get('Hindi Meaning', '').strip()
+    year = str(row.get('Year', '')).strip() or '2024'
+    unique_years.add(year)
+    year_counter[year] += 1
 
-        used_idioms.add(idiom)
+    options, correct_letter = generate_options(idiom, all_idioms, all_meanings)
 
-        # 🔁 Removed the 25-question limit
+    quiz_data.append({
+        'correct_idiom': format_idiom(idiom),
+        'year': year,
+        'meaning': meaning,
+        'hindi_meaning': hindi_meaning,
+        'options': options,
+        'correct_letter': correct_letter
+    })
+
+    used_idioms.add(idiom)
 
 # Save final output with both questions and list of years
 final_output = {
