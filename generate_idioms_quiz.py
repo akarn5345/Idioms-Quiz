@@ -7,8 +7,11 @@ import pandas as pd
 input_csv = "idioms_list.csv"
 output_json = "idioms_data.json"
 
-# Load the CSV with tab delimiter
-df = pd.read_csv(input_csv, delimiter="\t")
+# Attempt to read CSV with tab delimiter first, fallback to comma
+try:
+    df = pd.read_csv(input_csv, delimiter="\t")
+except Exception:
+    df = pd.read_csv(input_csv)
 
 # Format idioms (capitalize each word)
 def format_idiom(idiom):
@@ -16,16 +19,15 @@ def format_idiom(idiom):
 
 # Generate quiz data
 quiz_data = []
-used_indices = set()
 
 for idx, row in df.iterrows():
     idiom = format_idiom(row["Idioms"])
     correct = row["Meaning"]
     year = int(row["Year"])
 
-    # Choose 3 wrong options (exclude the correct one)
+    # Choose 3 wrong options (excluding the correct one)
     other_meanings = df[df["Meaning"] != correct]["Meaning"].tolist()
-    wrong_options = random.sample(other_meanings, 3)
+    wrong_options = random.sample(other_meanings, 3) if len(other_meanings) >= 3 else other_meanings
 
     # Combine and shuffle options
     options = wrong_options + [correct]
@@ -42,4 +44,4 @@ for idx, row in df.iterrows():
 with open(output_json, "w", encoding="utf-8") as f:
     json.dump(quiz_data, f, indent=2, ensure_ascii=False)
 
-print(f"Generated {len(quiz_data)} quiz questions.")
+print(f"✅ Generated {len(quiz_data)} quiz questions.")
