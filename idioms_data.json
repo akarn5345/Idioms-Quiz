@@ -1,327 +1,336 @@
-[
-  {
-    "correct_idiom": "A Bad Patch",
-    "year": "2024",
-    "meaning": "A period of time when a person faces lots of troubles",
-    "hindi_meaning": "वह समयावधि जब व्यक्ति को बहुत सारी परेशानियों का सामना करना पड़ता है",
-    "options": {
-      "A": " Keep plans and thoughts hidden",
-      "B": " Swiftly",
-      "C": " Very rare",
-      "D": " A period of time when a person faces lots of troubles"
+{
+  "questions": [
+    {
+      "correct_idiom": "A Bad Patch",
+      "year": "2024",
+      "meaning": "A period of time when a person faces lots of troubles",
+      "hindi_meaning": "वह समयावधि जब व्यक्ति को बहुत सारी परेशानियों का सामना करना पड़ता है",
+      "options": {
+        "A": " A period of time when a person faces lots of troubles",
+        "B": " An embarrassing fact to be kept secret",
+        "C": " To deal with a difficult situation in a very direct or confident way",
+        "D": " very active"
+      },
+      "correct_letter": "A"
     },
-    "correct_letter": "D"
-  },
-  {
-    "correct_idiom": "A Bitter Pill",
-    "year": "2024",
-    "meaning": "Facing a distressing situation",
-    "hindi_meaning": "एक कष्टदायक स्थिति का सामना करना",
-    "options": {
-      "A": " Official rules and bureaucracy that make it difficult to do something",
-      "B": " It is raining very heavily",
-      "C": " Not to take things seriously",
-      "D": " Facing a distressing situation"
+    {
+      "correct_idiom": "A Bitter Pill",
+      "year": "2024",
+      "meaning": "Facing a distressing situation",
+      "hindi_meaning": "एक कष्टदायक स्थिति का सामना करना",
+      "options": {
+        "A": " Speak truthfully",
+        "B": " Facing a distressing situation",
+        "C": " There's always some reason for a rumour",
+        "D": " To accept unpleasant consequences"
+      },
+      "correct_letter": "B"
     },
-    "correct_letter": "D"
-  },
-  {
-    "correct_idiom": "A Blessing In Disguise",
-    "year": "2024",
-    "meaning": "An apparent misfortune that eventually has good results",
-    "hindi_meaning": "एक स्पष्ट दुर्भाग्य जिसका अंततः अच्छा परिणाम होता है",
-    "options": {
-      "A": " A problem difficult to solve",
-      "B": " To deal with someone or something that proves unexpectedly or powerful",
-      "C": " An apparent misfortune that eventually has good results",
-      "D": " To be uncertain"
+    {
+      "correct_idiom": "A Blessing In Disguise",
+      "year": "2024",
+      "meaning": "An apparent misfortune that eventually has good results",
+      "hindi_meaning": "एक स्पष्ट दुर्भाग्य जिसका अंततः अच्छा परिणाम होता है",
+      "options": {
+        "A": " To feel extremely excited or happy",
+        "B": " grave error",
+        "C": " refused to yield",
+        "D": " An apparent misfortune that eventually has good results"
+      },
+      "correct_letter": "D"
     },
-    "correct_letter": "C"
-  },
-  {
-    "correct_idiom": "A Daredevil",
-    "year": "2024",
-    "meaning": "A fearless person",
-    "hindi_meaning": "एक निडर व्यक्ति",
-    "options": {
-      "A": " To have bigger things to take care of then the menial task at hand",
-      "B": " A fearless person",
-      "C": " There's always some reason for a rumour",
-      "D": " To disclose"
+    {
+      "correct_idiom": "A Daredevil",
+      "year": "2024",
+      "meaning": "A fearless person",
+      "hindi_meaning": "एक निडर व्यक्ति",
+      "options": {
+        "A": " Behave as if something that has happened is much worse then it really is",
+        "B": " To be forced to use one's last and weakest resource",
+        "C": " To do something too soon and too quickly",
+        "D": " A fearless person"
+      },
+      "correct_letter": "D"
     },
-    "correct_letter": "B"
-  },
-  {
-    "correct_idiom": "A Dime A Dozen",
-    "year": "2024",
-    "meaning": "Something common and not special",
-    "hindi_meaning": "कुछ सामान्य और विशेष नहीं",
-    "options": {
-      "A": " Going straight and quick",
-      "B": " Provoke trouble",
-      "C": " Failing completely",
-      "D": " Something common and not special"
+    {
+      "correct_idiom": "A Dime A Dozen",
+      "year": "2024",
+      "meaning": "Something common and not special",
+      "hindi_meaning": "कुछ सामान्य और विशेष नहीं",
+      "options": {
+        "A": " Oppressed husband",
+        "B": " Work harder than before",
+        "C": " Something common and not special",
+        "D": " Be useful"
+      },
+      "correct_letter": "C"
     },
-    "correct_letter": "D"
-  },
-  {
-    "correct_idiom": "A Rainy Day",
-    "year": "2024",
-    "meaning": "A time when money might unexpectedly be needed",
-    "hindi_meaning": "ऐसा समय जब धन की अप्रत्याशित रूप से आवश्यकता पड़ सकती है",
-    "options": {
-      "A": " To interfere with",
-      "B": " To understand more than what the words suggest",
-      "C": " Become very confused when you are trying to explian something",
-      "D": " A time when money might unexpectedly be needed"
+    {
+      "correct_idiom": "A Rainy Day",
+      "year": "2024",
+      "meaning": "A time when money might unexpectedly be needed",
+      "hindi_meaning": "ऐसा समय जब धन की अप्रत्याशित रूप से आवश्यकता पड़ सकती है",
+      "options": {
+        "A": " In trouble",
+        "B": " A time when money might unexpectedly be needed",
+        "C": " Speaking in a confusing manner without giving a correct answer",
+        "D": " To be in a dangerous risky position"
+      },
+      "correct_letter": "B"
     },
-    "correct_letter": "D"
-  },
-  {
-    "correct_idiom": "A Vicious Cycle",
-    "year": "एक निरंतर अप्रिय स्थिति ने एक और समस्या पैदा कर दी जो पहली समस्या को और बदतर बना देती है",
-    "meaning": "A continuing unpleasant situation",
-    "hindi_meaning": "created another problem that then makes the first problem worse",
-    "options": {
-      "A": " A fearless person",
-      "B": " To understand more than what the words suggest",
-      "C": " A continuing unpleasant situation",
-      "D": " The driver was under suspicion after the police found blood on his car"
+    {
+      "correct_idiom": "A Vicious Cycle",
+      "year": "एक निरंतर अप्रिय स्थिति ने एक और समस्या पैदा कर दी जो पहली समस्या को और बदतर बना देती है",
+      "meaning": "A continuing unpleasant situation",
+      "hindi_meaning": "created another problem that then makes the first problem worse",
+      "options": {
+        "A": " A continuing unpleasant situation",
+        "B": " Not very often",
+        "C": " In trouble",
+        "D": " Treated her with contempt"
+      },
+      "correct_letter": "A"
     },
-    "correct_letter": "C"
-  },
-  {
-    "correct_idiom": "Around The Clock",
-    "year": "2024",
-    "meaning": "Day and night",
-    "hindi_meaning": "दिन और रात",
-    "options": {
-      "A": " A person whose friendship cannot be relied on in times",
-      "B": " So worried",
-      "C": " Behave as if something that has happened is much worse then it really is",
-      "D": " Day and night"
+    {
+      "correct_idiom": "Around The Clock",
+      "year": "2024",
+      "meaning": "Day and night",
+      "hindi_meaning": "दिन और रात",
+      "options": {
+        "A": " To avoid giving a definite answer or position",
+        "B": " The better you know someone the less you like him",
+        "C": " Has a good effect even though at first it seemed it would be bad",
+        "D": " Day and night"
+      },
+      "correct_letter": "D"
     },
-    "correct_letter": "D"
-  },
-  {
-    "correct_idiom": "At A Low Ebb",
-    "year": "2024",
-    "meaning": "In a depressed or weak state",
-    "hindi_meaning": "उदास या कमज़ोर अवस्था में",
-    "options": {
-      "A": " Aware of any changes or developments and quick to react to them",
-      "B": " In trouble",
-      "C": " Angry feeling",
-      "D": " In a depressed or weak state"
+    {
+      "correct_idiom": "At A Low Ebb",
+      "year": "2024",
+      "meaning": "In a depressed or weak state",
+      "hindi_meaning": "उदास या कमज़ोर अवस्था में",
+      "options": {
+        "A": " To wait for a situation to become clear or certain",
+        "B": " To become very angry",
+        "C": " To be alert",
+        "D": " In a depressed or weak state"
+      },
+      "correct_letter": "D"
     },
-    "correct_letter": "D"
-  },
-  {
-    "correct_idiom": "At Her Wits' End",
-    "year": "वह इतनी चिंतित",
-    "meaning": "So worried",
-    "hindi_meaning": "confused or annoyed that she does not know what to do next",
-    "options": {
-      "A": " In perfect order",
-      "B": " So worried",
-      "C": " To deal with a difficult situation in a very direct or confident way",
-      "D": " At a distance"
+    {
+      "correct_idiom": "At Her Wits' End",
+      "year": "वह इतनी चिंतित",
+      "meaning": "So worried",
+      "hindi_meaning": "confused or annoyed that she does not know what to do next",
+      "options": {
+        "A": " To do something without special preparation",
+        "B": " So worried",
+        "C": " Start over",
+        "D": " In perfect order"
+      },
+      "correct_letter": "B"
     },
-    "correct_letter": "B"
-  },
-  {
-    "correct_idiom": "Beside The Mark",
-    "year": "2024",
-    "meaning": "Irrelevant",
-    "hindi_meaning": "अप्रासंगिक",
-    "options": {
-      "A": " Irrelevant",
-      "B": " Something that appears to be a misfortune can have unexpected benefits",
-      "C": " Swiftly",
-      "D": " To think hard"
+    {
+      "correct_idiom": "Beside The Mark",
+      "year": "2024",
+      "meaning": "Irrelevant",
+      "hindi_meaning": "अप्रासंगिक",
+      "options": {
+        "A": " Irrelevant",
+        "B": " A period of time when a person faces lots of troubles",
+        "C": " in writing",
+        "D": " Speak truthfully"
+      },
+      "correct_letter": "A"
     },
-    "correct_letter": "A"
-  },
-  {
-    "correct_idiom": "Bite The Bullet",
-    "year": "2024",
-    "meaning": "To force yourself to do something unpleasant",
-    "hindi_meaning": "अपने आप को कुछ अप्रिय करने के लिए मजबूर करना",
-    "options": {
-      "A": " It is raining very heavily",
-      "B": " Made a big fuss about a small problem",
-      "C": " To do something too soon and too quickly",
-      "D": " To force yourself to do something unpleasant"
+    {
+      "correct_idiom": "Bite The Bullet",
+      "year": "2024",
+      "meaning": "To force yourself to do something unpleasant",
+      "hindi_meaning": "अपने आप को कुछ अप्रिय करने के लिए मजबूर करना",
+      "options": {
+        "A": " To force yourself to do something unpleasant",
+        "B": " Has a good effect even though at first it seemed it would be bad",
+        "C": " Cowards",
+        "D": " To be ignored"
+      },
+      "correct_letter": "A"
     },
-    "correct_letter": "D"
-  },
-  {
-    "correct_idiom": "Break A Leg",
-    "year": "2024",
-    "meaning": "To wish good luck",
-    "hindi_meaning": "शुभकामनाएँ देने के लिए",
-    "options": {
-      "A": " Treated her with contempt",
-      "B": " Wildly exaggerated or falsified story",
-      "C": " To wish good luck",
-      "D": " Improve absurd behaviour and act seriously"
+    {
+      "correct_idiom": "Break A Leg",
+      "year": "2024",
+      "meaning": "To wish good luck",
+      "hindi_meaning": "शुभकामनाएँ देने के लिए",
+      "options": {
+        "A": " Very rare",
+        "B": " Tell others secret information",
+        "C": " you loose",
+        "D": " To wish good luck"
+      },
+      "correct_letter": "D"
     },
-    "correct_letter": "C"
-  },
-  {
-    "correct_idiom": "Break The Ice",
-    "year": "party",
-    "meaning": "To say or do something that makes people feel more relaxed",
-    "hindi_meaning": "especially at the beginning of a meeting",
-    "options": {
-      "A": " In perfect order",
-      "B": " With all of one's possessions",
-      "C": " Steal from a shop",
-      "D": " To say or do something that makes people feel more relaxed"
+    {
+      "correct_idiom": "Break The Ice",
+      "year": "party",
+      "meaning": "To say or do something that makes people feel more relaxed",
+      "hindi_meaning": "especially at the beginning of a meeting",
+      "options": {
+        "A": " Watching eagerly",
+        "B": " Friends in good times",
+        "C": " To become very angry",
+        "D": " To say or do something that makes people feel more relaxed"
+      },
+      "correct_letter": "D"
     },
-    "correct_letter": "D"
-  },
-  {
-    "correct_idiom": "Call A Space A Space",
-    "year": "2024",
-    "meaning": "Speak truthfully",
-    "hindi_meaning": "सच बोलो",
-    "options": {
-      "A": " Encourage the growth or action of something",
-      "B": " To start or create something from very beginning",
-      "C": " To deal with someone or something that proves unexpectedly or powerful",
-      "D": " Speak truthfully"
+    {
+      "correct_idiom": "Call A Space A Space",
+      "year": "2024",
+      "meaning": "Speak truthfully",
+      "hindi_meaning": "सच बोलो",
+      "options": {
+        "A": " Speak truthfully",
+        "B": " Work harder than before",
+        "C": " Doing a job in a quick and competent manner",
+        "D": " Something common and not special"
+      },
+      "correct_letter": "A"
     },
-    "correct_letter": "D"
-  },
-  {
-    "correct_idiom": "Care A Hang",
-    "year": "2024",
-    "meaning": "Showing no interest",
-    "hindi_meaning": "कोई रुचि नहीं दिखाना",
-    "options": {
-      "A": " Make consistent progress for success",
-      "B": " Steal from a shop",
-      "C": " To disclose",
-      "D": " Showing no interest"
+    {
+      "correct_idiom": "Care A Hang",
+      "year": "2024",
+      "meaning": "Showing no interest",
+      "hindi_meaning": "कोई रुचि नहीं दिखाना",
+      "options": {
+        "A": " Bad luck",
+        "B": " Showing no interest",
+        "C": " Avoid someone or something because it is dangerous for you",
+        "D": " A difficult problem"
+      },
+      "correct_letter": "B"
     },
-    "correct_letter": "D"
-  },
-  {
-    "correct_idiom": "Come Rain Or Shine",
-    "year": "2024",
-    "meaning": "Under any circumstances",
-    "hindi_meaning": "किसी भी परिस्थिति में",
-    "options": {
-      "A": " Obey someone's every wish",
-      "B": " To be in trouble",
-      "C": " To begin again",
-      "D": " Under any circumstances"
+    {
+      "correct_idiom": "Come Rain Or Shine",
+      "year": "2024",
+      "meaning": "Under any circumstances",
+      "hindi_meaning": "किसी भी परिस्थिति में",
+      "options": {
+        "A": " Disregarded",
+        "B": " Under any circumstances",
+        "C": " To allow a secret to be known",
+        "D": " It is raining very heavily"
+      },
+      "correct_letter": "B"
     },
-    "correct_letter": "D"
-  },
-  {
-    "correct_idiom": "Cook Someone's Goose",
-    "year": "किसी के लिए किसी चीज़ में हस्तक्षेप करना",
-    "meaning": "To interfere with",
-    "hindi_meaning": "disrupt or ruin something for someone",
-    "options": {
-      "A": " A selfish friend",
-      "B": " Watching eagerly",
-      "C": " Involved in a problem",
-      "D": " To interfere with"
+    {
+      "correct_idiom": "Cook Someone's Goose",
+      "year": "किसी के लिए किसी चीज़ में हस्तक्षेप करना",
+      "meaning": "To interfere with",
+      "hindi_meaning": "disrupt or ruin something for someone",
+      "options": {
+        "A": " To interfere with",
+        "B": " Occurred without a warning",
+        "C": " in writing",
+        "D": " Made a big fuss about a small problem"
+      },
+      "correct_letter": "A"
     },
-    "correct_letter": "D"
-  },
-  {
-    "correct_idiom": "Creature Of Habit",
-    "year": "2024",
-    "meaning": "One who does same thing in the same way",
-    "hindi_meaning": "जो एक ही काम एक ही तरीके से करता है",
-    "options": {
-      "A": " One who does same thing in the same way",
-      "B": " There's always some reason for a rumour",
-      "C": " To save money or time when doing something by not including some parts",
-      "D": " To act too soon or before the right time"
+    {
+      "correct_idiom": "Creature Of Habit",
+      "year": "2024",
+      "meaning": "One who does same thing in the same way",
+      "hindi_meaning": "जो एक ही काम एक ही तरीके से करता है",
+      "options": {
+        "A": " Avoid someone or something because it is dangerous for you",
+        "B": " To avoid giving a definite answer or position",
+        "C": " One who does same thing in the same way",
+        "D": " An embarrassing fact to be kept secret"
+      },
+      "correct_letter": "C"
     },
-    "correct_letter": "A"
-  },
-  {
-    "correct_idiom": "Cut Corners",
-    "year": "2024",
-    "meaning": "Do something in an inexpensive and easy way",
-    "hindi_meaning": "किसी काम को सस्ते और आसान तरीके से करें",
-    "options": {
-      "A": " Failing completely",
-      "B": " In trouble",
-      "C": " Do something in an inexpensive and easy way",
-      "D": " Irritates"
+    {
+      "correct_idiom": "Cut Corners",
+      "year": "2024",
+      "meaning": "Do something in an inexpensive and easy way",
+      "hindi_meaning": "किसी काम को सस्ते और आसान तरीके से करें",
+      "options": {
+        "A": " Not brave",
+        "B": " In prosperity and adversity",
+        "C": " Do something in an inexpensive and easy way",
+        "D": " A problem difficult to solve"
+      },
+      "correct_letter": "C"
     },
-    "correct_letter": "C"
-  },
-  {
-    "correct_idiom": "Easy Does It",
-    "year": "2024",
-    "meaning": "Used to tell someone to do something slowly and carefully",
-    "hindi_meaning": "किसी को कुछ धीरे और सावधानी से करने के लिए कहने के लिए प्रयोग किया जाता है",
-    "options": {
-      "A": " One who does same thing in the same way",
-      "B": " Used to tell someone to do something slowly and carefully",
-      "C": " Showing no interest",
-      "D": " To allow a secret to be known"
+    {
+      "correct_idiom": "Easy Does It",
+      "year": "2024",
+      "meaning": "Used to tell someone to do something slowly and carefully",
+      "hindi_meaning": "किसी को कुछ धीरे और सावधानी से करने के लिए कहने के लिए प्रयोग किया जाता है",
+      "options": {
+        "A": " Accept something as it looks without thinking about whether it might",
+        "B": " Now and then // Periodically",
+        "C": " Friends in good times",
+        "D": " Used to tell someone to do something slowly and carefully"
+      },
+      "correct_letter": "D"
     },
-    "correct_letter": "B"
-  },
-  {
-    "correct_idiom": "Fair Weather Friends",
-    "year": "2024",
-    "meaning": "Friends in good times",
-    "hindi_meaning": "अच्छे समय में दोस्त",
-    "options": {
-      "A": " To be a winner",
-      "B": " Under all conditions",
-      "C": " Friends in good times",
-      "D": " To save money or time when doing something by not including some parts"
+    {
+      "correct_idiom": "Fair Weather Friends",
+      "year": "2024",
+      "meaning": "Friends in good times",
+      "hindi_meaning": "अच्छे समय में दोस्त",
+      "options": {
+        "A": " Friends in good times",
+        "B": " Blaming another person",
+        "C": " Make people meeting first time feel more comfortable",
+        "D": " Aware of any changes or developments and quick to react to them"
+      },
+      "correct_letter": "A"
     },
-    "correct_letter": "C"
-  },
-  {
-    "correct_idiom": "Fall Flat",
-    "year": "2024",
-    "meaning": "Had no effect on",
-    "hindi_meaning": "पर कोई प्रभाव नहीं पड़ा",
-    "options": {
-      "A": " Not take too seriously",
-      "B": " Highest priority",
-      "C": " A person who does not settle in one place for a long time",
-      "D": " Had no effect on"
+    {
+      "correct_idiom": "Fall Flat",
+      "year": "2024",
+      "meaning": "Had no effect on",
+      "hindi_meaning": "पर कोई प्रभाव नहीं पड़ा",
+      "options": {
+        "A": " With all of one's possessions",
+        "B": " Had no effect on",
+        "C": " Become very confused when you are trying to explian something",
+        "D": " Used to tell someone to do something slowly and carefully"
+      },
+      "correct_letter": "B"
     },
-    "correct_letter": "D"
-  },
-  {
-    "correct_idiom": "Fish Out Of Water",
-    "year": "2024",
-    "meaning": "Uncomfortable",
-    "hindi_meaning": "असुविधाजनक",
-    "options": {
-      "A": " Uncomfortable",
-      "B": " Provoke trouble",
-      "C": " Angry feeling",
-      "D": " Stopped working"
+    {
+      "correct_idiom": "Fish Out Of Water",
+      "year": "2024",
+      "meaning": "Uncomfortable",
+      "hindi_meaning": "असुविधाजनक",
+      "options": {
+        "A": " To wait for a situation to become clear or certain",
+        "B": " Uncomfortable",
+        "C": " Start over",
+        "D": " Inexperienced"
+      },
+      "correct_letter": "B"
     },
-    "correct_letter": "A"
-  },
-  {
-    "correct_idiom": "Five-finger Discount",
-    "year": "2024",
-    "meaning": "Steal from a shop",
-    "hindi_meaning": "दुकान से चोरी करना",
-    "options": {
-      "A": " Resentment",
-      "B": " To become worse",
-      "C": " Steal from a shop",
-      "D": " A talent for speaking"
-    },
-    "correct_letter": "C"
-  }
-]
+    {
+      "correct_idiom": "Five-finger Discount",
+      "year": "2024",
+      "meaning": "Steal from a shop",
+      "hindi_meaning": "दुकान से चोरी करना",
+      "options": {
+        "A": " He can't take a decision",
+        "B": " Stopped working",
+        "C": " Steal from a shop",
+        "D": " Treated her with contempt"
+      },
+      "correct_letter": "C"
+    }
+  ],
+  "years": [
+    "2024",
+    "party",
+    "एक निरंतर अप्रिय स्थिति ने एक और समस्या पैदा कर दी जो पहली समस्या को और बदतर बना देती है",
+    "किसी के लिए किसी चीज़ में हस्तक्षेप करना",
+    "वह इतनी चिंतित"
+  ]
+}
