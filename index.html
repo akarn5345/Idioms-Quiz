@@ -36,9 +36,9 @@
       transition: 0.3s;
     }
     .option.correct {
-      background-color: #d4f7d4;
-      border-color: #28a745;
-      color: #1c581c;
+      background-color: #4CAF50;
+      border-color: #1b5e20;
+      color: white;
       font-weight: bold;
     }
     .option.wrong {
@@ -75,6 +75,29 @@
       font-size: 16px;
       cursor: pointer;
       margin-top: 10px;
+      margin-right: 10px;
+    }
+    .submit-btn {
+      display: none;
+      background-color: #28a745;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 20px 0;
+    }
+    .retry-btn {
+      display: none;
+      background-color: #ffc107;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      color: black;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 20px 10px 0 0;
     }
     .inline-group {
       margin-top: 10px;
@@ -88,6 +111,24 @@
       font-weight: bold;
       color: #dc3545;
       text-align: right;
+    }
+    .font-controls {
+      margin-top: 10px;
+    }
+    .font-controls button {
+      margin-right: 10px;
+      padding: 6px 12px;
+      border: 1px solid #007bff;
+      background: #f0f8ff;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .score-summary {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      margin: 20px 0;
+      color: #007bff;
     }
   </style>
 </head>
@@ -104,13 +145,31 @@
         <label><input type="radio" name="questionCount" value="50"> 50 Questions</label>
       </div>
 
+      <div class="font-controls">
+        Font Size:
+        <button onclick="adjustFontSize(1)">A+</button>
+        <button onclick="adjustFontSize(-1)">A-</button>
+      </div>
+
       <button class="start-btn" onclick="startQuiz()">Start Quiz</button>
     </div>
     <div id="quiz-container"></div>
+    <div class="score-summary" id="score-summary"></div>
+    <button class="submit-btn" id="submit-btn" onclick="submitQuiz()">Submit</button>
+    <button class="retry-btn" id="retry-btn" onclick="startQuiz()">Retry</button>
   </div>
   <script>
     let data = [];
     let timer;
+    let score = 0;
+
+    function adjustFontSize(delta) {
+      document.querySelectorAll('.question-card, .option, .hindi-meaning').forEach(el => {
+        const style = window.getComputedStyle(el);
+        const currentSize = parseFloat(style.fontSize);
+        el.style.fontSize = (currentSize + delta) + 'px';
+      });
+    }
 
     async function startQuiz() {
       const years = Array.from(document.querySelectorAll('.filters input[type=checkbox]:checked')).map(cb => parseInt(cb.value));
@@ -123,9 +182,14 @@
       data = shuffleArray(data).slice(0, questionCount);
 
       document.getElementById('quiz-container').innerHTML = '';
+      document.getElementById('score-summary').textContent = '';
+      document.getElementById('retry-btn').style.display = 'none';
       clearInterval(timer);
+      score = 0;
       startTimer(timeLimit);
       renderAllQuestions();
+
+      document.getElementById('submit-btn').style.display = 'inline-block';
     }
 
     function startTimer(minutes) {
@@ -144,6 +208,14 @@
           disableRemaining();
         }
       }, 1000);
+    }
+
+    function submitQuiz() {
+      clearInterval(timer);
+      disableRemaining();
+      document.getElementById('timer').textContent = 'Quiz Submitted!';
+      document.getElementById('score-summary').textContent = `You scored ${score} out of ${data.length}`;
+      document.getElementById('retry-btn').style.display = 'inline-block';
     }
 
     function disableRemaining() {
@@ -177,6 +249,10 @@
           btn.classList.add('wrong');
         }
       });
+
+      if (selectedBtn.textContent === question.answer) {
+        score++;
+      }
 
       const hindiDiv = document.createElement('div');
       hindiDiv.className = 'hindi-meaning';
