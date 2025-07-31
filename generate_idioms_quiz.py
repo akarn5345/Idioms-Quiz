@@ -35,7 +35,8 @@ def save_used_idioms(used):
 input_xlsx = 'idioms_list.xlsx'
 output_json = 'idioms_data.json'
 
-df = pd.read_excel(input_xlsx, dtype=str).fillna('')
+# 🔧 Fix: specify engine explicitly for GitHub Actions or CI environments
+df = pd.read_excel(input_xlsx, engine='openpyxl', dtype=str).fillna('')
 rows = df.to_dict(orient='records')
 
 quiz_data = []
