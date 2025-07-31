@@ -38,6 +38,7 @@
     .option.correct {
       background-color: #d4f7d4;
       border-color: #28a745;
+      color: #1c581c;
       font-weight: bold;
     }
     .option.wrong {
@@ -172,7 +173,6 @@
         btn.disabled = true;
         if (btn.textContent === question.answer) {
           btn.classList.add('correct');
-          btn.style.fontWeight = 'bold';
         } else if (btn === selectedBtn) {
           btn.classList.add('wrong');
         }
