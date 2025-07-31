@@ -3,7 +3,7 @@ import json
 import random
 
 # Read the .xlsx file
-df = pd.read_excel('idioms_data.xlsx')
+df = pd.read_excel('idioms_list.xlsx')
 
 # Ensure required columns exist
 required_columns = ['Idioms', 'Meaning', 'Hindi Meaning']
