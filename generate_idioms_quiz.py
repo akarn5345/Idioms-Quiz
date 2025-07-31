@@ -58,7 +58,12 @@ used_file = 'used_idioms.txt'
 output_json = 'idioms_data.json'
 
 # Read Excel file with specified engine
-df = pd.read_excel(input_excel, engine='openpyxl')
+if input_excel.endswith('.xlsx'):
+    df = pd.read_excel(input_excel, engine='openpyxl')
+elif input_excel.endswith('.csv'):
+    df = pd.read_csv(input_excel)
+else:
+    raise ValueError("Unsupported file format")
 df.columns = [c.strip() for c in df.columns]
 records = df.to_dict(orient='records')
 all_meanings = [r['Meaning'] for r in records if r.get('Meaning')]
