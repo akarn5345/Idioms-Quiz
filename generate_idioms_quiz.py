@@ -3,91 +3,54 @@ import json
 import random
 from collections import Counter
 
-USED_TRACK_FILE = 'used_idioms.txt'
-
-def format_idiom(idiom):
-    return ' '.join(word.capitalize() for word in idiom.strip().split())
-
-def generate_distractor_meanings(correct_meaning, all_meanings):
-    pool = [m for m in all_meanings if m.strip().lower() != correct_meaning.strip().lower()]
-    return random.sample(pool, 3) if len(pool) >= 3 else pool[:3]
-
-def generate_options(correct_idiom, all_idioms, all_meanings):
-    correct_meaning = next(row['Meaning'] for row in all_idioms if row['Idioms'] == correct_idiom)
-    distractors = generate_distractor_meanings(correct_meaning, all_meanings)
-    options = distractors + [correct_meaning]
-    random.shuffle(options)
-    labeled = dict(zip(['A', 'B', 'C', 'D'], options))
-    correct_letter = [k for k, v in labeled.items() if v == correct_meaning][0]
-    return labeled, correct_letter
-
-def load_used_idioms():
-    try:
-        with open(USED_TRACK_FILE, 'r', encoding='utf-8') as f:
-            return set(line.strip() for line in f)
-    except FileNotFoundError:
-        return set()
-
-def save_used_idioms(used):
-    with open(USED_TRACK_FILE, 'w', encoding='utf-8') as f:
-        f.write('\n'.join(used))
-
+# Input/Output
 input_xlsx = 'idioms_list.xlsx'
 output_json = 'idioms_data.json'
 
-# 🔧 Fix: specify engine explicitly for GitHub Actions or CI environments
+# Capitalize idioms properly
+def format_idiom(idiom):
+    return ' '.join(word.capitalize() for word in idiom.strip().split())
+
+# Load Excel
 df = pd.read_excel(input_xlsx, engine='openpyxl', dtype=str).fillna('')
 rows = df.to_dict(orient='records')
 
+# Prepare data
 quiz_data = []
 year_counter = Counter()
-unique_years = set()
-used_idioms = load_used_idioms()
 
-all_idioms = [{'Idioms': row['Idioms'], 'Meaning': row['Meaning']} for row in rows if row['Idioms']]
-all_meanings = [row['Meaning'] for row in rows if row['Meaning']]
+meanings_pool = [row['Meaning'].strip() for row in rows if row.get('Meaning')]
 
-unused_rows = [row for row in rows if row['Idioms'].strip() not in used_idioms]
-if not unused_rows:
-    print("🔄 All idioms used. Resetting...")
-    unused_rows = rows
-    used_idioms = set()
+for row in rows:
+    idiom = format_idiom(row.get('Idioms', ''))
+    correct_meaning = row.get('Meaning', '').strip()
+    hindi_meaning = row.get('Hindi Meaning', '').strip() or 'No Hindi meaning available'
+    year = str(row.get('Year', '')).strip() or '2024'
 
-for row in unused_rows:
-    idiom = row.get('Idioms', '').strip()
-    if not idiom:
-        continue
+    # Get 3 wrong options (exclude correct one)
+    wrong_options = random.sample([m for m in meanings_pool if m != correct_meaning], 3)
+    options = wrong_options + [correct_meaning]
+    random.shuffle(options)
 
-    meaning = row.get('Meaning', '').strip()
-    hindi_meaning = row.get('Hindi Meaning', '').strip()
-    year = row.get('Year', '').strip() or '2024'
-    unique_years.add(year)
-    year_counter[year] += 1
-
-    options, correct_letter = generate_options(idiom, all_idioms, all_meanings)
+    labeled_options = dict(zip(['A', 'B', 'C', 'D'], options))
+    correct_letter = [k for k, v in labeled_options.items() if v == correct_meaning][0]
 
     quiz_data.append({
-        'correct_idiom': format_idiom(idiom),
+        'idiom': idiom,
         'year': year,
-        'meaning': meaning,
         'hindi_meaning': hindi_meaning,
-        'options': options,
+        'options': labeled_options,
         'correct_letter': correct_letter
     })
 
-    used_idioms.add(idiom)
+    year_counter[year] += 1
 
-final_output = {
-    "questions": quiz_data,
-    "years": sorted(unique_years)
-}
+# Save JSON
+with open(output_json, 'w', encoding='utf-8') as f:
+    json.dump(quiz_data, f, indent=2, ensure_ascii=False)
 
-with open(output_json, 'w', encoding='utf-8') as out:
-    json.dump(final_output, out, indent=2, ensure_ascii=False)
-
-save_used_idioms(used_idioms)
-
-print(f"✅ Quiz saved to '{output_json}' with {len(quiz_data)} questions.")
-print("\n📊 Year-wise breakdown:")
-for y, c in sorted(year_counter.items()):
-    print(f"  {y}: {c} questions")
+# Summary
+print(f"✅ Quiz data written to '{output_json}' with {len(quiz_data)} questions.")
+print("\n📊 Question count by year:")
+for yr, count in sorted(year_counter.items()):
+    print(f"  {yr}: {count} questions")
