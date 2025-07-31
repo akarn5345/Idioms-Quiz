@@ -6,9 +6,9 @@ permissions:
 on:
   push:
     paths:
-      - 'idioms_list.csv'
+      - 'idioms_list.xlsx'           # ✅ updated to watch the .xlsx file
       - 'generate_idioms_quiz.py'
-      - 'idioms_data.json'  # optional, for clarity
+      - 'idioms_data.json'           # optional, for clarity
   workflow_dispatch:
 
 jobs:
@@ -18,6 +18,14 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install pandas openpyxl
 
       - name: Run script to generate idioms_data.json
         run: python generate_idioms_quiz.py
